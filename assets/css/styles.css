@@ -1256,6 +1256,16 @@ select {
 .cards-section .item-purple .icon {
   color: #8A40A7;
 }
+
+.cards-section .item-dark-green .item-inner {
+  border-top: 3px solid #388E3C;
+}
+.cards-section .item-dark-green .item-inner:hover .title {
+  color: #1B5E20;
+}
+.cards-section .item-dark-green .icon {
+  color: #388E3C;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .cards-section .item-inner {
