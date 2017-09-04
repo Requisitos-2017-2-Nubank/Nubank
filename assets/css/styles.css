@@ -423,7 +423,7 @@ select {
   font-size: 36px;
 }
 .body-green .doc-header .doc-title {
-  color: #75c181;
+  color: #006633;
 }
 .body-blue .doc-header .doc-title {
   color: #58bbee;
@@ -838,8 +838,8 @@ select {
   font-weight: 600;
 }
 .body-green .doc-menu > li.active > a {
-  color: #75c181;
-  border-color: #75c181;
+  color: #006633;
+  border-color: #006633;
 }
 .body-blue .doc-menu > li.active > a {
   color: #58bbee;
@@ -1258,13 +1258,13 @@ select {
 }
 
 .cards-section .item-dark-green .item-inner {
-  border-top: 3px solid #388E3C;
+  border-top: 3px solid #006633;
 }
 .cards-section .item-dark-green .item-inner:hover .title {
-  color: #1B5E20;
+  color: #006633;
 }
 .cards-section .item-dark-green .icon {
-  color: #388E3C;
+  color: #006633;
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
