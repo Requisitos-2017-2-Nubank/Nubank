@@ -1,5 +1,5 @@
 
-<p align="center"><a href="http://www.nubank.unb.br" target="_blank"><img width="270"src="assets/images/Nubank_Logo.png"></a></p>
+<p align="center"><a href="http://www.nubank.com.br" target="_blank"><img width="270"src="assets/images/Nubank_Logo.png"></a></p>
 
 # Requisitos - Nubank
 
