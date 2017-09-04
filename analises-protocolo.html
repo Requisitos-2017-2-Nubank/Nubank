@@ -147,10 +147,85 @@
                                 <h2 class="section-title">Usuários de bancos tradicionais</h2>
                                 <div class="section-block">
 
+                                        <div id="pagamento-fatura"  class="section-block">        
+                                                <h3 class="block-title"> Contexto: Pagamento da Fatura</h3>
+                                        <b>Fluxo Principal:</b>                                                
+                                        <ul>
+                                            <li>Manter anotações dos pagamentos realizados com o cartão de crédito;</li>
+                                            <li>Receber a fatura (gera F.A. 1):</li>
+                                                <ul>
+                                                <li>por correios;</li>
+                                                <li>por e-mail;</li></ul>
+                                            <li>Conferir os valores apresentados na fatura com os anotados ao longo do mês (gera F.A. 2)</li>
+                                            <li>Optar por pagamento integral ou parcelado, dependendo do valor;</li>
+                                            <li>Ligar para o serviço de pagamentos do banco;</li>
+                                            <li>Escolher a opção de débito da fatura;</li>
+                                            <li>Agendar a data para débito na conta-corrente;</li>
+                                            <li>Autorizar o débito para pagamento (gera F.A. 3)</li>
+                                        </ul>
+
+                                        <b>Fluxos Alternativos:</b>   
+                                        <p align="justify">&emsp;&emsp;F.A. 1 - A Fatura não foi recebida por e-mail ou correios dentro do prazo:</p>                                             
+                                        <ul>
+                                            <li>Contatar o banco.</li>
+                                        </ul>
+
+                                        <p align="justify">&emsp;&emsp;F.A. 2 - Os valores anotados não coincidem com os da fatura:</p>                                             
+                                        <ul>
+                                            <li>Revisar os valores anotados em busca de erros;</li>
+                                            <li>Revisar os valores anotados em busca de errosProcurar os serviços de atendimento do banco para resolver o problema.</li>
+                                        </ul>
+                                        
+                                        <p align="justify">&emsp;&emsp;Saldo insuficiente na conta-corrente para debitar a fatura:</p>                                             
+                                        <ul>
+                                            <li>Parcelar o valor, em caso de pagamento integral;</li>
+                                            <li>Utilizar opções especiais de crédito para completar o valor.</li>
+                                        </ul>
+                                        <p align="right">&emsp;&emsp;Análise feita por Felipe Hargreaves, em 03/09/2017.</p>        
+
+                                        </div>    
                                         
 
+                                        <div id="pagamento-fatura2"  class="section-block">        
+                                                <h3 class="block-title"> Contexto: Pagamento de Fatura - Aplicativo Caixa</h3>
+                                                <b>Pagamento de Fatura:</b>
+                                                <ul>
+                                                    <li>Abre o aplicativo Caixa;</li>
+                                                    <li>Entrar com usuário e senha;</li>
+                                                </ul>
+
+                                                <p align="justify">&emsp;&emsp;Após o login, a página principal com as funcionalidades disponíveis se abre (minha conta, pagamentos, transferência, investimento, crédito, cartões, minhas transações, habitação, loterias, FGTS, inss, seguradora, etc)
+                                                    </p>
+
+                                                <table style="width:50%" align="center">
+                                                        <tr><td><img src="assets/images/protocol-analysis/1-mariana.jpg" alt="1" style="width:75%;"></td></tr>
+                                                      </table>
+                                                <br>   
+                                                
+                                                <ul>
+                                                        <li>Clica em cartões, menu lateral aparece;</li></ul>
+
+                                                        <table style="width:50%" align="center">
+                                                                <tr><td><img src="assets/images/protocol-analysis/2-mariana.jpg" alt="1" style="width:75%;"></td></tr>
+                                                              </table>
+                                                        <br>
+
+                                                        <li>Selecionar cartão de crédito:</li>
+
+                                                        <ul>
+                                                                <li>Faturas</li>
+                                                                <li>Pagar</li></ul><br>
+                                                                <table style="width:100%" align="center">
+                                                                        <tr>
+                                                                          <td><img src="assets/images/protocol-analysis/3-mariana.jpg" alt="3" style="width:80%;"></td>
+                                                                          <td><img src="assets/images/protocol-analysis/4-mariana.jpg" alt="4" style="width:80%;"></td>
+                                                                        </tr>
+                                                                      </table>
+                                                                    <br>
+                                                                      <p align="right">&emsp;&emsp;Análise feita por Mariana Pícolo, em 03/09/2017.</p>        
+                                                                      
+                                    </div>    
                             </section><!--//doc-section-->
-                            
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
                     <div class="doc-sidebar hidden-xs">
@@ -163,6 +238,11 @@
                                         
                                 </ul><!--//nav-->
                                 <li><a class="scrollto" href="#nao-usuario-nubank">Usuários tradicionais</a></li>
+                                <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#pagamento-fatura">Pagamento da Fatura</a></li>
+                                        <li><a class="scrollto" href="#pagamento-fatura2">Pagamento da Fatura - Caixa</a></li>
+                                        
+                                </ul><!--//nav-->
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
