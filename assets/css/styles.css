@@ -595,6 +595,10 @@ select {
 .body-blue .table > thead > tr > th {
   border-bottom-color: #b5e1f7;
 }
+.blue-migue tr > th{
+  background: #58bbee;
+  color: white;
+}
 .body-orange .table > thead > tr > th {
   border-bottom-color: #fbc393;
 }
@@ -1266,12 +1270,14 @@ select {
 .cards-section .item-dark-green .icon {
   color: #006633;
 }
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .cards-section .item-inner {
     padding: 30px 15px;
   }
 }
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
