@@ -601,7 +601,7 @@ select {
   border-bottom: 1px solid #ddd;
 }
 
-.blue-migue tr:nth-child(even) {background-color: #E1EEF5}
+.blue-migue tr:nth-child(odd) {background-color: #E1EEF5}
 
 .blue-migue th {
   text-align: center;
