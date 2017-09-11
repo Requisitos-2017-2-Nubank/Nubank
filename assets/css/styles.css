@@ -598,7 +598,15 @@ select {
 .blue-migue tr > th{
   background: #58bbee;
   color: white;
+  border-bottom: 1px solid #ddd;
 }
+
+.blue-migue tr:nth-child(even) {background-color: #E1EEF5}
+
+.blue-migue th {
+  text-align: center;
+}
+
 .body-orange .table > thead > tr > th {
   border-bottom-color: #fbc393;
 }
