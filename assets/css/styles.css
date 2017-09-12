@@ -599,6 +599,12 @@ select {
   background: #58bbee;
   color: white;
   border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.blue-migue-description {
+  position: relative;
+  top: 6px;
 }
 
 .blue-migue tr:nth-child(odd) {background-color: #E1EEF5}
