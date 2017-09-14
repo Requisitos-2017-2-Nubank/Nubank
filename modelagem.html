@@ -90,31 +90,60 @@
                             <section id="cenarios" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
                                 <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div> 
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Basic Usage</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="https://github.com/flot/flot/blob/master/README.md" target="_blank">https://github.com/flot/flot/blob/master/README.md</a></p>
-                                    <p>Create a placeholder div to put the graph in:</p>
-                                    <p><pre><code class="language-markup">&#x3C;div id=&#x22;placeholder&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
-                                    <p>You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:</p>
-                                    <p><pre><code class="language-markup">&#x3C;div id=&#x22;placeholder&#x22; style=&#x22;width:600px;height:300px&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
-                                    <p>You can also do it with an external stylesheet. Make sure that the placeholder isn't within something with a display:none CSS property - in that case, Flot has trouble measuring label dimensions which results in garbled looks and might have trouble measuring the placeholder dimensions which is fatal (it'll throw an exception).</p>
 
-                                    <p>Then when the div is ready in the DOM, which is usually on document ready, run the plot function:</p>
-                                    <p><pre><code class="language-javascript">$.plot($(&#x22;#placeholder&#x22;), data, options);</code></pre></p>
-                                    <p>Here, data is an array of data series and options is an object with settings if you want to customize the plot. Take a look at the examples for some ideas of what to put in or look at the <a href="#">API reference</a>. Here's a quick example that'll draw a line from (0, 0) to (1, 1):</p>
-                                    
-                                    <p><pre><code class="language-javascript">$.plot($(&#x22;#placeholder&#x22;), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });</code></pre></p>
-                                    <p>The plot function immediately draws the chart and then returns a plot object with a couple of methods.</p>
-                                    
+                                    <div id="solicitacao-convite"  class="section-block">  
+                                        <h3 class="block-title"> Solicitação do cartão com convite (indicação de amigo)</h3>
+                                           <table  class="blue-migue" class="" style="width:100%">
+                                               <tr>
+                                                 <th>Objetivo</th>
+                                                 <td><p align="justify" class="blue-migue-description">Solicitar um cartão de crédito Nubank, usando um convite compartilhado por um previamente cliente Nubank.</p>
+                                                </td></tr>
+    
+                                               <tr>
+                                                 <th>Contexto</th>
+                                                 <td>
+                                                    <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
+                                                    <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
+                                                    <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                    <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
+                                               </tr>
+    
+                                               <tr>
+                                                 <th>Atores</th>
+                                                 <td><p align="justify" class="blue-migue-description">Solicitante</p>
+                                                </td></tr>
+    
+                                               <tr>
+                                                <th>Recursos</th>
+                                                    <td>
+                                                        <p align="justify" class="blue-migue-description">Internet</p>
+                                                        <p align="justify" class="blue-migue-description">Navegador Web</p>
+                                                        <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
+                                                        <p align="justify" class="blue-migue-description">O link do convite</p>                                                    
+                                                    </td></tr>    
+                                                <tr>
+                                                    <th>Exceção</th>
+                                                    <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Episódios</th>
+                                                    <td><p align="justify" class="blue-migue-description">
+                                                            <ul>
+                                                                    <li>O solicitante clica no link e segue para a página de indicação no Nubank;</li>
+                                                                    <li>O Solicitante clica em pedir meu cartão;</li>
+                                                                    <li>O Solicitante informa seus dados pessoais;</li>
+                                                                    <li>O Solicitante clica em pedir meu cartão.</li>
+                                                                </ul>    
+                                                    </p></td>
+                                                </tr>
+                                             </table>
+                                            </div><!--//section-block-->
+        <br> 
+
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
-                            
+    <!--//INÍCIO DOS LÉXICOS! -->
                             <section id="lexicos" class="doc-section">
 
                                 <h2 class="section-title">Léxicos</h2>
@@ -126,17 +155,17 @@
                                            <table  class="blue-migue" class="" style="width:100%">
                                                <tr>
                                                  <th>Nome</th>
-                                                 <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Anuidade</p>
+                                                 <td><p align="justify" class="blue-migue-description">Anuidade</p>
                                                 </td></tr>
     
                                                <tr>
                                                  <th>Sinônimo</th>
-                                                 <td><p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#tarifa">Taxa</a> anual</p></td>
+                                                 <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#tarifa">Taxa</a> anual</p></td>
                                                </tr>
     
                                                <tr>
                                                  <th>Noção</th>
-                                                 <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Uma <a class="scrollto" href="#tarifa">taxa</a> anual cobrada pelos bancos para o <a class="scrollto" href="#usuario">usuário</a> de 
+                                                 <td><p align="justify" class="blue-migue-description">Uma <a class="scrollto" href="#tarifa">taxa</a> anual cobrada pelos bancos para o <a class="scrollto" href="#usuario">usuário</a> de 
                                                     seu <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, para o uso dos serviços oferecidos por ele. 
                                                     Pode ser paga à vista ou dividida em parcelas mensais.</p>
                                                 </td></tr>
@@ -144,12 +173,12 @@
                                                <tr>
                                                 <th>Impacto</th>
                                                     <td>
-                                                        <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Cliente</a> <a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a> paga anuidade.</p>
+                                                        <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a> paga anuidade.</p>
                                                     </td></tr>
     
                                                 <tr>
                                                     <th>Classificação</th>
-                                                    <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                    <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                                 </tr>
                                              </table>
                                             </div><!--//section-block-->
@@ -160,31 +189,31 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Apagar Gastos</p>
+                                             <td><p align="justify" class="blue-migue-description">Apagar Gastos</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp; - </p></td>
+                                             <td><p align="justify" class="blue-migue-description"> - </p></td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo <a class="scrollto" href="#usuario">usuário</a> através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> usa seus <a class="scrollto" href="#pontos">pontos</a> acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do <a class="scrollto" href="#usuario">cliente</a> o valor da compra que foi apagada através do uso dos <a class="scrollto" href="#pontos">pontos</a>.</p>
-                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;Na <a class="scrollto" href="#fatura">fatura</a> aparece como <i>“<a class="scrollto" href="#nubank-rewards">Rewards</a> - Crédito de compra apagada”</i>.</p>                                                    
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo <a class="scrollto" href="#usuario">usuário</a> através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> usa seus <a class="scrollto" href="#pontos">pontos</a> acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do <a class="scrollto" href="#usuario">cliente</a> o valor da compra que foi apagada através do uso dos <a class="scrollto" href="#pontos">pontos</a>.</p>
+                                                <p align="justify" class="blue-migue-description">Na <a class="scrollto" href="#fatura">fatura</a> aparece como <i>“<a class="scrollto" href="#nubank-rewards">Rewards</a> - Crédito de compra apagada”</i>.</p>                                                    
                                                 </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> apaga seus gastos.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> apaga seus gastos.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table>  
                                         </div><!--//section-block-->
@@ -194,7 +223,7 @@
                                                    <table  class="blue-migue" class="" style="width:100%">
                                                        <tr>
                                                          <th>Nome</th>
-                                                         <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Anuidade</p>
+                                                         <td><p align="justify" class="blue-migue-description">Anuidade</p>
                                                         </td></tr>
             
                                                        <tr>
@@ -204,21 +233,21 @@
             
                                                        <tr>
                                                          <th>Noção</th>
-                                                         <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                             <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                             <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                                         <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                             <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                             <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                                         </td></tr>
             
                                                        <tr>
                                                         <th>Impacto</th>
                                                             <td>
-                                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                                <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                                <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                             </td></tr>
             
                                                         <tr>
                                                             <th>Classificação</th>
-                                                            <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                            <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                                         </tr>
                                                      </table>
                                                     </div><!--//section-block-->
@@ -231,7 +260,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Cartão de Crédito</p>
+                                             <td><p align="justify" class="blue-migue-description">Cartão de Crédito</p>
                                             </td></tr>
 
                                            <tr>
@@ -241,21 +270,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table>  
                                         </div><!--//section-block-->
@@ -266,7 +295,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Contestar Compra</p>
+                                             <td><p align="justify" class="blue-migue-description">Contestar Compra</p>
                                             </td></tr>
 
                                            <tr>
@@ -276,21 +305,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table>  
                                         </div><!--//section-block-->
@@ -302,31 +331,31 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Crédito Rotativo</p>
+                                             <td><p align="justify" class="blue-migue-description">Crédito Rotativo</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Rotativo</p></td>
+                                             <td><p align="justify" class="blue-migue-description">Rotativo</p></td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Dívida pendente acumulada para a próxima <a class="scrollto" href="#fatura">fatura</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;O não pagamento do valor total da <a class="scrollto" href="#fatura">fatura</a> atual, 
+                                             <td><p align="justify" class="blue-migue-description">Dívida pendente acumulada para a próxima <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O não pagamento do valor total da <a class="scrollto" href="#fatura">fatura</a> atual, 
                                                      deixando o valor restante para a próxima, com acréscimo de <a class="scrollto" href="#juros">juros</a>.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Crédito rotativo 
+                                                    <p align="justify" class="blue-migue-description">Crédito rotativo 
                                                         acrescenta <a class="scrollto" href="#juros">juros</a> à próxima <a class="scrollto" href="#fatura">fatura</a>.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                             </tr>
                                          </table>  
                                         </div><!--//section-block-->
@@ -338,20 +367,20 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Fatura</p>
+                                             <td><p align="justify" class="blue-migue-description">Fatura</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Conta, faturas</td>
+                                             <td><p align="justify" class="blue-migue-description">Conta, faturas</td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
                                              <td>
-                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;Soma de todas as dívidas feitas no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> durante determinado período de 30 dias.</p>
-                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> é informado sobre todos os seus gastos no mês.</p>
-                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;Apresenta itens como:
+                                                <p align="justify" class="blue-migue-description">Soma de todas as dívidas feitas no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> durante determinado período de 30 dias.</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> é informado sobre todos os seus gastos no mês.</p>
+                                                <p align="justify" class="blue-migue-description">Apresenta itens como:
                                         <ul>
                                             <li><a class="scrollto" href="#vencimento">Vencimento</a></li>
                                             <li>Total da fatura;</li>
@@ -363,16 +392,16 @@
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> paga a fatura.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> altera <a class="scrollto" href="#vencimento">vencimento</a> da fatura.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> <a class="scrollto" href="#parcela">parcela</a> a fatura.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> acessa a fatura</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> acessa a fatura detalhadamente.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> paga a fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> altera <a class="scrollto" href="#vencimento">vencimento</a> da fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> <a class="scrollto" href="#parcela">parcela</a> a fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> acessa a fatura</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> acessa a fatura detalhadamente.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -384,7 +413,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Gerar Boleto</p>
+                                             <td><p align="justify" class="blue-migue-description">Gerar Boleto</p>
                                             </td></tr>
 
                                            <tr>
@@ -394,21 +423,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -420,7 +449,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Indicar Amigo</p>
+                                             <td><p align="justify" class="blue-migue-description">Indicar Amigo</p>
                                             </td></tr>
 
                                            <tr>
@@ -430,21 +459,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -455,7 +484,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Juros</p>
+                                             <td><p align="justify" class="blue-migue-description">Juros</p>
                                             </td></tr>
 
                                            <tr>
@@ -465,21 +494,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -491,30 +520,30 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Limite do Cartão de Crédito</p>
+                                             <td><p align="justify" class="blue-migue-description">Limite do Cartão de Crédito</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Limite</p>
+                                             <td><p align="justify" class="blue-migue-description">Limite</p>
                                              </td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Valor máximo que a soma das compras podem atingir no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Calculado com base na renda mensal do <a class="scrollto" href="#usuario">usuário</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Limite diminui a cada compra feita com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
+                                             <td><p align="justify" class="blue-migue-description">Valor máximo que a soma das compras podem atingir no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">Calculado com base na renda mensal do <a class="scrollto" href="#usuario">usuário</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">Limite diminui a cada compra feita com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Cliente</a> Nubank pode aumentar/diminuir seu limite.</p>
+                                                <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> Nubank pode aumentar/diminuir seu limite.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -526,33 +555,33 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;<i>Nubank Rewards</i></p>
+                                             <td><p align="justify" class="blue-migue-description"><i>Nubank Rewards</i></p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Programa de recompensas</p>
+                                             <td><p align="justify" class="blue-migue-description">Programa de recompensas</p>
                                              </td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Programa de recompensas baseado em <a class="scrollto" href="#pontos">pontos</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;A cada compra efetuada com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, R$1,00 equivale à um <a class="scrollto" href="#pontos">ponto</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#pontos">Pontos</a> não expiram.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Acúmulo de <a class="scrollto" href="#pontos">pontos</a> em tempo real.</p>                                                 
+                                             <td><p align="justify" class="blue-migue-description">Programa de recompensas baseado em <a class="scrollto" href="#pontos">pontos</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">A cada compra efetuada com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, R$1,00 equivale à um <a class="scrollto" href="#pontos">ponto</a>.</p>
+                                                 <p align="justify" class="blue-migue-description"><a class="scrollto" href="#pontos">Pontos</a> não expiram.</p>
+                                                 <p align="justify" class="blue-migue-description">Acúmulo de <a class="scrollto" href="#pontos">pontos</a> em tempo real.</p>                                                 
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> paga <a class="scrollto" href="#anuidade">anuidade</a>.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> troca <a class="scrollto" href="#pontos">pontos</a> por serviços.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> paga <a class="scrollto" href="#anuidade">anuidade</a>.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> troca <a class="scrollto" href="#pontos">pontos</a> por serviços.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -563,7 +592,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Transação</p>
+                                             <td><p align="justify" class="blue-migue-description">Transação</p>
                                             </td></tr>
 
                                            <tr>
@@ -573,21 +602,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -599,7 +628,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Pagamento Mínimo</p>
+                                             <td><p align="justify" class="blue-migue-description">Pagamento Mínimo</p>
                                             </td></tr>
 
                                            <tr>
@@ -609,21 +638,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -634,7 +663,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Parcela</p>
+                                             <td><p align="justify" class="blue-migue-description">Parcela</p>
                                             </td></tr>
 
                                            <tr>
@@ -644,21 +673,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -670,32 +699,32 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Pontos</p>
+                                             <td><p align="justify" class="blue-migue-description">Pontos</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Ponto</p> </td>
+                                             <td><p align="justify" class="blue-migue-description">Ponto</p> </td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Sistema de acúmulo de pontos a depender do valor gasto em um <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>,
+                                             <td><p align="justify" class="blue-migue-description">Sistema de acúmulo de pontos a depender do valor gasto em um <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>,
                                                   por exemplo, gasto em um certo período.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Participantes do programa podem trocar seus pontos acumulados por produtos, 
+                                                 <p align="justify" class="blue-migue-description">Participantes do programa podem trocar seus pontos acumulados por produtos, 
                                                      serviços, ou descontos em compras, por exemplo.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Cliente</a>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a>
                                                         <a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a> acumula pontos.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Objeto</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -707,7 +736,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Reclamar</p>
+                                             <td><p align="justify" class="blue-migue-description">Reclamar</p>
                                             </td></tr>
 
                                            <tr>
@@ -717,21 +746,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -741,31 +770,31 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarifa</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarifa</p>
                                             </td></tr>
 
                                            <tr>
                                              <th>Sinônimo</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp; - </p></td>
+                                             <td><p align="justify" class="blue-migue-description"> - </p></td>
                                            </tr>
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo <a class="scrollto" href="#usuario">usuário</a> através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> usa seus <a class="scrollto" href="#pontos">pontos</a> acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do <a class="scrollto" href="#usuario">cliente</a> o valor da compra que foi apagada através do uso dos <a class="scrollto" href="#pontos">pontos</a>.</p>
-                                                <p align="justify" class="blue-migue-description">&emsp;&emsp;Na <a class="scrollto" href="#fatura">fatura</a> aparece como <i>“<a class="scrollto" href="#nubank-rewards">Rewards</a> - Crédito de compra apagada”</i>.</p>                                                    
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo <a class="scrollto" href="#usuario">usuário</a> através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> usa seus <a class="scrollto" href="#pontos">pontos</a> acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do <a class="scrollto" href="#usuario">cliente</a> o valor da compra que foi apagada através do uso dos <a class="scrollto" href="#pontos">pontos</a>.</p>
+                                                <p align="justify" class="blue-migue-description">Na <a class="scrollto" href="#fatura">fatura</a> aparece como <i>“<a class="scrollto" href="#nubank-rewards">Rewards</a> - Crédito de compra apagada”</i>.</p>                                                    
                                                 </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;<a class="scrollto" href="#usuario">Usuário</a> apaga seus gastos.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> apaga seus gastos.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table>  
                                         </div><!--//section-block-->
@@ -777,7 +806,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário</p>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
                                             </td></tr>
 
                                            <tr>
@@ -787,21 +816,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->       
@@ -812,7 +841,7 @@
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
                                              <th>Nome</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Vencimento</p>
+                                             <td><p align="justify" class="blue-migue-description">Vencimento</p>
                                             </td></tr>
 
                                            <tr>
@@ -822,21 +851,21 @@
 
                                            <tr>
                                              <th>Noção</th>
-                                             <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Tarefa realizada pelo usuário através do aplicativo.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">&emsp;&emsp;Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">&emsp;&emsp;Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
                                                 <th>Classificação</th>
-                                                <td><p align="justify" class="blue-migue-description">&emsp;&emsp;Verbo</p></td>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
                                             </tr>
                                          </table> 
                                         </div><!--//section-block-->
@@ -846,7 +875,7 @@
                             <section id="referencias" class="doc-section">
                                 <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
                                 <div class="section-block">
-                                    <p align="justify">&emsp;&emsp;Material utilizado como referência para este módulo da disciplina.</p>
+                                    <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
                                     <ul style="list-style-type:circle">
                                         <li><p align="justify">[1] PMBOK, GUIA. <b>Um guia do conjunto de conhecimentos em gerenciamento de projetos.</b> Project Management Institute. 2004.</p></li>
                                         <li><p align="justify">[2] CHEMUTURI, Murali. <b>Requirements engineering and management for software development projects.</b> Springer Science & Business Media, 2012.</p></li>
@@ -863,6 +892,9 @@
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
                                 <li><a class="scrollto" href="#introducao">Introdução</a></li>
                                 <li><a class="scrollto" href="#cenarios">Cenários</a></li>
+                                    <ul class="nav doc-sub-menu">
+                                    <li><a class="scrollto" href="#solicitacao-convite">Solicitação com Convite</a></li>
+                                    </ul><!--//nav-->
                                 
                                 <li><a class="scrollto" href="#lexicos">Léxicos</a></li>
                                     <ul class="nav doc-sub-menu">

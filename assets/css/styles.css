@@ -605,6 +605,8 @@ select {
 .blue-migue-description {
   position: relative;
   top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blue-migue tr:nth-child(odd) {background-color: #E1EEF5}
