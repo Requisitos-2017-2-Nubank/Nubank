@@ -61,33 +61,7 @@
                 <div class="doc-body">
                     <div class="doc-content">
                         <div class="content-inner">
-                            <section id="introducao" class="doc-section">
-                                <h2 class="section-title">Introdução</h2>
-                                <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <p>The screenshots used in this page are taken from <a href="https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">AppKit</a>. AppKit is a Bootstrap Angular admin theme.</p>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-chartjs.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div> 
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Global Configurations</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="http://www.chartjs.org/docs/" target="_blank">http://www.chartjs.org/docs/</a></p>
-                                    <div class="code-block">
-                                        <pre><code class="language-javascript">Chart.defaults.global = {
-    // Boolean - Whether to animate the chart
-    animation: true,
-
-    // Number - Number of animation steps
-    animationSteps: 60,
-
-}</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            
-                            <section id="cenarios" class="doc-section">
+                            <section id="cenarios-section" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
                                 <div class="section-block">
 
@@ -144,7 +118,7 @@
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
     <!--//INÍCIO DOS LÉXICOS! -->
-                            <section id="lexicos" class="doc-section">
+                            <section id="lexicos-section" class="doc-section">
 
                                 <h2 class="section-title">Léxicos</h2>
                                     <div class="section-block">
@@ -891,12 +865,15 @@
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
                                 <li><a class="scrollto" href="#introducao">Introdução</a></li>
-                                <li><a class="scrollto" href="#cenarios">Cenários</a></li>
+                                <li><a data-toggle="collapse" href="#cenarios">Cenários</a></li>
+                                <div id="cenarios" class="panel-collapse collapse">
                                     <ul class="nav doc-sub-menu">
                                     <li><a class="scrollto" href="#solicitacao-convite">Solicitação com Convite</a></li>
                                     </ul><!--//nav-->
+                                </div>
                                 
-                                <li><a class="scrollto" href="#lexicos">Léxicos</a></li>
+                                <li><a data-toggle="collapse" href="#lexicos">Léxicos</a></li>
+                                <div id="lexicos" class="panel-collapse collapse">
                                     <ul class="nav doc-sub-menu">
                                     <li><a class="scrollto" href="#anuidade">Anuidade</a></li>
                                     <li><a class="scrollto" href="#apagar-gastos">Apagar Gastos</a></li>
@@ -919,6 +896,7 @@
                                     <li><a class="scrollto" href="#usuario">Usuário</a></li>
                                     <li><a class="scrollto" href="#vencimento">Vencimento</a></li>
                                     </ul><!--//nav-->
+                                </div>
                                 <li><a class="scrollto" href="#referencias">Referências</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
