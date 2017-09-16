@@ -61,6 +61,49 @@
                             <section id="cenarios-section" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
 
+                                <div id="alterar-categoria"  class="section-block">  
+                                    <h3 class="block-title"> Alterar Categoria de Uma Compra</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description">Alterar a categoria de uma compra que o usuário efetuou.</p>
+                                        </td></tr>
+
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>                                    
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>
+                                                <p align="justify" class="blue-migue-description">Ter feito uma compra qualquer</p>                                                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário clica no ícone da categoria atual;</li>
+                                                    <li>O usuário escolhe a categoria que deseja definir a compra;</li>
+                                                    <li>O usuário clica em salvar.</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
 
                                 <h2>Geração de Fatura</h2>
 
@@ -403,6 +446,49 @@
                                                 </tr>
                                             </table>
                                         </div><!--//section-block-->
+    
+                                    <div id="reportar-compra"  class="section-block">  
+                                            <h3 class="block-title"> Reportar Compra</h3>
+                                           <table  class="blue-migue" class="" style="width:100%">
+                                               <tr>
+                                                 <th>Objetivo</th>
+                                                 <td><p align="justify" class="blue-migue-description"> Reportar uma compra duplicada, fraudada, etc. </p>
+                                                </td></tr>
+        
+                                               <tr>
+                                                 <th>Contexto</th>
+                                                 <td>
+                                                    <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>
+                                               </tr>
+        
+                                               <tr>
+                                                 <th>Atores</th>
+                                                 <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                                </td></tr>
+        
+                                               <tr>
+                                                <th>Recursos</th>
+                                                    <td>
+                                                        <p align="justify" class="blue-migue-description">Internet</p>                                    
+                                                        <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>
+                                                    </td></tr>    
+                                                <tr>
+                                                    <th>Exceção</th>
+                                                    <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento.</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Episódios</th>
+                                                    <td><p align="justify" class="blue-migue-description">
+                                                        <ul>
+                                                            <li>O usuário clica no botão reportar no topo da página;</li>
+                                                            <li>O usuário seleciona o motivo da sua reportagem;</li>
+                                                            <li>O usuário confirma e envia seu reportar;</li>
+                                                        </ul>    
+                                                    </p></td>
+                                                </tr>
+                                            </table>
+                                        </div><!--//section-block-->
 
 
                                 <div class="section-block">
@@ -506,6 +592,7 @@
 
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
+
 <!--//INÍCIO DOS LÉXICOS! -->
                             <section id="lexicos-section" class="doc-section">
 
@@ -1257,8 +1344,10 @@
                                 <li><a data-toggle="collapse" href="#cenarios">Cenários</a>
                                 <div id="cenarios" class="panel-collapse collapse">
                                     <ul class="nav doc-sub-menu">
-                                    <li><a class="scrollto" href="#geracao-boleto-cenario">Geração de Boleto</a></li>     
-                                    <li><a class="scrollto" href="#pedir-ajuda">Pedir Ajuda</a></li>                               
+                                    <li><a class="scrollto" href="#alterar-categoria">Alterar Categoria</a></li>  
+                                     <li><a class="scrollto" href="#geracao-boleto-cenario">Geração de Boleto</a></li>     
+                                    <li><a class="scrollto" href="#pedir-ajuda">Pedir Ajuda</a></li>  
+                                    <li><a class="scrollto" href="#reportar-compra">Reportar Compra</a></li>                               
                                     <li><a class="scrollto" href="#solicitacao-cartao">Solicitação do Cartão</a></li>
                                 </ul><!--//nav-->
                                 </div>
