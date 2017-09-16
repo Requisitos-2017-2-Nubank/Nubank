@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
     <title>Módulo IV - Modelagem</title>
     <!-- Meta -->
@@ -26,11 +23,6 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     
 </head> 
 
@@ -64,92 +56,379 @@
                             <section id="introducao" class="doc-section">
                                 <h2 class="section-title">Introdução</h2>
                                 <div class="section-block">
-                                        <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>                               
-
-
+                                        <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
                             </section>
                             <section id="cenarios-section" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
                                 <div class="section-block">
+                                <h2>Solicitação de Cartão</h2>
 
-                                    <div id="solicitacao-convite"  class="section-block">  
-                                        <h3 class="block-title"> Solicitação do cartão com convite (indicação de amigo)</h3>
-                                           <table  class="blue-migue" class="" style="width:100%">
-                                               <tr>
-                                                 <th>Objetivo</th>
-                                                 <td><p align="justify" class="blue-migue-description">Solicitar um cartão de crédito Nubank, usando um convite compartilhado por um previamente cliente Nubank.</p>
-                                                </td></tr>
-    
-                                               <tr>
-                                                 <th>Contexto</th>
-                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
-                                                    <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
-                                                    <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
-                                                    <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
-                                               </tr>
-    
-                                               <tr>
-                                                 <th>Atores</th>
-                                                 <td><p align="justify" class="blue-migue-description">Solicitante</p>
-                                                </td></tr>
-    
-                                               <tr>
-                                                <th>Recursos</th>
-                                                    <td>
-                                                        <p align="justify" class="blue-migue-description">Internet</p>
-                                                        <p align="justify" class="blue-migue-description">Navegador Web</p>
-                                                        <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
-                                                        <p align="justify" class="blue-migue-description">O link do convite</p>                                                    
-                                                    </td></tr>    
-                                                <tr>
-                                                    <th>Exceção</th>
-                                                    <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
-                                                </tr>
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Solicitação do cartão com convite (indicação de amigo)</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitar um cartão de crédito Nubank, usando um convite compartilhado por um previamente cliente Nubank.</p>
+                                        </td></tr>
 
-                                                <tr>
-                                                    <th>Episódios</th>
-                                                    <td><p align="justify" class="blue-migue-description">
-                                                            <ul>
-                                                                    <li>O solicitante clica no link e segue para a página de indicação no Nubank;</li>
-                                                                    <li>O Solicitante clica em pedir meu cartão;</li>
-                                                                    <li>O Solicitante informa seus dados pessoais;</li>
-                                                                    <li>O Solicitante clica em pedir meu cartão.</li>
-                                                                </ul>    
-                                                    </p></td>
-                                                </tr>
-                                             </table>
-                                            </div><!--//section-block-->
-        <br> 
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
+                                            <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
+                                       </tr>
 
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitante</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Navegador Web</p>
+                                                <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
+                                                <p align="justify" class="blue-migue-description">O link do convite</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O solicitante clica no link e segue para a página de indicação no Nubank;</li>
+                                                    <li>O Solicitante clica em pedir meu cartão;</li>
+                                                    <li>O solicitante digita os dados: nome, email e cpf;</li>
+                                                    <li>O Solicitante clica em pedir meu cartão.</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+                                <br> 
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Solicitação do Cartão sem convite</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description"> Solicitar um cartão de crédito Nubank sem um convite previamente recebido. </p>
+                                        </td></tr>
+
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
+                                            <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitante</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Navegador Web</p>
+                                                <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
+                                                <p align="justify" class="blue-migue-description">O link do convite</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O solicitante entra no site do nubank por um navegador;</li>
+                                                    <li>O solicitante digita os dados: nome, email e cpf;</li>
+                                                    <li>O solicitante clica em pedir meu cartão;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <h2>Gerar Fatura</h2>
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela inicial)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma fatura previamente fechada do cartão de crédito, através da tela de<br> gerenciamento de faturas. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela de gerenciamento de faturas)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto de uma fatura previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de faturas. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
+                                                    <li>O usuário clica em pagar;</li>
+                                                    <li>O usuário visualiza os dados da fatura;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Geração da Fatura Antecipada <br>(pela tela inicial)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+
+                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
+                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário desliza o menu superior até encontrar o valor da fatura atual e o botão de gerar boleto;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Geração da Fatura antecipada <br>(pela tela de gerenciamento de faturas)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+
+                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
+                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
+                                                    <li>Desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
+                                                    <li>Clica em fatura atual ou próximas faturas;</li>
+                                                    <li>Visualiza os gastos até a presente data;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div id="solicitacao-convite"  class="section-block">  
+                                    <h3 class="block-title"> Gerar Boleto</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar o boleto de uma fatura.</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário visualiza as informações do tempo de processamento de boletos;</li>
+                                                    <li>O usuário  clica em continuar;</li>
+                                                    <li>O usuário digita o valor que deseja pagar;</li>
+                                                    <li>O usuário clica em gerar boleto;</li>
+                                                    <li>O usuário visualiza as informações da fatura;</li>
+                                                    <li>O usuário clica em copiar código ou enviar por e-mail;</li>
+                                                    <li>O usuário paga sua fatura no banco;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
-    <!--//INÍCIO DOS LÉXICOS! -->
+<!--//INÍCIO DOS LÉXICOS! -->
                             <section id="lexicos-section" class="doc-section">
 
                                 <h2 class="section-title">Léxicos</h2>
                                     <div class="section-block">
 
                                 <div id="anuidade"  class="section-block">  
-                                        <h3 class="block-title">Anuidade</h3>
-
-                                           <table  class="blue-migue" class="" style="width:100%">
-                                               <tr>
-                                                 <th>Nome</th>
-                                                 <td><p align="justify" class="blue-migue-description">Anuidade</p>
-                                                </td></tr>
+                                    <h3 class="block-title">Anuidade</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                                <th>Nome</th>
+                                                <td><p align="justify" class="blue-migue-description">Anuidade</p>
+                                                </td>
+                                            </tr>
     
-                                               <tr>
-                                                 <th>Sinônimo(s)</th>
-                                                 <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#tarifa">Taxa</a> anual</p></td>
-                                               </tr>
+                                            <tr>
+                                                <th>Sinônimo(s)</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#tarifa">Taxa</a> anual</p>
+                                                </td>
+                                            </tr>
     
-                                               <tr>
-                                                 <th>Noção</th>
-                                                 <td><p align="justify" class="blue-migue-description">Uma <a class="scrollto" href="#tarifa">taxa</a> anual cobrada pelos bancos para o <a class="scrollto" href="#usuario">usuário</a> de 
+                                            <tr>
+                                                <th>Noção</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Uma <a class="scrollto" href="#tarifa">taxa</a> anual cobrada pelos bancos para o <a class="scrollto" href="#usuario">usuário</a> de 
                                                     seu <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, para o uso dos serviços oferecidos por ele. 
-                                                    Pode ser paga à vista ou dividida em parcelas mensais.</p>
-                                                </td></tr>
+                                                Pode ser paga à vista ou dividida em parcelas mensais.</p>
+                                             </td></tr>
     
                                                <tr>
                                                 <th>Impacto</th>
@@ -160,10 +439,10 @@
                                                 <tr>
                                                     <th>Classificação</th>
                                                     <td><p align="justify" class="blue-migue-description">Objeto</p></td>
-                                                </tr>
-                                             </table>
-                                            </div><!--//section-block-->
-        <br> 
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+                                <br> 
 
                                 <div class="section-block" div id="apagar-gastos">                                    
                                     <h3 class="block-title"> Apagar gastos</h3> 
