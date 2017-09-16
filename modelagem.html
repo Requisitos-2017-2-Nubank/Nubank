@@ -48,7 +48,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><span aria-hidden="true" class="icon fa fa-sitemap"></span> Módulo IV - Modelagem</h1>
-                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 13th, 2017</div>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 17th, 2017</div>
                 </div><!--//doc-header-->
                 <div class="doc-body">
                     <div class="doc-content">
@@ -60,10 +60,253 @@
                             </section>
                             <section id="cenarios-section" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
+
+
+                                <h2>Geração de Fatura</h2>
+
+                                <div class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto da Fatura</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerar o boleto de uma fatura.</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário visualiza as informações do tempo de processamento de boletos;</li>
+                                                        <li>O usuário  clica em continuar;</li>
+                                                        <li>O usuário digita o valor que deseja pagar;</li>
+                                                        <li>O usuário clica em gerar boleto;</li>
+                                                        <li>O usuário visualiza as informações da fatura;</li>
+                                                        <li>O usuário clica em copiar código ou enviar por e-mail;</li>
+                                                        <li>O usuário paga sua fatura no banco;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+
+                                <div id="geracao-boleto-cenario"  class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela inicial)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma fatura previamente fechada do cartão de crédito, através da tela de<br> gerenciamento de faturas. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela de gerenciamento de faturas)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto de uma fatura previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de faturas. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
+                                                    <li>O usuário clica em pagar;</li>
+                                                    <li>O usuário visualiza os dados da fatura;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto da Fatura Antecipada <br>(pela tela inicial)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+
+                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
+                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                    <li>O usuário desliza o menu superior até encontrar o valor da fatura atual e o botão de gerar boleto;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+                                <div class="section-block">  
+                                    <h3 class="block-title"> Geração do Boleto da Fatura antecipada <br>(pela tela de gerenciamento de faturas)</h3>
+                                    <table  class="blue-migue" class="" style="width:100%">
+                                        <tr>
+                                            <th>Objetivo</th>
+                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                         <th>Contexto</th>
+                                         <td>
+
+                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
+                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                            </td></tr>    
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O usuário abre o aplicativo;</li>
+                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                    <li>Desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
+                                                    <li>Clica em fatura atual ou próximas faturas;</li>
+                                                    <li>Visualiza os gastos até a presente data;</li>
+                                                    <li>O usuário  clica em Gerar Boleto;</li>
+                                                </ul>    
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
+
                                 <div class="section-block">
                                 <h2>Solicitação de Cartão</h2>
 
-                                <div id="solicitacao-convite"  class="section-block">  
+                                <div id="solicitacao-cartao"  class="section-block">  
                                     <h3 class="block-title"> Solicitação do cartão com convite (indicação de amigo)</h3>
                                    <table  class="blue-migue" class="" style="width:100%">
                                        <tr>
@@ -112,7 +355,7 @@
                                 </div><!--//section-block-->
                                 <br> 
 
-                                <div id="solicitacao-convite"  class="section-block">  
+                                <div id="solicitacao-cartao"  class="section-block">  
                                     <h3 class="block-title"> Solicitação do Cartão sem convite</h3>
                                    <table  class="blue-migue" class="" style="width:100%">
                                        <tr>
@@ -159,245 +402,6 @@
                                     </table>
                                 </div><!--//section-block-->
 
-                                <h2>Gerar Fatura</h2>
-
-                                <div id="solicitacao-convite"  class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela inicial)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma fatura previamente fechada do cartão de crédito, através da tela de<br> gerenciamento de faturas. </p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-
-                                <div id="solicitacao-convite"  class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela de gerenciamento de faturas)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto de uma fatura previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de faturas. </p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
-                                                    <li>O usuário clica em pagar;</li>
-                                                    <li>O usuário visualiza os dados da fatura;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-
-                                <div id="solicitacao-convite"  class="section-block">  
-                                    <h3 class="block-title"> Geração da Fatura Antecipada <br>(pela tela inicial)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-
-                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
-                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário desliza o menu superior até encontrar o valor da fatura atual e o botão de gerar boleto;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-
-                                <div id="solicitacao-convite"  class="section-block">  
-                                    <h3 class="block-title"> Geração da Fatura antecipada <br>(pela tela de gerenciamento de faturas)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-
-                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
-                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li>Restrição: caso já não esteja logado, fazer login.</li>
-                                                    <li>Desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
-                                                    <li>Clica em fatura atual ou próximas faturas;</li>
-                                                    <li>Visualiza os gastos até a presente data;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-
-                                <div id="solicitacao-convite"  class="section-block">  
-                                    <h3 class="block-title"> Gerar Boleto</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar o boleto de uma fatura.</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário visualiza as informações do tempo de processamento de boletos;</li>
-                                                    <li>O usuário  clica em continuar;</li>
-                                                    <li>O usuário digita o valor que deseja pagar;</li>
-                                                    <li>O usuário clica em gerar boleto;</li>
-                                                    <li>O usuário visualiza as informações da fatura;</li>
-                                                    <li>O usuário clica em copiar código ou enviar por e-mail;</li>
-                                                    <li>O usuário paga sua fatura no banco;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 <!--//INÍCIO DOS LÉXICOS! -->
@@ -1151,8 +1155,9 @@
                                 <li><a data-toggle="collapse" href="#cenarios">Cenários</a>
                                 <div id="cenarios" class="panel-collapse collapse">
                                     <ul class="nav doc-sub-menu">
-                                    <li><a class="scrollto" href="#solicitacao-convite">Solicitação com Convite</a></li>
-                                    </ul><!--//nav-->
+                                    <li><a class="scrollto" href="#geracao-boleto-cenario">Geração de Boleto</a></li>                                    
+                                    <li><a class="scrollto" href="#solicitacao-cartao">Solicitação do Cartão</a></li>
+                                </ul><!--//nav-->
                                 </div>
                                 
                                 <li><a data-toggle="collapse" href="#lexicos">Léxicos</a> 
