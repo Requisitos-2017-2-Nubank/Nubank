@@ -35,7 +35,8 @@
                     <h1 class="logo">
                         <a href="index.html">
                             <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                            <span class="text-highlight">Requisitos de Software</span>                        </a>
+                            <span class="text-highlight">Requisitos de Software</span>
+                        </a>
                     </h1>
                 </div><!--//branding-->
                 <ol class="breadcrumb">
@@ -58,9 +59,8 @@
                                 <div class="section-block">
                                         <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
                             </section>
-                            <section id="cenarios-section" class="doc-section">
+                            <section id="cenarios" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
-
                                 <div id="alterar-categoria"  class="section-block">  
                                     <h3 class="block-title"> Alterar Categoria de Uma Compra</h3>
                                    <table  class="blue-migue" class="" style="width:100%">
@@ -109,10 +109,18 @@
 
                                 <div class="section-block">  
                                         <h3 class="block-title"> Geração do Boleto da Fatura</h3>
+                                <div id="gerenciar-compras"  class="section-block">
+                                    <h2>Gerenciar Compras</h2>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário gerenciamento de compra (página inicial)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="geracao-boleto-fatura" class="section-block">  
+                                        <h3 class="block-title"> Gerenciar Compra (página inicial)</h3>
                                         <table  class="blue-migue" class="" style="width:100%">
                                             <tr>
                                                 <th>Objetivo</th>
-                                                <td><p align="justify" class="blue-migue-description"> Gerar o boleto de uma fatura.</p>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela página inicial do aplicativo.</p>
                                                 </td>
                                             </tr>
     
@@ -125,14 +133,15 @@
     
                                            <tr>
                                              <th>Atores</th>
-                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
                                             </td></tr>
     
                                            <tr>
                                             <th>Recursos</th>
                                                 <td>
                                                     <p align="justify" class="blue-migue-description">Internet</p>
-                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
                                                 </td></tr>    
                                             <tr>
                                                 <th>Exceção</th>
@@ -142,213 +151,575 @@
                                                 <th>Episódios</th>
                                                 <td><p align="justify" class="blue-migue-description">
                                                     <ul>
-                                                        <li>O usuário visualiza as informações do tempo de processamento de boletos;</li>
-                                                        <li>O usuário  clica em continuar;</li>
-                                                        <li>O usuário digita o valor que deseja pagar;</li>
-                                                        <li>O usuário clica em gerar boleto;</li>
-                                                        <li>O usuário visualiza as informações da fatura;</li>
-                                                        <li>O usuário clica em copiar código ou enviar por e-mail;</li>
-                                                        <li>O usuário paga sua fatura no banco;</li>
+                                                        <li>O usuário abre o aplicativo e acessa a página inicial que apresenta o seu histórico;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
                                                     </ul>    
                                                 </p></td>
                                             </tr>
                                         </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Gerenciar Compra (pela tela de gerenciamento de faturas)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="gerenciar-compra-tela-gerenciamento-faturas" class="section-block">  
+                                        <h3 class="block-title"> Gerenciar Compra (pela tela de gerenciamento de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela tela de gerenciamento de faturas</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário abre o aplicativo;</li>
+                                                        <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de faturas;</li>
+                                                        <li>O usuário seleciona uma fatura;</li>
+                                                        <li>O usuário visualiza os dados da fatura;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Gerenciar Compra (pela tela de relação de faturas)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="gerenciar-compra-tela-relação-faturas" class="section-block">  
+                                        <h3 class="block-title"> Gerenciar Compra (pela tela de relação de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela tela de gerenciamento de faturas</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário abre o aplicativo;</li>
+                                                        <li>O usuário desliza para a esquerda duas vezes e acessa a tela de relação de faturas;</li>
+                                                        <li>O usuário seleciona uma fatura;</li>
+                                                        <li>O usuário visualiza os dados da fatura;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Reportar Compra
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="reportar-compra" class="section-block">  
+                                        <h3 class="block-title"> Reportar Compra</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Reportar uma compra</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no botão reportar no topo da página;</li>
+                                                        <li>O usuário seleciona o motivo da sua reportagem;</li>
+                                                        <li>O usuário confirma e envia seu reportar.</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Alterar Categoria
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="alterar-categoria" class="section-block">  
+                                        <h3 class="block-title"> Alterar Categoria</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Alterar a categoria de uma compra.</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no ícone da categoria atual;</li>
+                                                        <li>O usuário escolhe a categoria;</li>
+                                                        <li>O usuário clica em salvar.</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Adicionar tag
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="adicionar-tag" class="section-block">  
+                                        <h3 class="block-title"> Adicionar tag</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Adicionar uma tag a uma compra.</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica em +tag;</li>
+                                                        <li>O usuário digita o nome da tag;</li>
+                                                        <li>O usuário clica em adicionar.</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Marcar no Mapa
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="marcar-mapa" class="section-block">  
+                                        <h3 class="block-title"> Marcar no Mapa</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Marcar no mapa o local da compra.</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no lado esquerdo onde o mapa está aparecendo;</li>
+                                                        <li>O usuário clica em marcar no mapa;</li>
+                                                        <li>O usuário segura o pino e arrasta para o local desejado;</li>
+                                                        <li>O usuário clica em confirmar localização;</li>
+                                                        <li>O usuário visualiza o local atualizado.</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    topico de cenarios geração de fatura
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="geracao-fatura" class="section-block">
+                                    <h2>Geração de <a class="scrollto" href="#fatura">Fatura</a></h2>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Geração do Boleto da fatura
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="geracao-boleto-fatura" class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a></h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar o boleto</a> de uma <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as informações do tempo de processamento de boletos;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em continuar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> digita o valor que deseja pagar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as informações da <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em copiar código ou enviar por e-mail;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> paga sua <a class="scrollto" href="#fatura">fatura</a> no banco;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
 
-                                <div id="geracao-boleto-cenario"  class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela inicial)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma fatura previamente fechada do cartão de crédito, através da tela de<br> gerenciamento de faturas. </p>
-                                            </td>
-                                        </tr>
+                                    <div id="geracao-boleto-tela-inicial"  class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto para pagamento da <a class="scrollto" href="#fatura">fatura</a> fechada <br>(pela tela inicial)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma <a class="scrollto" href="#fatura">fatura</a> previamente fechada do <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, através da tela de<br> gerenciamento de <a class="scrollto" href="#fatura">faturas</a>. </p>
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> já foi fechada.</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
 
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
 
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
 
-                                <div class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto para pagamento da fatura fechada <br>(pela tela de gerenciamento de faturas)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto de uma fatura previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de faturas. </p>
-                                            </td>
-                                        </tr>
+                                    <div class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto para pagamento da <a class="scrollto" href="#fatura">fatura</a> fechada <br>(pela tela de gerenciamento de <a class="scrollto" href="#fatura">faturas</a>)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> de uma <a class="scrollto" href="#fatura">fatura</a> previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de <a class="scrollto" href="#fatura">faturas</a>. </p>
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Fatura já foi fechada.</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> já foi fechada.</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
 
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
 
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
-                                                    <li>O usuário clica em pagar;</li>
-                                                    <li>O usuário visualiza os dados da fatura;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> desliza para a esquerda e acessa a tela de gerenciamento de <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em pagar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza os dados da <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
 
-                                <div class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto da Fatura Antecipada <br>(pela tela inicial)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
-                                            </td>
-                                        </tr>
+                                    <div class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a> Antecipada <br>(pela tela inicial)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> da <a class="scrollto" href="#fatura">fatura</a> antecipada do cartão de crédito. </p>
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
 
-                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
-                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> atualizada até a data presente</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> ainda não foi fechada</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
 
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
 
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
-                                                    <li>O usuário desliza o menu superior até encontrar o valor da fatura atual e o botão de gerar boleto;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> desliza o menu superior até encontrar o valor da <a class="scrollto" href="#fatura">fatura</a> atual e o botão de <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
 
-                                <div class="section-block">  
-                                    <h3 class="block-title"> Geração do Boleto da Fatura antecipada <br>(pela tela de gerenciamento de faturas)</h3>
-                                    <table  class="blue-migue" class="" style="width:100%">
-                                        <tr>
-                                            <th>Objetivo</th>
-                                            <td><p align="justify" class="blue-migue-description"> Gerar boleto da fatura antecipada do cartão de crédito. </p>
-                                            </td>
-                                        </tr>
+                                    <div class="section-block">  
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a> antecipada <br>(pela tela de gerenciamento de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> da <a class="scrollto" href="#fatura">fatura</a> antecipada do cartão de crédito. </p>
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                         <th>Contexto</th>
-                                         <td>
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
 
-                                            <p align="justify" class="blue-migue-description">Fatura atualizada até a data presente</p>
-                                            <p align="justify" class="blue-migue-description">Fatura ainda não foi fechada</p>
-                                            <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
-                                            <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
-                                       </tr>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> atualizada até a data presente</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> ainda não foi fechada</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
 
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description">Usuário</p>
-                                        </td></tr>
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
 
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>                                                    
-                                            </td></tr>    
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li>O usuário abre o aplicativo;</li>
-                                                    <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
-                                                    <li>Desliza para a esquerda e acessa a tela de gerenciamento de fatura;</li>
-                                                    <li>Clica em fatura atual ou próximas faturas;</li>
-                                                    <li>Visualiza os gastos até a presente data;</li>
-                                                    <li>O usuário  clica em Gerar Boleto;</li>
-                                                </ul>    
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-
-                                <div class="section-block">
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>                                                    
+                                                </td></tr>    
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>Desliza para a esquerda e acessa a tela de gerenciamento de <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>Clica em fatura atual ou próximas <a class="scrollto" href="#fatura">Fatura</a>;</li>
+                                                        <li>Visualiza os gastos até a presente data;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">Gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>    
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+                                </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    topico de cenarios pedir ajuda
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->                                
+                                <div id="pedir-ajuda" class="section-block">
                                         <h2>Pedir Ajuda</h2>
 
-                                <div id="pedir-ajuda"  class="section-block">  
+                                <div id="pedir-ajuda-chat"  class="section-block">  
                                         <h3 class="block-title"> Pedir ajuda (chat no aplicativo)</h3>
                                        <table  class="blue-migue" class="" style="width:100%">
                                            <tr>
@@ -366,14 +737,14 @@
     
                                            <tr>
                                              <th>Atores</th>
-                                             <td><p align="justify" class="blue-migue-description">Usuário, atendente.</p>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a>, atendente.</p>
                                             </td></tr>
     
                                            <tr>
                                             <th>Recursos</th>
                                                 <td>
                                                     <p align="justify" class="blue-migue-description">Internet</p>
-                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
                                                     <p align="justify" class="blue-migue-description">Dúvidas quaisquer</p>                                     
                                                 </td></tr>    
                                             <tr>
@@ -384,11 +755,11 @@
                                                 <th>Episódios</th>
                                                 <td><p align="justify" class="blue-migue-description">
                                                     <ul>
-                                                            <li>O usuário abre o aplicativo;</li>
-                                                            <li>O usuário clica no ícone me ajuda;</li>
-                                                            <li>O usuário clica no ícone chat;</li>
-                                                            <li>O usuário visualiza o chat com algumas informações e seu histórico de conversas;</li>
-                                                            <li>O usuário inicia uma conversa;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone me ajuda;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone chat;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza o chat com algumas informações e seu histórico de conversas;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> inicia uma conversa;</li>
                                                             <li>O atendente responde.</li>
                                                     </ul>    
                                                 </p></td>
@@ -414,14 +785,14 @@
         
                                                <tr>
                                                  <th>Atores</th>
-                                                 <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                                 <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
                                                 </td></tr>
         
                                                <tr>
                                                 <th>Recursos</th>
                                                     <td>
                                                         <p align="justify" class="blue-migue-description">Internet</p>
-                                                        <p align="justify" class="blue-migue-description">Aplicativo logado na conta do usuário</p>
+                                                        <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">suário</a></p>
                                                         <p align="justify" class="blue-migue-description">Dúvidas comuns quaisquer</p>                                     
                                                     </td></tr>    
                                                 <tr>
@@ -432,15 +803,15 @@
                                                     <th>Episódios</th>
                                                     <td><p align="justify" class="blue-migue-description">
                                                         <ul>
-                                                                <li>O usuário abre o aplicativo;</li>
-                                                                <li>Desliza para a esquerda e acessa o menu lateral, dentro da página de controle das faturas;</li>
-                                                                <li>O usuário clica no ícone me ajuda;</li>
-                                                                <li>O usuário clica em dúvidas frequentes;</li>
-                                                                <li>O usuário visualiza uma página com as dúvidas frequentes separadas por categorias. ex: Faturas e Pagamentos, Entrega do seu cartão e etc.</li>
-                                                                <li>O usuário seleciona uma das categorias;</li>
-                                                                <li>O usuário visualiza perguntas;</li>
-                                                                <li>O usuário seleciona a pergunta que se encaixa com sua dúvida;</li>
-                                                                <li>O usuário visualiza as respostas e as dicas.</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> Desliza para a esquerda e acessa o menu lateral, dentro da página de controle das <a class="scrollto" href="#fatura">faturas</a>;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone me ajuda;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> clica em dúvidas frequentes;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza uma página com as dúvidas frequentes separadas por categorias. ex: <a class="scrollto" href="#fatura">Fatura</a> e Pagamentos, Entrega do seu cartão e etc.</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> seleciona uma das categorias;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza perguntas;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> seleciona a pergunta que se encaixa com sua dúvida;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as respostas e as dicas.</li>
                                                         </ul>    
                                                     </p></td>
                                                 </tr>
@@ -588,8 +959,6 @@
                                             </p></td>
                                         </tr>
                                     </table>
-                                </div><!--//section-block-->
-
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 
@@ -755,14 +1124,14 @@
                                              <th>Noção</th>
                                              <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo usuário através do aplicativo.</p>
                                                  <p align="justify" class="blue-migue-description">Dinheiro gasto em compras é convertido em pontos.</p>
-                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua fatura.</p>
+                                                 <p align="justify" class="blue-migue-description">Usuário usa seus pontos acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
                                             </td></tr>
 
                                            <tr>
                                             <th>Impacto</th>
                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">O sistema retira da fatura do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
-                                                    <p align="justify" class="blue-migue-description">Na fatura aparece como “Rewards - Crédito de compra apagada”.</p>
+                                                    <p align="justify" class="blue-migue-description">O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do cliente o valor da compra que foi apagada através do uso dos pontos.</p>
+                                                    <p align="justify" class="blue-migue-description">Na <a class="scrollto" href="#fatura">fatura</a> aparece como “Rewards - Crédito de compra apagada”.</p>
                                                 </td></tr>
 
                                             <tr>
@@ -1341,17 +1710,12 @@
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
                                 <li><a class="scrollto" href="#introducao">Introdução</a></li>
-                                <li><a data-toggle="collapse" href="#cenarios">Cenários</a>
-                                <div id="cenarios" class="panel-collapse collapse">
+                                <li><a class="scrollto" href="#cenarios">Cenários</a></li>
                                     <ul class="nav doc-sub-menu">
-                                    <li><a class="scrollto" href="#alterar-categoria">Alterar Categoria</a></li>  
-                                     <li><a class="scrollto" href="#geracao-boleto-cenario">Geração de Boleto</a></li>     
-                                    <li><a class="scrollto" href="#pedir-ajuda">Pedir Ajuda</a></li>  
-                                    <li><a class="scrollto" href="#reportar-compra">Reportar Compra</a></li>                               
-                                    <li><a class="scrollto" href="#solicitacao-cartao">Solicitação do Cartão</a></li>
-                                </ul><!--//nav-->
-                                </div>
-                                
+                                        <li><a class="scrollto" href="#gerenciar-compras">Gerenciar Compras</a>
+                                        <li><a class="scrollto" href="#geracao-fatura">Geração de Fatura</a>
+                                        <li><a class="scrollto" href="#pedir-ajuda">Pedir ajuda</a>
+                                    </ul>
                                 <li><a data-toggle="collapse" href="#lexicos">Léxicos</a> 
                                 <div id="lexicos" class="panel-collapse collapse">
                                     <ul class="nav doc-sub-menu">
@@ -1408,4 +1772,3 @@
     
 </body>
 </html> 
-
