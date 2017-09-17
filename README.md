@@ -1,7 +1,8 @@
 
 <p align="center"><a href="http://www.nubank.com.br" target="_blank"><img width="270"src="assets/images/Nubank_Logo.png"></a></p>
 
-<p align="justify"><img src="https://img.shields.io/badge/Requisitos%20de%20Software-2017--2-005a1d.svg?style=flat-square"></p>
+<img src="https://img.shields.io/badge/Requisitos%20de%20Software-2017--2-005a1d.svg?style=flat-square"> <img src="https://img.shields.io/badge/Grupo-03-blue.svg?style=flat-square" alt="Grupo 03">
+
 
 # Requisitos - Nubank
 
