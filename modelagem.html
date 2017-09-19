@@ -63,6 +63,105 @@
                             <section id="cenarios" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
 
+                                <div id="alterar-limite"  class="section-block">
+                                        <h3 class="block-title"> Alterar Limite do Cartão</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Objetivo</th>
+                                             <td><p align="justify" class="blue-migue-description"> Alterar o limite de compras do cartão.</p></td>
+                                          </tr>
+    
+                                           <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>             
+                                           </tr>
+    
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a></p>
+                                            </td></tr>
+    
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo</p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante a tentativa de bloqueio.</p>
+                                                <p align="justify" class="blue-migue-description">O sistema recusar a tentativa de aumento do limite.</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> abre o aplicativo. <b>Restrição:</b> caso já não esteja logado, fazer login. </li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> desliza a tela para a esquerda.</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> aperta o botão chamado “Minha Conta”.</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> seleciona a opção “Alterar limite”.</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> ajusta o limite para o valor desejado</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> confirma apertando em “Alterar”. <b>Restrição:</b> o valor desejado para o novo limite é maior do que o intervalo oferecido pelo sistema.</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> insere o valor desejado</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> seleciona “Pedir mais limite”. </li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> justifica o pedido, selecionando uma das opções disponíveis.</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> confirma o pedido</li>
+                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> aguarda a análise do sistema para saber se foi ou não aprovado.</li>                                                        </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+
+
+
+
+                            <div id="bloquear-cartao"  class="section-block">
+                                    <h3 class="block-title"> Bloquear Temporariamente o Cartão</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description"> Realizar o bloqueio do cartão</p></td>
+                                      </tr>
+
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>
+                                            <p align="justify" class="blue-migue-description">Estar com o cartão desbloqueado.</p>                                            
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a></p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo</p>
+                                            </td></tr>
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">A internet cair durante a tentativa de bloqueio.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                        <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> abre o aplicativo. <b>Restrição:</b> caso já não esteja logado, fazer login. </li>
+                                                        <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> desliza a tela para a esquerda</li>
+                                                        <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> aperta o botão chamado “Bloqueio Temporário”.</li>
+                                                        <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> confirma a ação.</li>
+                                                </ul>
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+
                                 <div id="gerenciar-compras"  class="section-block">
                                     <h2>Gerenciar Compras</h2>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -872,105 +971,6 @@
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 
-                            <div class="section-block">
-                                <h2>Bloquear Temporariamente o Cartão</h2>
-
-                                <div id="bloquear-temporariamente"  class="section-block">
-                                    <h3 class="block-title"> Bloquear Temporariamente o <a class="scrollto" href="#cartao-de-credito">Cartão</a> </h3>
-                                   <table  class="blue-migue" class="" style="width:100%">
-                                       <tr>
-                                         <th>Objetivo</th>
-                                         <td><p align="justify" class="blue-migue-description">Realizar o <a class="scrollto" href="#bloqueio-temporario">bloqueio</a> do <a class="scrollto" href="#cartao-de-credito">cartão</a>.</p>
-                                        </td></tr>
-
-                                       <tr>
-                                         <th>Contexto</th>
-                                         <td>
-                                            <p align="justify" class="blue-migue-description">Contexto:	Estar com o aplicativo instalado e acesso a internet.</p>
-                                            <p align="justify" class="blue-migue-description">Estar com o <a class="scrollto" href="#cartao-de-credito">cartão</a> desbloqueado.</p>
-                                       </tr>
-
-                                       <tr>
-                                         <th>Atores</th>
-                                         <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a>.</p>
-                                        </td></tr>
-
-                                       <tr>
-                                        <th>Recursos</th>
-                                            <td>
-                                                <p align="justify" class="blue-migue-description">Internet</p>
-                                                <p align="justify" class="blue-migue-description">Aplicativo</p>                                                                                                    
-                                            </td></tr>
-                                        <tr>
-                                            <th>Exceção</th>
-                                            <td><p align="justify" class="blue-migue-description">A internet cair durante o processo.</p></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Episódios</th>
-                                            <td><p align="justify" class="blue-migue-description">
-                                                <ul>
-                                                    <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> abre o aplicativo. Restrição: caso já não esteja logado, fazer login.</li>
-                                                    <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> desliza a tela para a esquerda e aperta o botão chamado "<a class="scrollto" href="#bloqueio-temporario">bloqueio temporário</a>".</li>
-                                                    <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> confirma a ação.</li>
-                                                </ul>
-                                            </p></td>
-                                        </tr>
-                                    </table>
-                                </div><!--//section-block-->
-                                <br>
-                            
-
-                                <div class="section-block">
-                                        <h2>Alterar limite</h2>
-        
-                                        <div id="alterar-limite"  class="section-block">
-                                            <h3 class="block-title">Alterar limite </h3>
-                                           <table  class="blue-migue" class="" style="width:100%">
-                                               <tr>
-                                                 <th>Objetivo</th>
-                                                 <td><p align="justify" class="blue-migue-description">Alterar o <a class="scrollto" href="#limite">limite</a> de compras do <a class="scrollto" href="#cartao-de-credito">cartão</a>.</p>
-                                                </td></tr>
-        
-                                               <tr>
-                                                 <th>Contexto</th>
-                                                 <td>
-                                                    <p align="justify" class="blue-migue-description">Estar com o aplicativo instalado e acesso a internet.</p>
-                                               </tr>
-        
-                                               <tr>
-                                                 <th>Atores</th>
-                                                 <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a>.</p>
-                                                </td></tr>
-        
-                                               <tr>
-                                                <th>Recursos</th>
-                                                    <td>
-                                                        <p align="justify" class="blue-migue-description">Internet</p>
-                                                        <p align="justify" class="blue-migue-description">Aplicativo</p>                                                                                                    
-                                                    </td></tr>
-                                                <tr>
-                                                    <th>Exceção</th>
-                                                    <td><p align="justify" class="blue-migue-description">A internet cair durante o processo.</p></td>
-                                                    <td><p align="justify" class="blue-migue-description">O sistema recusar a tentativa de aumento do <a class="scrollto" href="#limite">limite</a>.</p></td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th>Episódios</th>
-                                                    <td><p align="justify" class="blue-migue-description">
-                                                        <ul>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> abre o aplicativo. Restrição: caso já não esteja logado, fazer login.</li>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> desliza a tela para a esquerda e aperta o botão chamado "Minha <a class="scrollto" href="#conta">conta</a>".</li>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> seleciona a opção "Alterar <a class="scrollto" href="#limite">limite</a>".</li>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> ajusta o <a class="scrollto" href="#limite">limite</a> para o valor desejado e confirma apertando em "Alterar". Restrição: o valor desejado para o novo <a class="scrollto" href="#limite">limite</a> é maior do que o intervalo oferecido pelo sistema.</li>                                                            
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> insere o valor desejado e seleciona "Pedir mais <a class="scrollto" href="#limite">limite</a>".</li>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> justifica o pedido, selecionando uma das opções disponíveis.</li>
-                                                            <li><a class="scrollto" href="#usuario">Proprietário do cartão</a> confirma o pedido e aguarda a análise do sistema para saber se foi ou não aprovado.</li>                                                            
-                                                        </ul>
-                                                    </p></td>
-                                                </tr>
-                                            </table>
-                                        </div><!--//section-block-->
-                                        <br>
 <!--//INÍCIO DOS LÉXICOS! -->
                             <section id="lexicos-section" class="doc-section">
 
@@ -1717,6 +1717,8 @@
                                 <li><a class="scrollto" href="#introducao">Introdução</a></li>
                                 <li><a class="scrollto" href="#cenarios">Cenários</a>
                                     <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#alterar-limite">Alterar Limite</a></li>                                             
+                                        <li><a class="scrollto" href="#bloquear-cartao">Bloquear o Cartão</a></li>                                            
                                         <li><a class="scrollto" href="#gerenciar-compras">Gerenciar Compras</a></li>
                                         <li><a class="scrollto" href="#geracao-fatura">Geração de Fatura</a></li>
                                         <li><a class="scrollto" href="#pedir-ajuda">Pedir ajuda</a></li>
