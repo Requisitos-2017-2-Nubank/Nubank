@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<head>
+    <title>Módulo IV - Modelagem</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-blue">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Requisitos de Software</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Modelagem</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="icon fa fa-sitemap"></span> Módulo IV - Modelagem</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 17th, 2017</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <section id="introducao" class="doc-section">
+                                <h2 class="section-title">Introdução</h2>
+                                <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
+                            </section>
+                            <section id="cenarios" class="doc-section">
+                                <h2 class="section-title">Cenários</h2>
+
+                                <div id="gerenciar-compras"  class="section-block">
+                                    <h2>Gerenciar Compras</h2>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário gerenciamento de compra (página inicial)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="geracao-boleto-fatura" class="section-block">
+                                        <h3 class="block-title"> Gerenciar Compra (página inicial)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela página inicial do aplicativo.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário abre o aplicativo e acessa a página inicial que apresenta o seu histórico;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Gerenciar Compra (pela tela de gerenciamento de faturas)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="gerenciar-compra-tela-gerenciamento-faturas" class="section-block">
+                                        <h3 class="block-title"> Gerenciar Compra (pela tela de gerenciamento de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela tela de gerenciamento de faturas</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário abre o aplicativo;</li>
+                                                        <li>O usuário desliza para a esquerda e acessa a tela de gerenciamento de faturas;</li>
+                                                        <li>O usuário seleciona uma fatura;</li>
+                                                        <li>O usuário visualiza os dados da fatura;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Gerenciar Compra (pela tela de relação de faturas)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="gerenciar-compra-tela-relação-faturas" class="section-block">
+                                        <h3 class="block-title"> Gerenciar Compra (pela tela de relação de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerenciar uma compra pela tela de gerenciamento de faturas</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário abre o aplicativo;</li>
+                                                        <li>O usuário desliza para a esquerda duas vezes e acessa a tela de relação de faturas;</li>
+                                                        <li>O usuário seleciona uma fatura;</li>
+                                                        <li>O usuário visualiza os dados da fatura;</li>
+                                                        <li>O usuário seleciona a compra que deseja gerenciar;</li>
+                                                        <li>O usuário visualiza as informações da compra;</li>
+                                                        <li>O usuário pode <a class="scrollto" href="#reportar-compra">Reportar Compra</a>, <a class="scrollto" href="#alterar-categoria">Alterar Categoria</a>, <a class="scrollto" href="#adicionar-tag">Adicionar tag</a> e <a class="scrollto" href="#marcar-mapa">Marcar no Mapa</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Reportar Compra
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="reportar-compra" class="section-block">
+                                        <h3 class="block-title"> Reportar Compra</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Reportar uma compra</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no botão reportar no topo da página;</li>
+                                                        <li>O usuário seleciona o motivo da sua reportagem;</li>
+                                                        <li>O usuário confirma e envia seu reportar.</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Alterar Categoria
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="alterar-categoria" class="section-block">
+                                        <h3 class="block-title"> Alterar Categoria</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Alterar a categoria de uma compra.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no ícone da categoria atual;</li>
+                                                        <li>O usuário escolhe a categoria;</li>
+                                                        <li>O usuário clica em salvar.</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Adicionar tag
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="adicionar-tag" class="section-block">
+                                        <h3 class="block-title"> Adicionar tag</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Adicionar uma tag a uma compra.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica em +tag;</li>
+                                                        <li>O usuário digita o nome da tag;</li>
+                                                        <li>O usuário clica em adicionar.</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Marcar no Mapa
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="marcar-mapa" class="section-block">
+                                        <h3 class="block-title"> Marcar no Mapa</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Marcar no mapa o local da compra.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O usuário clica no lado esquerdo onde o mapa está aparecendo;</li>
+                                                        <li>O usuário clica em marcar no mapa;</li>
+                                                        <li>O usuário segura o pino e arrasta para o local desejado;</li>
+                                                        <li>O usuário clica em confirmar localização;</li>
+                                                        <li>O usuário visualiza o local atualizado.</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    topico de cenarios geração de fatura
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="geracao-fatura" class="section-block">
+                                    <h2>Geração de <a class="scrollto" href="#fatura">Fatura</a></h2>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenário Geração do Boleto da fatura
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="geracao-boleto-fatura" class="section-block">
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a></h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar o boleto</a> de uma <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as informações do tempo de processamento de boletos;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em continuar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> digita o valor que deseja pagar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as informações da <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em copiar código ou enviar por e-mail;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> paga sua <a class="scrollto" href="#fatura">fatura</a> no banco;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="geracao-boleto-tela-inicial"  class="section-block">
+                                        <h3 class="block-title"> Geração do Boleto para pagamento da <a class="scrollto" href="#fatura">fatura</a> fechada <br>(pela tela inicial)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Gerar do boleto de uma <a class="scrollto" href="#fatura">fatura</a> previamente fechada do <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, através da tela de<br> gerenciamento de <a class="scrollto" href="#fatura">faturas</a>. </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> já foi fechada.</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+
+                                    <div class="section-block">
+                                        <h3 class="block-title"> Geração do Boleto para pagamento da <a class="scrollto" href="#fatura">fatura</a> fechada <br>(pela tela de gerenciamento de <a class="scrollto" href="#fatura">faturas</a>)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> de uma <a class="scrollto" href="#fatura">fatura</a> previamente fechada do cartão de crédito, através da tela de <br>gerenciamento de <a class="scrollto" href="#fatura">faturas</a>. </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> já foi fechada.</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> desliza para a esquerda e acessa a tela de gerenciamento de <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> clica em pagar;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza os dados da <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+
+                                    <div class="section-block">
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a> Antecipada <br>(pela tela inicial)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> da <a class="scrollto" href="#fatura">fatura</a> antecipada do cartão de crédito. </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> atualizada até a data presente</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> ainda não foi fechada</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> desliza o menu superior até encontrar o valor da <a class="scrollto" href="#fatura">fatura</a> atual e o botão de <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+
+                                    <div class="section-block">
+                                        <h3 class="block-title"> Geração do Boleto da <a class="scrollto" href="#fatura">Fatura</a> antecipada <br>(pela tela de gerenciamento de faturas)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> <a class="scrollto" href="#gerar-boleto">Gerar boleto</a> da <a class="scrollto" href="#fatura">fatura</a> antecipada do cartão de crédito. </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> atualizada até a data presente</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Fatura</a> ainda não foi fechada</p>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante o procedimento. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                        <li><b>Restrição:</b> caso já não esteja logado, fazer login.</li>
+                                                        <li>Desliza para a esquerda e acessa a tela de gerenciamento de <a class="scrollto" href="#fatura">fatura</a>;</li>
+                                                        <li>Clica em fatura atual ou próximas <a class="scrollto" href="#fatura">Fatura</a>;</li>
+                                                        <li>Visualiza os gastos até a presente data;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a>  clica em <a class="scrollto" href="#gerar-boleto">Gerar boleto</a>;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> executa as atividades do <a class="scrollto" href="#geracao-boleto-fatura">Geração do Boleto da Fatura</a>;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+                                </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    topico de cenarios pedir ajuda
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="pedir-ajuda" class="section-block">
+                                        <h2>Pedir Ajuda</h2>
+
+                                <div id="pedir-ajuda-chat"  class="section-block">
+                                        <h3 class="block-title"> Pedir ajuda (chat no aplicativo)</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Objetivo</th>
+                                             <td><p align="justify" class="blue-migue-description"> Sanar dúvidas a respeito dos procedimentos necessários para realizar alguma funcionalidade
+                                                 dentro do aplicativo, ou dúvidas a respeito de conceitos financeiros em geral, através do chat do aplicativo </p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a>, atendente.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                    <p align="justify" class="blue-migue-description">Dúvidas quaisquer</p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone me ajuda;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone chat;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza o chat com algumas informações e seu histórico de conversas;</li>
+                                                            <li>O <a class="scrollto" href="#usuario">usuário</a> inicia uma conversa;</li>
+                                                            <li>O atendente responde.</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div><!--//section-block-->
+
+                                    <div class="section-block">
+                                            <h3 class="block-title"> Pedir ajuda (dúvidas frequentes no aplicativo)</h3>
+                                           <table  class="blue-migue" class="" style="width:100%">
+                                               <tr>
+                                                 <th>Objetivo</th>
+                                                 <td><p align="justify" class="blue-migue-description"> Sanar dúvidas a respeito dos procedimentos necessários para realizar alguma funcionalidade
+                                                     dentro do aplicativo, ou dúvidas a respeito de conceitos financeiros em geral, através do chat do aplicativo </p>
+                                                </td></tr>
+
+                                               <tr>
+                                                 <th>Contexto</th>
+                                                 <td>
+                                                    <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado.</p>
+                                               </tr>
+
+                                               <tr>
+                                                 <th>Atores</th>
+                                                 <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                                </td></tr>
+
+                                               <tr>
+                                                <th>Recursos</th>
+                                                    <td>
+                                                        <p align="justify" class="blue-migue-description">Internet</p>
+                                                        <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                        <p align="justify" class="blue-migue-description">Dúvidas comuns quaisquer</p>
+                                                    </td></tr>
+                                                <tr>
+                                                    <th>Exceção</th>
+                                                    <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Episódios</th>
+                                                    <td><p align="justify" class="blue-migue-description">
+                                                        <ul>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> abre o aplicativo;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> Desliza para a esquerda e acessa o menu lateral, dentro da página de controle das <a class="scrollto" href="#fatura">faturas</a>;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> clica no ícone me ajuda;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> clica em dúvidas frequentes;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza uma página com as dúvidas frequentes separadas por categorias. ex: <a class="scrollto" href="#fatura">Fatura</a> e Pagamentos, Entrega do seu cartão e etc.</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> seleciona uma das categorias;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza perguntas;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> seleciona a pergunta que se encaixa com sua dúvida;</li>
+                                                                <li>O <a class="scrollto" href="#usuario">usuário</a> visualiza as respostas e as dicas.</li>
+                                                        </ul>
+                                                    </p></td>
+                                                </tr>
+                                            </table>
+                                        </div><!--//section-block-->
+
+                                <div class="section-block">
+                                <h2>Solicitação de Cartão</h2>
+
+                                <div id="solicitacao-cartao"  class="section-block">
+                                    <h3 class="block-title"> Solicitação do <a class="scrollto" href="#cartao-de-credito">Cartão</a> com convite (indicação de amigo)</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitar um <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> Nubank, usando um convite compartilhado por um previamente cliente Nubank.</p>
+                                        </td></tr>
+
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
+                                            <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitante</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Navegador Web</p>
+                                                <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
+                                                <p align="justify" class="blue-migue-description">O link do convite</p>
+                                            </td></tr>
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O solicitante clica no link e segue para a página de indicação no Nubank;</li>
+                                                    <li>O Solicitante clica em pedir meu cartão;</li>
+                                                    <li>O solicitante digita os dados: nome, email e cpf;</li>
+                                                    <li>O Solicitante clica em pedir meu cartão.</li>
+                                                </ul>
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+                                <br>
+
+                                <div class="section-block">
+                                    <h3 class="block-title"> Solicitação do <a class="scrollto" href="#cartao-de-credito">Cartão</a> sem convite</h3>
+                                   <table  class="blue-migue" class="" style="width:100%">
+                                       <tr>
+                                         <th>Objetivo</th>
+                                         <td><p align="justify" class="blue-migue-description"> Solicitar um <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> Nubank sem um convite previamente recebido. </p>
+                                        </td></tr>
+
+                                       <tr>
+                                         <th>Contexto</th>
+                                         <td>
+                                            <p align="justify" class="blue-migue-description">Ter acesso a um computador ou dispositivo que permita acessar um um navegador web.</p>
+                                            <p align="justify" class="blue-migue-description">Ter recebido um convite para solicitação de cartão nubank;</p>
+                                            <p align="justify" class="blue-migue-description">Ter acesso à internet.</p>
+                                            <p align="justify" class="blue-migue-description">Ter idade igual ou superior à 18 anos.</p>
+                                       </tr>
+
+                                       <tr>
+                                         <th>Atores</th>
+                                         <td><p align="justify" class="blue-migue-description">Solicitante</p>
+                                        </td></tr>
+
+                                       <tr>
+                                        <th>Recursos</th>
+                                            <td>
+                                                <p align="justify" class="blue-migue-description">Internet</p>
+                                                <p align="justify" class="blue-migue-description">Navegador Web</p>
+                                                <p align="justify" class="blue-migue-description">Nome, e-mail e CPF do solicitante</p>
+                                                <p align="justify" class="blue-migue-description">O link do convite</p>
+                                            </td></tr>
+                                        <tr>
+                                            <th>Exceção</th>
+                                            <td><p align="justify" class="blue-migue-description">Interrupção da internet durante o processo.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Episódios</th>
+                                            <td><p align="justify" class="blue-migue-description">
+                                                <ul>
+                                                    <li>O solicitante entra no site do nubank por um navegador;</li>
+                                                    <li>O solicitante digita os dados: nome, email e cpf;</li>
+                                                    <li>O solicitante clica em pedir meu cartão;</li>
+                                                </ul>
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+<!--//INÍCIO DOS LÉXICOS! -->
+                            <section id="lexicos-section" class="doc-section">
+
+                                <h2 class="section-title">Léxicos</h2>
+                                    <div class="section-block">
+
+                                <div id="anuidade"  class="section-block">
+                                    <h3 class="block-title">Anuidade</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                                <th>Nome</th>
+                                                <td><p align="justify" class="blue-migue-description">Anuidade</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Sinônimo(s)</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#tarifa">Taxa</a> anual</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Noção</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Uma <a class="scrollto" href="#tarifa">taxa</a> anual cobrada pelos bancos para o <a class="scrollto" href="#usuario">usuário</a> de
+                                                    seu <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, para o uso dos serviços oferecidos por ele.
+                                                Pode ser paga à vista ou dividida em parcelas mensais.</p>
+                                             </td></tr>
+
+                                               <tr>
+                                                <th>Impacto</th>
+                                                    <td>
+                                                        <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a> paga anuidade.</p>
+                                                    </td></tr>
+
+                                                <tr>
+                                                    <th>Classificação</th>
+                                                    <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                        </tr>
+                                    </table>
+                                </div><!--//section-block-->
+                                <br>
+
+                                <div class="section-block" div id="apagar-gastos">
+                                    <h3 class="block-title"> Apagar gastos</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Apagar Gastos</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description"> - </p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada pelo <a class="scrollto" href="#usuario">usuário</a> através do aplicativo.</p>
+                                                 <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> usa seus <a class="scrollto" href="#pontos">pontos</a> acumulados para retirar o valor de alguma compra de sua <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O sistema retira da <a class="scrollto" href="#fatura">fatura</a> do <a class="scrollto" href="#usuario">cliente</a> o valor da compra que foi apagada através do uso dos <a class="scrollto" href="#pontos">pontos</a>.</p>
+                                                <p align="justify" class="blue-migue-description">Na <a class="scrollto" href="#fatura">fatura</a> aparece como <i>“<a class="scrollto" href="#nubank-rewards">Rewards</a> - Crédito de compra apagada”</i>.</p>
+                                                </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> apaga seus gastos.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+              <br>
+                                         <div class="section-block" div id="bloqueio-temporario">
+                                                <h3 class="block-title"> Bloqueio Temporário</h3>
+                                                   <table  class="blue-migue" class="" style="width:100%">
+                                                       <tr>
+                                                             <th>Nome</th>
+                                                             <td><p align="justify" class="blue-migue-description">Bloqueio Temporário</p>
+                                                             </td>
+                                                        </tr>
+
+                                                       <tr>
+                                                         <th>Sinônimo(s)</th>
+                                                         <td><p align="justify" class="blue-migue-description">Bloqueio</p></td>
+                                                       </tr>
+
+                                                       <tr>
+                                                         <th>Noção</th>
+                                                         <td><p align="justify" class="blue-migue-description">O ato do <a class="scrollto" href="#usuario">proprietário do cartão</a> de impedir a utilização do <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> pelo sistema por um período de tempo.</p>
+                                                        </td></tr>
+
+                                                       <tr>
+                                                        <th>Impacto</th>
+                                                            <td>
+                                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a> efetua bloqueio temporário.</p>
+                                                            </td></tr>
+
+                                                        <tr>
+                                                            <th>Classificação</th>
+                                                            <td><p align="justify" class="blue-migue-description">Verbo</p></td>
+                                                        </tr>
+                                                     </table>
+                                                    </div><!--//section-block-->
+
+
+        <br>
+
+                                <div class="section-block" div id="cartao-de-credito">
+                                    <h3 class="block-title"> Cartão de Crédito</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Cartão de Crédito</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Cartão, cartões, crédito</p> </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">É um cartão de plástico que possui uma tarja magnetizada, similar a um cartão de débito, que permite pagamentos que são acumulados mensalmente em <a class="scrollto" href="#fatura">faturas</a>, que são pagas posteriormente.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> faz compra no cartão de crédito.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+<br>
+
+                                <div class="section-block" div id="contestar-compra">
+                                    <h3 class="block-title"> Contestar Compra</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Contestar Compra</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Chargeback, Contestar transação</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Recusar o reconhecimento de determinada compra ou transação.</p>
+                                           </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Ao notar compras não feitas por ele, o <a class="scrollto" href="#usuario">usuário</a> contesta a compra.</p>
+                                                    <p align="justify" class="blue-migue-description">Ao notar compras repetidas, o <a class="scrollto" href="#usuario">usuário</a> contesta a compra.</p>
+                                                    <p align="justify" class="blue-migue-description">Quando uma compra é contestada o banco analisa a situação e toma as devidas providências.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+<br>
+
+                                <div class="section-block" div id="credito-rotativo">
+                                    <h3 class="block-title"> Crédito Rotativo</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Crédito Rotativo</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Rotativo</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Dívida pendente acumulada para a próxima <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O não pagamento do valor total da <a class="scrollto" href="#fatura">fatura</a> atual,
+                                                     deixando o valor restante para a próxima, com acréscimo de <a class="scrollto" href="#juros">juros</a>.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Crédito rotativo
+                                                        acrescenta <a class="scrollto" href="#juros">juros</a> à próxima <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+        <br>
+
+                                <div class="section-block" div id="fatura">
+                                    <h3 class="block-title"> Fatura</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Fatura</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Conta, faturas</td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Soma de todas as dívidas feitas no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a> durante determinado período de 30 dias.</p>
+                                                <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> é informado sobre todos os seus gastos no mês.</p>
+                                                <p align="justify" class="blue-migue-description">Apresenta itens como:
+                                        <ul>
+                                            <li><a class="scrollto" href="#vencimento">Vencimento</a></li>
+                                            <li>Total da fatura;</li>
+                                            <li><a class="scrollto" href="#pagamento-minimo">Pagamento mínimo</a>;</li>
+                                            <li><a class="scrollto" href="#parcela">Parcelamento da fatura</a>.</li></p>
+                                        </ul>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> paga a fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> altera <a class="scrollto" href="#vencimento">vencimento</a> da fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> <a class="scrollto" href="#parcela">parcela</a> a fatura.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> acessa a fatura</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> acessa a fatura detalhadamente.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+                                         <br>
+
+                                <div class="section-block" div id="gerar-boleto">
+                                    <h3 class="block-title"> Gerar Boleto</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Gerar Boleto</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Boletar</p> </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada por um <a class="scrollto" href="#usuario">usuário Nubank</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">É gerar uma conta com o valor da <a class="scrollto" href="#fatura">fatura</a> a ser paga por meio de um código de barras.</p>
+                                                 <p align="justify" class="blue-migue-description">O <a class="scrollto" href="#usuario">usuário Nubank</a> seleciona o valor da sua <a class="scrollto" href="#fatura">fatura</a>
+                                                  e escolhe um valor para então gerar o boleto:
+                                                 pagamento integral, em <a class="scrollto" href="#parcela">parcelas</a> ou um pagamento mínimo acrescido de <a class="scrollto" href="#credito-rotativo">crédito rotativo.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">O aplicativo gera o boleto.</p>
+                                                    <p align="justify" class="blue-migue-description">O aplicativo envia o boleto por e-mail.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+<br>
+
+                                <div class="section-block" div id="indicar-amigo">
+                                    <h3 class="block-title"> Indicar Amigo</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Indicar Amigo</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td> <p align="justify" class="blue-migue-description">Enviar convite, indicar amigos</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Tarefa realizada por um <a class="scrollto" href="#usuario">usuário Nubank</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">Consiste em recomendar uma ou mais pessoas para se tornarem possíveis <a class="scrollto" href="#usuario">usuários</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">O <a class="scrollto" href="#usuario">usuário nubank</a> adiciona os e-mails dos amigos que deseja indicar e envia a solicitação.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> indica amigo.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+<br>
+
+                                <div class="section-block" div id="juros">
+                                    <h3 class="block-title"> Juros</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Juros</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">lucro, rendimento</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Porcentagem acrescentada sobre o valor total de compra ou <a class="scrollto" href="#fatura">fatura</a> em caso de atraso de pagamento, pagamento incompleto(<a class="scrollto" href="#credito-rotativo">Crédito rotativo</a>) e empréstimo de dinheiro.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> paga juros ao optar pelo <a class="scrollto" href="#credito-rotativo">Crédito rotativo</a>.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> paga juros ao parcelar a <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+    <br>
+
+                                <div class="section-block" div id="limite-cartao">
+                                    <h3 class="block-title"> Limite do Cartão</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Limite do Cartão de Crédito</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Limite</p>
+                                             </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Valor máximo que a soma das compras podem atingir no <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">Calculado com base na renda mensal do <a class="scrollto" href="#usuario">usuário</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">Limite diminui a cada compra feita com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> Nubank pode aumentar/diminuir seu limite.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+<br>
+
+                                <div class="section-block" div id="nubank-rewards">
+                                    <h3 class="block-title"> <i>Nubank Rewards</i></h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description"><i>Nubank Rewards</i></p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Programa de recompensas</p>
+                                             </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Programa de recompensas baseado em <a class="scrollto" href="#pontos">pontos</a>.</p>
+                                                 <p align="justify" class="blue-migue-description">A cada compra efetuada com o <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>, R$1,00 equivale à um <a class="scrollto" href="#pontos">ponto</a>.</p>
+                                                 <p align="justify" class="blue-migue-description"><a class="scrollto" href="#pontos">Pontos</a> não expiram.</p>
+                                                 <p align="justify" class="blue-migue-description">Acúmulo de <a class="scrollto" href="#pontos">pontos</a> em tempo real.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> paga <a class="scrollto" href="#anuidade">anuidade</a>.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> <i>Nubank Rewards</i> troca <a class="scrollto" href="#pontos">pontos</a> por serviços.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+        <br>
+
+                                <div class="section-block" div id="transacao">
+                                    <h3 class="block-title"> Transação</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Transação</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td> <p align="justify" class="blue-migue-description">Operação, transferência, negócio, transações.</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Situação em que ocorre fluxo de dinheiro de uma fonte para outra, como em uma compra ou uma transferência.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Um <a class="scrollto" href="#usuario">usuário</a> faz uma compra, realizando uma transação.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a> paga <a class="scrollto" href="#fatura">fatura</a>, realizando uma transação.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+<br>
+
+                                <div class="section-block" div id="pagamento-minimo">
+                                    <h3 class="block-title"> Pagamento Mínimo</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Pagamento Mínimo</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td> </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Opção de pagamento de <a class="scrollto" href="#fatura">fatura</a> oferecido pelo banco na qual é possível pagar apenas uma parte da <a class="scrollto" href="#fatura">fatura</a> total pelo <a class="scrollto" href="#credito-rotativo">crédito rotativo</a>.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">O cliente faz uso do <a class="scrollto" href="#credito-rotativo">crédito rotativo</a> fazendo o pagamento mínimo.</p>
+                                                    <p align="justify" class="blue-migue-description">O cliente não paga a <a class="scrollto" href="#fatura">fatura</a> inteira pagando um valor igual ou maior que o mínimo.</p>
+                                                    <p align="justify" class="blue-migue-description">Ao não efetuar o pagamento completo ou mínimo até o dia do <a class="scrollto" href="#vencimento">vencimento</a> o <a class="scrollto" href="#usuario">cliente</a> está sujeito à multa e <a class="scrollto" href="#juros">juros</a> de atraso.</p>
+                                                    <p align="justify" class="blue-migue-description">Ao efetuar um pagamento mínimo o restante da <a class="scrollto" href="#fatura">fatura</a> será adicionado a <a class="scrollto" href="#fatura">fatura</a> do mês seguinte acrescido de <a class="scrollto" href="#juros">juros</a> de financiamento.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+                                         <br>
+
+                                <div class="section-block" div id="parcela">
+                                    <h3 class="block-title"> Parcela</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Parcela</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td> <p align="justify" class="blue-migue-description">Prestação, parcelas, prestações.</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Valor de uma compra ou <a class="scrollto" href="#fatura">fatura</a>
+                                              dividido em frações iguais para serem pagas a cada mês.</p>
+                                                 <p align="justify" class="blue-migue-description">Divisão do valor integral de uma <a class="scrollto" href="#transacao">transação</a>,
+                                                 possibilitando pagamentos menores ao longo de um período de tempo, com ou sem <a class="scrollto" href="#juros">juros</a>.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a> faz compra em parcelas.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Proprietário do cartão</a> paga a
+                                                        <a class="scrollto" href="#fatura">fatura em parcelas.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+<br>
+
+                                <div class="section-block" div id="pontos">
+                                    <h3 class="block-title"> Pontos</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Pontos</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Ponto</p> </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Sistema de acúmulo de pontos a depender do valor gasto em um <a class="scrollto" href="#cartao-de-credito">cartão de crédito</a>,
+                                                  por exemplo, gasto em um certo período.</p>
+                                                 <p align="justify" class="blue-migue-description">Participantes do programa podem trocar seus pontos acumulados por produtos,
+                                                     serviços, ou descontos em compras, por exemplo.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a>
+                                                        <a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a> acumula pontos.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+        <br>
+
+                                <div class="section-block" div id="reclamar">
+                                    <h3 class="block-title"> Reclamar</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Reclamar</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td>
+                                               <p align="justify" class="blue-migue-description">protestar</p> </td>
+                                             </td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Solicitar ao banco que revise algum serviço ou ocorrência.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                   <p align="justify" class="blue-migue-description">O <a class="scrollto" href="#usuario">usuário</a> reclama sobre um processo ou serviço do banco.</p>
+                                                   <p align="justify" class="blue-migue-description">O <a class="scrollto" href="#usuario">cliente</a> se sente prejudicado de alguma forma pelo banco e então reclama.</p>
+                                                   <p align="justify" class="blue-migue-description">O banco recebe e analisa a reclamação e toma as devidas providências.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Verbo</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+<br>
+                                <div class="section-block" div id="tarifa">
+                                    <h3 class="block-title"> Tarifa</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Tarifa</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">Taxa</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Relação de valores cobrados por serviços e produtos.</p>
+                                                </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> pagará por tarifa caso escolha por um serviço ou produto que tenha tarifa embutida.</p>
+                                                    <p align="justify" class="blue-migue-description">Ao fazer uso de um serviço que possui tarifas o <a class="scrollto" href="#usuario">usuário</a> estará sujeito a cobrança dessas tarifas.</p>
+                                                    <p align="justify" class="blue-migue-description">Tarifas serão cobradas ao <a class="scrollto" href="#usuario">usuário</a> em certos serviços.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+       <br>
+
+                                <div class="section-block" div id="usuario">
+                                    <h3 class="block-title"> Usuário</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Usuário</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td> <p align="justify" class="blue-migue-description">Cliente, proprietário do cartão, usuários, usuário Nubank</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Agente principal do Nubank.</p>
+                                                 <p align="justify" class="blue-migue-description">Possui o <a class="scrollto" href="#cartao-de-credito">cartão</a>
+                                                    e utiliza o aplicativo para acessar informações sobre suas <a class="scrollto" href="#transacao">transações</a>, alterar dados e solicitar ajuda.</p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Nubank envia <a class="scrollto" href="#cartao-de-credito">cartão</a> ao usuário.</p>
+                                                    <p align="justify" class="blue-migue-description">Nubank oferece atendimento ao usuário.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#fatura">Faturas</a> são pagas pelo usuário.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+     <br>
+
+                                <div class="section-block" div id="vencimento">
+                                    <h3 class="block-title"> Vencimento</h3>
+                                       <table  class="blue-migue" class="" style="width:100%">
+                                           <tr>
+                                             <th>Nome</th>
+                                             <td><p align="justify" class="blue-migue-description">Vencimento</p>
+                                            </td></tr>
+
+                                           <tr>
+                                             <th>Sinônimo(s)</th>
+                                             <td><p align="justify" class="blue-migue-description">limite, prazo</p></td>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Noção</th>
+                                             <td><p align="justify" class="blue-migue-description">Data limite de pagamento de determinada <a class="scrollto" href="#fatura">fatura</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Impacto</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> efetua o pagamento da <a class="scrollto" href="#fatura">fatura</a> até o dia de vencimento pagando assim o valor original da <a class="scrollto" href="#fatura">fatura</a>.</p>
+                                                    <p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Cliente</a> efetua o pagamento da <a class="scrollto" href="#fatura">fatura</a> após o dia de vencimento assim o calor original da fatura acrescido de multa e <a class="scrollto" href="#juros">juros</a>.</p>
+                                                    <p align="justify" class="blue-migue-description">Valor de uma <a class="scrollto" href="#fatura">fatura</a> paga por um <a class="scrollto" href="#usuario">cliente</a> é afetada pela data de vencimento e a data em que o pagamento for efetuado.</p>
+                                                </td></tr>
+
+                                            <tr>
+                                                <th>Classificação</th>
+                                                <td><p align="justify" class="blue-migue-description">Objeto</p></td>
+                                            </tr>
+                                         </table>
+                                        </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+
+                            <section id="referencias" class="doc-section">
+                                <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
+                                <div class="section-block">
+                                    <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">[1] Requisitos de Software, Grupo 3, <b><i>Sobre o Nubank</i></b>.
+                                            Disponível <a href="sobre.html#app">Aqui</a>.
+                                            Acesso em: 12 de setembro de 2017. </p></li>
+                                </div>
+                            </section><!--//doc-section-->
+
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                                <li><a class="scrollto" href="#introducao">Introdução</a></li>
+                                <li><a class="scrollto" href="#cenarios">Cenários</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#gerenciar-compras">Gerenciar Compras</a></li>
+                                        <li><a class="scrollto" href="#geracao-fatura">Geração de Fatura</a></li>
+                                        <li><a class="scrollto" href="#pedir-ajuda">Pedir ajuda</a></li>
+                                        <li><a class="scrollto" href="#solicitacao-cartao">Solicitação do Cartão</a></li>
+                                    </ul>
+                                <li><a data-toggle="collapse" href="#lexicos">Léxicos</a>
+                                <div id="lexicos" class="panel-collapse collapse">
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#anuidade">Anuidade</a></li>
+                                        <li><a class="scrollto" href="#apagar-gastos">Apagar Gastos</a></li>
+                                        <li><a class="scrollto" href="#bloqueio-temporario">Bloqueio Temporário</a></li>
+                                        <li><a class="scrollto" href="#cartao-de-credito">Cartão de Crédito</a></li>
+                                        <li><a class="scrollto" href="#contestar-compra">Contestar Compra</a></li>
+                                        <li><a class="scrollto" href="#credito-rotativo">Crédito Rotativo</a></li>
+                                        <li><a class="scrollto" href="#fatura">Fatura</a></li>
+                                        <li><a class="scrollto" href="#gerar-boleto">Gerar Boleto</a></li>
+                                        <li><a class="scrollto" href="#indicar-amigo">Indicar Amigo</a></li>
+                                        <li><a class="scrollto" href="#juros">Juros</a></li>
+                                        <li><a class="scrollto" href="#limite-cartao">Limite do Cartão</a></li>
+                                        <li><a class="scrollto" href="#nubank-rewards"><i>Nubank Rewards</i></a></li>
+                                        <li><a class="scrollto" href="#transacao">Transação</a></li>
+                                        <li><a class="scrollto" href="#pagamento-minimo">Pagamento Mínimo</a></li>
+                                        <li><a class="scrollto" href="#parcela">Parcela</a></li>
+                                        <li><a class="scrollto" href="#pontos">Pontos</a></li>
+                                        <li><a class="scrollto" href="#reclamar">Reclamar</a></li>
+                                        <li><a class="scrollto" href="#tarifa">Tarifa</a></li>
+                                        <li><a class="scrollto" href="#usuario">Usuário</a></li>
+                                        <li><a class="scrollto" href="#vencimento">Vencimento</a></li>
+                                    </ul><!--//nav-->
+                                </div>
+                                <li><a class="scrollto" href="#referencias">Referências</a></li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+
+    </div><!--//page-wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support.
+                 :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class><b><font color="white">Universidade de Brasília,  Requisitos de Software,  Grupo 3 - 2017.2</b></small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
