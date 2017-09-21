@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Módulo IV - Modelagem</title>
+    <title>Casos de Uso</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -41,52 +42,55 @@
                 </div><!--//branding-->
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Modelagem</li>
+                    <li><a href="modelagem.html">Modelagem</a></li>
+                    <li class="active">Casos de Uso</li>
                 </ol>
             </div><!--//container-->
         </header><!--//header-->
         <div class="doc-wrapper">
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
-                    <h1 class="doc-title"><span aria-hidden="true" class="icon fa fa-sitemap"></span> Módulo IV - Modelagem</h1>
-                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 17th, 2017</div>
+                    <h1 class="doc-title"><span aria-hidden="true" <i class="material-icons" style="font-size: 37px">style</i></span> Casos de Uso</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 21th, 2017</div>
                 </div><!--//doc-header-->
                 <div class="doc-body">
                     <div class="doc-content">
                         <div class="content-inner">
 
-                            <section id="introducao" class="doc-section">
-                                <h2 class="section-title">Introdução</h2>
-                                <div class="section-block">
-                                        <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
-                            </section>
-
-
-                            <section id="cenarios" class="doc-section">
-                                <h2 class="section-title">Cenários e Léxicos</h2>
-                                <div class="section-block">
-                                    <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
-                                    <p align="justify"><a href="cenarios-lexicos.html"> Cenários e léxicos</a></p>
-                            </section>
-
-
-                            <section id="caso-de-uso" class="doc-section">
+                            <section id="use-cases" class="doc-section">
                                 <h2 class="section-title">Casos de Uso</h2>
                                 <div class="section-block">
-                                        <p align="justify">&emsp;&emsp;Insira um texto super legal aqui :D </p>
-                                        <p align="justify"><a href="caso-de-uso.html"> Casos de Uso</a></p>
-                            </section>
+
+                            <div id="diagramas"  class="section-block">        
+                            <h3 class="block-title">Diagramas de Caso de Uso</h3>
+
+                            <br>
+                                <h6> Diagrama Geral 1.0 </h6>
+                                <p>Diagrama de caso de uso de funcionalidades essenciais do app <i>Nubank</i>.</p>
+                                <div class="screenshot-holder">
+                                    <a href="assets/images/Use-Case1.png" data-title="Overview Nubank" data-toggle="lightbox"><img class="img-responsive" src="assets/images/Use-Case1.png" alt="screenshot" /></a>
+                                    <a class="mask" href="assets/images/Use-Case1.png" data-title="Overview Nubank" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                </div>
+                                <p><i>Autores: Clarissa Borges, Felipe Hargreaves, Isaque Alves, Mariana Pícolo, Sannya Arvelos.<br>Elaborado em: 19/09/2017 </i></p> 
+                                <p><i>Fontes:<a class="scrollto" href="#referencias-section"> [1]</a></i></p>
+                            </div>
+                        </section>
 
 
+                        <section id="especificacao" class="doc-section">
+                                <h2 class="section-title">Especificação de Casos de Uso</h2>
+                                <div class="section-block">
+                        </section>
 
+                        
                             <section id="referencias" class="doc-section">
                                 <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
                                 <div class="section-block">
                                     <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
                                     <ul style="list-style-type:circle">
-                                        <li><p align="justify">[1] Requisitos de Software, Grupo 3, <b><i>Sobre o Nubank</i></b>.
-                                            Disponível <a href="sobre.html#app">Aqui</a>.
-                                            Acesso em: 12 de setembro de 2017. </p></li>
+                                        <li><p align="justify">[1] Requisitos de Software, Grupo 3, <b>Cenários e Léxicos</b>.
+                                            Disponível <a href="cenarios-lexicos.html">Aqui</a>.
+                                            Acesso em: 19 de setembro de 2017. </p></li>
                                 </div>
                             </section><!--//doc-section-->
 
@@ -96,10 +100,12 @@
 
                     <div class="doc-sidebar hidden-xs">
                         <nav id="doc-nav">
-                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
-                                <li><a class="scrollto" href="#introducao">Introdução</a>
-                                <li><a class="scrollto" href="#cenarios">Cenários e Léxicos</a>                                    
-                                <li><a data-toggle="collapse" href="#caso-de-uso">Casos de Uso</a>
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">                                  
+                                <li><a data-toggle="collapse" href="#use-cases">Casos de Uso</a>
+                                    <ul class="nav doc-sub-menu">
+                                            <li><a class="scrollto" href="#diagramas">Diagramas de<br> Caso de Uso</a></li>
+                                            <li><a class="scrollto" href="#especificacao">Especificação de<br> Casos de Uso</a></li>
+                                        </ul><!--//nav-->
                                 <li><a class="scrollto" href="#referencias">Referências</a>
                             </ul><!--//doc-menu-->
                         </nav>
