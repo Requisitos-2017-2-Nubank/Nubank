@@ -615,6 +615,29 @@ select {
   text-align: center;
 }
 
+.green-migue tr > th{
+  padding: 20px;
+  text-align: center;
+}
+
+.green-migue-description {
+  position: relative;
+  top: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.green-migue th {
+  text-align: center;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
 .body-orange .table > thead > tr > th {
   border-bottom-color: #fbc393;
 }
