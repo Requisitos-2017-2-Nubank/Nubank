@@ -62,10 +62,10 @@
 
                             <div id="diagramas"  class="section-block">        
                             <h3 class="block-title">Diagramas de Caso de Uso</h3>
-
-                            <br>
-                                <h6> Diagrama Geral 1.0 </h6>
-                                <p>Diagrama de caso de uso de funcionalidades essenciais do app <i>Nubank</i>.</p>
+                            <p align="justify">&emsp;&emsp;Aqui encontram-se todos os diagramas de casos de uso elaborados durante o módulo IV.</p>
+                                <br>
+                            <h4> Diagrama Geral 1.0 </h4>
+                                <p align="justify">&emsp;&emsp;Diagrama de caso de uso de funcionalidades essenciais do app <i>Nubank</i>.</p>
                                 <div class="screenshot-holder">
                                     <a href="assets/images/Use-Case1.png" data-title="Overview Nubank" data-toggle="lightbox"><img class="img-responsive" src="assets/images/Use-Case1.png" alt="screenshot" /></a>
                                     <a class="mask" href="assets/images/Use-Case1.png" data-title="Overview Nubank" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
@@ -77,8 +77,57 @@
 
 
                         <section id="especificacao" class="doc-section">
-                                <h2 class="section-title">Especificação de Casos de Uso</h2>
+                                <h2 class="section-title">Especificação dos Casos de Uso</h2>
                                 <div class="section-block">
+
+                                <div id="uc01"  class="section-block">        
+                                <h3 class="block-title">UC01 - Fazer Login</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Fazer Login</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;Autentica o usuário no aplicativo dando a ele acesso às informações de sua conta, 
+                                        bem como às funcionalidades de gerar fatura, alterar limite, falar com um atendente, etc.</p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico</b><br>
+                                        <ol>
+                                                <li>O caso de uso começa quando o ator abre o aplicativo e se depara com a tela inicial do aplicativo sem estar logado.</li>
+                                                <li>O ator toca em “Entrar”. <b>[FA 01]</b></li>
+                                                <li>O ator digita o seu CPF e sua senha.</li>
+                                                <li>O ator toca em “Entrar” e é autenticado. <b>[FE 01],[FE02]</b></li>
+                                            </ol>
+
+                                        <b>4.2 Fluxos alternativos</b><br>
+                                        <b>FA01 - O usuário esqueceu a senha</b>
+                                        <ol>
+                                                <li>Logo após digitar o CPF, o ator toca em “Esqueci a senha”.</li>
+                                                <li>O sistema envia um e-mail ao ator para trocar a senha.</li>
+                                                <li>Depois de abrir o e-mail e redefinir a senha, o usuário digita seu CPF e sua nova senha e toca em “Entrar”.</li>
+                                        </ol>
+                                        <b>4.3 Fluxos de Exceção</b>
+                                        <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
+                                        <ol>
+                                                <li>O sistema informa a queda de internet.</li>
+                                                <li>A operação é interrompida.</li>
+                                                <li>O caso de uso se encerra.</li>
+                                        </ol>
+                                        <b>FE02 - Preenchimento incorreto da senha</b>
+                                        <ol>
+                                            <li>O sistema informa que a senha inserida está incorreta.</li>
+                                            <li>A aplicação retorna à tela de inserção de dados.</li>
+                                        </ol>
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                            <li>Ser usuário Nubank.</li>
+                                            <li>Ter o aplicativo instalado.</li>
+                                            <li>Estar conectado a internet.</li>
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;O usuário é logado no sistema e tem acesso à sua conta no aplicativo.</p>
+                                        
+                                </div>
                         </section>
 
                         
@@ -100,10 +149,10 @@
                     <div class="doc-sidebar hidden-xs">
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">                                  
-                                <li><a class="scrollto" href="#use-cases">Casos de Uso</a>
+                                    <li><a class="scrollto" href="#diagramas">Diagramas de<br> Caso de Uso</a></li>
+                                    <li><a class="scrollto" href="#especificacao">Especificação de<br> Casos de Uso</a></li>
                                     <ul class="nav doc-sub-menu">
-                                            <li><a class="scrollto" href="#diagramas">Diagramas de<br> Caso de Uso</a></li>
-                                            <li><a class="scrollto" href="#especificacao">Especificação de<br> Casos de Uso</a></li>
+                                            <li><a class="scrollto" href="#uc01">UC01 Fazer Login</a></li>                                            
                                         </ul><!--//nav-->
                                 <li><a class="scrollto" href="#referencias">Referências</a>
                             </ul><!--//doc-menu-->
