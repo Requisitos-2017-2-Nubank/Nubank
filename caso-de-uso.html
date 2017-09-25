@@ -148,7 +148,7 @@
                                                 <li>O fluxo principal é encerrado.</li>
                                             </ol>
 
-                                        <b>4.3 Fluxos de Exceção</b>
+                                        <b>4.2 Fluxos de Exceção</b>
                                         <br><b>FE01 - Proprietário do cartão tenta adicionar tag já existente</b>
                                         <ol>
                                             <li>O fluxo de exceção começa quando a tag inserida pelo usuário já 
@@ -175,6 +175,52 @@
                                         </ol>
                                         <b>6 Pós-condições</b>
                                         <p align="justify">&emsp;&emsp;É adicionada uma nova tag referente a uma compra.</p>
+                                    </div>
+                                    <div id="uc11"  class="section-block">        
+                                    <h3 class="block-title">UC12 - Bloquear Temporariamente o Cartão</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Bloquear Temporariamente o Cartão</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;Efetua o bloqueio do cartão, 
+                                            o impossibilitando de realizar transações por um período de tempo.
+                                        </p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico</b><br>
+                                            <ol>
+                                                <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “Bloqueio Temporário” no menu lateral do aplicativo.</li>
+                                                <li>O sistema exibe um popup de confirmação. <b>[FA01]</b></li>
+                                                <li>O proprietário do cartão confirma a ação.</li>
+                                                <li>O sistema retorna para a tela anterior.</li>
+                                                <li>O fluxo principal é encerrado.</li>
+                                            </ol>
+
+                                            <b>4.2 Fluxos alternativos</b><br>
+                                            <b>FA01 - O usuário cancela o procedimento</b>
+                                            <ol>
+                                                    <li>O proprietário do cartão cancela a ação.</li>
+                                                    <li>O sistema retorna para a tela anterior.</li>
+                                                    <li>O cartão permanece desbloqueado.</li>
+                                                    <li>O caso de uso é encerrado.</li>
+                                            </ol>
+                                            <b>4.3 Fluxos de Exceção</b>
+                                            <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
+                                            <ol>
+                                                    <li>O sistema informa a queda de internet.</li>
+                                                    <li>A operação é interrompida.</li>
+                                                    <li>O caso de uso se encerra.</li>
+                                            </ol>
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                            <li>O proprietário do cartão deve estar logado no sistema.</li>
+                                            <li>O proprietário do cartão deve possuir acesso à internet.</li>
+                                            <li>O ator deve estar com o menu lateral do aplicativo aberto.</li>
+                                            <li>O ator deve estar com o cartão desbloqueado.</li>
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;O cartão pertencente ao ator é bloqueado.</p>
                                     </div>
                         </section>
 
