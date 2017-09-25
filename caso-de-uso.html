@@ -128,6 +128,114 @@
                                         <p align="justify">&emsp;&emsp;O usuário é logado no sistema e tem acesso à sua conta no aplicativo.</p>
                                     </div>
 
+                                    <div id="uc02"  class="section-block">        
+                                <h3 class="block-title">UC02 - Gerar Boleto</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Gerar Boleto</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;Gerar o boleto de uma fatura existente.</p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico - Geração do Boleto para pagamento da fatura fechada (pela tela inicial)</b><br>
+                                        <ol>
+                                            <li>O caso de uso começa quando o proprietário do cartão abre o aplicativo com suas credenciais de segurança;</li>
+                                            <li>O sistema apresenta na página inicial o histórico de compras e o botão para gerar boleto; <b>[FA01], [FA02], [FA03], [FA04]</b></li>
+                                            <li>O proprietário do cartão seleciona “Gerar boleto”; <b>[FE01]</b></li>
+                                            <li>O proprietário do cartão visualiza as informações do tempo de processamento de boletos; <b>[FA04]</b></li>
+                                            <li>O proprietário do cartão seleciona “continuar”;</li>
+                                            <li>O proprietário do cartão define o valor que deseja pagar; <b>[FA04]</b></li>
+                                            <li>O proprietário do cartão seleciona “Gerar boleto”;</li>
+                                            <li>O sistema exibe as informações da fatura e disponibiliza as opções: “copiar código” ou “enviar por email”; <b>[FA04]</b></li>
+                                            <li>O proprietário do cartão paga sua fatura no banco;</li>
+                                            <li>O caso de uso é encerrado.</li>
+                                        </ol>
+
+                                        <b>4.2 Fluxos alternativos</b><br>
+                                        <b>FA01 - Geração do Boleto para pagamento da fatura aberta (pela tela inicial)</b>
+                                        <ol>
+                                            <li>O sistema apresenta na página inicial o histórico de compras o proprietário do cartão desliza o menu superior até encontrar o botão para gerar boleto;</li>
+                                            <li>O fluxo continua no passo 3.</li>
+                                        </ol>
+
+                                        <b>FA02 - Geração do Boleto para pagamento da fatura fechada (pela tela de gerenciamento de faturas)</b>
+                                        <ol>
+                                            <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
+                                            <li>O proprietário do cartão seleciona “pagar”;</li>
+                                            <li>O fluxo continua no passo 4.</li>
+                                        </ol>
+
+                                        <b>FA03 - Geração do boleto da fatura antecipada (pela tela de gerenciamento de faturas)</b>
+                                        <ol>
+                                            <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
+                                            <li>O proprietário do cartão seleciona “Boleto”;</li>
+                                            <li>O fluxo continua no passo 4.</li>
+                                        </ol>
+
+                                        <b>FA04 - O usuário cancela o procedimento</b>
+                                        <ol>
+                                            <li>O proprietário do cartão cancela a ação.</li>
+                                            <li>O sistema retorna para a tela anterior.</li>
+                                            <li>O caso de uso é encerrado.</li>
+                                        </ol>
+
+                                        <b>4.3 Fluxos de Exceção</b>
+                                        <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
+                                        <ol>
+                                                <li>O sistema informa a queda de internet.</li>
+                                                <li>A operação é interrompida.</li>
+                                                <li>O caso de uso se encerra.</li>
+                                        </ol>
+                                        
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                            <li>O proprietário do cartão deve estar conectado à internet. </li>
+                                            <li>O proprietário do cartão deve estar logado no sistema. </li>
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;O usuário tem acesso ao boleto de sua fatura e pode efetuar o pagamento.</p>
+                                    </div>
+
+
+                             <div id="uc04"  class="section-block">        
+                                <h3 class="block-title">UC04 - Pedir Ajuda</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Pedir Ajuda</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;O usuário que tem dúvidas pode encontrar os mecanismos para saná-las.</p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico</b><br>
+                                        <ol>
+                                            <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “me ajuda” no menu lateral esquerdo da página de gerenciamento de faturas.</li>
+                                            <li>O sistema exibe as opções disponíveis de ajuda. <b>[FA01]</b></li>
+                                            <ul>
+                                                    <li>Chat online. <b>UC07 - ACESSAR CHAT ONLINE.</b></li>
+                                                    <li>Dúvidas frequentes. <b>UC08 - ACESSAR DÚVIDAS FREQUENTES</b></li>
+                                                </ul>
+                                            <li>O caso de uso é encerrado.</li>  
+                                        </ol>
+
+                                        <b>4.2 Fluxos alternativos</b><br>
+                                        <b>FA01 - O usuário cancela o procedimento</b>
+                                        <ol>
+                                                <li>O proprietário do cartão clica em fechar.</li>
+                                                <li>O sistema retorna para a tela anterior.</li>
+                                                <li>O caso de uso é encerrado.</li>
+                                        </ol>
+                                        
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                                <li>O proprietário do cartão deve estar conectado à internet. </li>
+                                                <li>O proprietário do cartão deve estar logado no sistema.</li>
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;Um menu com opções de ajuda disponíveis é exibido.</p>
+                                    </div>
+
                                 <div id="uc11"  class="section-block">        
                                 <h3 class="block-title">UC11 - Adicionar Tag</h3>
                                         
@@ -312,6 +420,8 @@
                                     <li><a class="scrollto" href="#especificacao">Especificação de<br> Casos de Uso</a>
                                     <ul class="nav doc-sub-menu">
                                             <li><a class="scrollto" href="#uc01">UC01 - Fazer Login</a> 
+                                            <li><a class="scrollto" href="#uc02">UC02 - Gerar Boleto</a>
+                                            <li><a class="scrollto" href="#uc04">UC04 - Pedir Ajuda</a>
                                             <li><a class="scrollto" href="#uc11">UC11 - Adicionar Tag</a>
                                             <li><a class="scrollto" href="#uc12">UC12 - Bloquear <br>Temporariamente o Cartão</a>
                                             <li><a class="scrollto" href="#uc13">UC13 - Alterar limite</a>                                          
