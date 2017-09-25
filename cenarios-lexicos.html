@@ -58,6 +58,209 @@
                             <section id="cenarios" class="doc-section">
                                 <h2 class="section-title">Cenários</h2>
 
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      topico de cenarios Acessar histórico de compras
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="acessar-historico" class="section-block">
+                                    <h2>Acessar Histórico de Compras</h2>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      cenarios Acessar Histórico de Compras (Geral)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="historico-compras-geral" class="section-block">
+                                        <h3 class="block-title">Acessar Histórico de Compras (Geral)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Ter controle sobre sua conta em tempo real.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Estar logado no aplicativo.</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante a realização do serviço. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão abre o aplicativo e terá logo acesso ao histórico de gastos, onde será possível ver data e hora da compra;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    cenarios Acessar Histórico de Compras (Pela fatura do mês)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                    <div id ="historico-compras-fatura-mes" class="section-block">
+                                        <h3 class="block-title">Acessar Histórico de Compras (Pela fatura do mês)</h3>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Ter controle sobre sua fatura pelo mês em tempo real.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Estar logado no aplicativo.</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante a realização do serviço. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão abre o aplicativo e desliza duas vezes a tela inicial e seleciona o mês que deseja ver a <a class="scrollto" href="#reportar-compra">fatura;</a></li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> Selecionando o mês da <a class="scrollto" href="#reportar-compra">fatura</a> o usuário visualiza os gastos que teve durante o mês;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      cenarios Alterar o Vencimento da Fatura
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="alterar-vencimento"  class="section-block">
+                                    <h2>Alterar o Vencimento da <a class="scrollto" href="#fatura">Fatura</a></h2>
+                                        <table  class="blue-migue" class="" style="width:100%">
+                                            <tr>
+                                                <th>Objetivo</th>
+                                                <td><p align="justify" class="blue-migue-description"> Alterar o dia de vencimento da fatura do cartão.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>Contexto</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                                <p align="justify" class="blue-migue-description">Estar logado no aplicativo.</p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>Atores</th>
+                                             <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                            </td></tr>
+
+                                           <tr>
+                                            <th>Recursos</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description">Internet</p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                    <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                                </td></tr>
+                                            <tr>
+                                                <th>Exceção</th>
+                                                <td><p align="justify" class="blue-migue-description">A internet cair durante a realização do serviço. </p></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Episódios</th>
+                                                <td><p align="justify" class="blue-migue-description">
+                                                    <ul>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão abre o aplicativo;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão desliza a tela para a direita e aperta na opção chamada “Minha Conta”;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> aperta na opção “Vencimento da próxima fatura”;</li>
+                                                        <li>O <a class="scrollto" href="#usuario">usuário</a> tem a opção de escolher os seguintes dias: “02, 04, 07, 11, 19, 22, 26, 28”;</li>
+                                                    </ul>
+                                                </p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      cenarios Apagar Gastos
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                                <div id="apagar-gastos"  class="section-block">
+                                    <h2>Apagar Gastos</h2>
+                                      <table  class="blue-migue" class="" style="width:100%">
+                                          <tr>
+                                              <th>Objetivo</th>
+                                              <td><p align="justify" class="blue-migue-description"> Converter em pontos o dinheiro gasto nas faturas.</p>
+                                              </td>
+                                          </tr>
+
+                                          <tr>
+                                           <th>Contexto</th>
+                                           <td>
+                                              <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                              <p align="justify" class="blue-migue-description">Estar logado no aplicativo.</p>
+                                              <p align="justify" class="blue-migue-description">Estar cadastrado no nubank rewards.</p>
+                                         </tr>
+
+                                         <tr>
+                                           <th>Atores</th>
+                                           <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                          </td></tr>
+
+                                         <tr>
+                                          <th>Recursos</th>
+                                              <td>
+                                                  <p align="justify" class="blue-migue-description">Internet</p>
+                                                  <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                                  <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                              </td></tr>
+                                          <tr>
+                                              <th>Exceção</th>
+                                              <td><p align="justify" class="blue-migue-description">A internet cair durante a realização do serviço. </p></td>
+                                          </tr>
+                                          <tr>
+                                              <th>Episódios</th>
+                                              <td><p align="justify" class="blue-migue-description">
+                                                  <ul>
+                                                      <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão abre o aplicativo;</li>
+                                                      <li>O <a class="scrollto" href="#usuario">usuário</a> entra na tela inicial do aplicativo, clique em seus pontos na parte superior;</li>
+                                                      <li>O <a class="scrollto" href="#usuario">usuário</a> vê as opções de compras que aparecem em seu histórico;</li>
+                                                      <li>O <a class="scrollto" href="#usuario">usuário</a> pode apagar as compras que aparecem abaixo, selecionando a opção “voos e hotéis” ou a categoria “Extra”;</li>
+                                                      <li>Para apagar a compra escolhida, é só deslizar a compra para a direita e clicar em “confirmar”;</li>
+                                                  </ul>
+                                              </p></td>
+                                          </tr>
+                                      </table>
+                                  </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      topico de cenarios Gerenciamento de compras
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
                                 <div id="gerenciar-compras"  class="section-block">
                                     <h2>Gerenciar Compras</h2>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1603,7 +1806,7 @@
                                         <li><p align="justify">[2] <i>Nubank</i>, <b>Rotativo e Parcelamento</b>.
                                             Disponível <a href="https://nubank.com.br/rotativo-e-parcelamento/">Aqui</a>.
                                             Acesso em: 12 de setembro de 2017. </p></li>
-                                            
+
                                 </div>
                             </section><!--//doc-section-->
 
