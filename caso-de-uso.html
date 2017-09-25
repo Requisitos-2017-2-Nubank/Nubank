@@ -75,14 +75,12 @@
                             </div>
                         </section>
 
-
                         <section id="especificacao" class="doc-section">
-                                <h2 class="section-title">Especificação dos Casos de Uso</h2>
-                                <div class="section-block">
+                            <h2 class="section-title">Especificação dos Casos de Uso</h2>
+                            <div class="section-block">
 
                                 <div id="uc01"  class="section-block">
-                                <h3 class="block-title">UC01 - Fazer Login</h3>
-
+                                    <h3 class="block-title">UC01 - Fazer Login</h3>
                                         <b>1 Nome do Caso de Uso</b><br>
                                         <p align="justify">&emsp;&emsp;Fazer Login</p>
                                         <b>2 Breve descrição</b>
@@ -93,11 +91,11 @@
                                         <b>4 Fluxo de eventos</b><br>
                                         <b>4.1 Fluxo básico</b><br>
                                         <ol>
-                                                <li>O caso de uso começa quando o ator abre o aplicativo e se depara com a tela inicial do aplicativo sem estar logado.</li>
-                                                <li>O ator toca em “Entrar”. <b>[FA 01]</b></li>
-                                                <li>O ator digita o seu CPF e sua senha.</li>
-                                                <li>O ator toca em “Entrar” e é autenticado. <b>[FE 01],[FE02]</b></li>
-                                            </ol>
+                                            <li>O caso de uso começa quando o ator abre o aplicativo e se depara com a tela inicial do aplicativo sem estar logado.</li>
+                                            <li>O ator toca em “Entrar”. <b>[FA 01]</b></li>
+                                            <li>O ator digita o seu CPF e sua senha.</li>
+                                            <li>O ator toca em “Entrar” e é autenticado. <b>[FE 01],[FE02]</b></li>
+                                        </ol>
 
                                         <b>4.2 Fluxos alternativos</b><br>
                                         <b>FA01 - O usuário esqueceu a senha</b>
@@ -126,262 +124,258 @@
                                         </ol>
                                         <b>6 Pós-condições</b>
                                         <p align="justify">&emsp;&emsp;O usuário é logado no sistema e tem acesso à sua conta no aplicativo.</p>
-                                    </div>
+                                </div>
 
-                                    <div id="uc02"  class="section-block">
-                                <h3 class="block-title">UC02 - Gerar Boleto</h3>
+                                <div id="uc02"  class="section-block">
+                                    <h3 class="block-title">UC02 - Gerar Boleto</h3>
+                                    <b>1 Nome do Caso de Uso</b><br>
+                                    <p align="justify">&emsp;&emsp;Gerar Boleto</p>
+                                    <b>2 Breve descrição</b>
+                                    <p align="justify">&emsp;&emsp;Gerar o boleto de uma fatura existente.</p>
+                                    <b>3 Atores</b>
+                                    <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                    <b>4 Fluxo de eventos</b><br>
+                                    <b>4.1 Fluxo básico - Geração do Boleto para pagamento da fatura fechada (pela tela inicial)</b><br>
+                                    <ol>
+                                        <li>O caso de uso começa quando o proprietário do cartão abre o aplicativo com suas credenciais de segurança;</li>
+                                        <li>O sistema apresenta na página inicial o histórico de compras e o botão para gerar boleto; <b>[FA01], [FA02], [FA03], [FA04]</b></li>
+                                        <li>O proprietário do cartão seleciona “Gerar boleto”; <b>[FE01]</b></li>
+                                        <li>O proprietário do cartão visualiza as informações do tempo de processamento de boletos; <b>[FA04]</b></li>
+                                        <li>O proprietário do cartão seleciona “continuar”;</li>
+                                        <li>O proprietário do cartão define o valor que deseja pagar; <b>[FA04]</b></li>
+                                        <li>O proprietário do cartão seleciona “Gerar boleto”;</li>
+                                        <li>O sistema exibe as informações da fatura e disponibiliza as opções: “copiar código” ou “enviar por email”; <b>[FA04]</b></li>
+                                        <li>O proprietário do cartão paga sua fatura no banco;</li>
+                                        <li>O caso de uso é encerrado.</li>
+                                    </ol>
 
-                                        <b>1 Nome do Caso de Uso</b><br>
-                                        <p align="justify">&emsp;&emsp;Gerar Boleto</p>
-                                        <b>2 Breve descrição</b>
-                                        <p align="justify">&emsp;&emsp;Gerar o boleto de uma fatura existente.</p>
-                                        <b>3 Atores</b>
-                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                        <b>4 Fluxo de eventos</b><br>
-                                        <b>4.1 Fluxo básico - Geração do Boleto para pagamento da fatura fechada (pela tela inicial)</b><br>
-                                        <ol>
-                                            <li>O caso de uso começa quando o proprietário do cartão abre o aplicativo com suas credenciais de segurança;</li>
-                                            <li>O sistema apresenta na página inicial o histórico de compras e o botão para gerar boleto; <b>[FA01], [FA02], [FA03], [FA04]</b></li>
-                                            <li>O proprietário do cartão seleciona “Gerar boleto”; <b>[FE01]</b></li>
-                                            <li>O proprietário do cartão visualiza as informações do tempo de processamento de boletos; <b>[FA04]</b></li>
-                                            <li>O proprietário do cartão seleciona “continuar”;</li>
-                                            <li>O proprietário do cartão define o valor que deseja pagar; <b>[FA04]</b></li>
-                                            <li>O proprietário do cartão seleciona “Gerar boleto”;</li>
-                                            <li>O sistema exibe as informações da fatura e disponibiliza as opções: “copiar código” ou “enviar por email”; <b>[FA04]</b></li>
-                                            <li>O proprietário do cartão paga sua fatura no banco;</li>
-                                            <li>O caso de uso é encerrado.</li>
-                                        </ol>
+                                    <b>4.2 Fluxos alternativos</b><br>
+                                    <b>FA01 - Geração do Boleto para pagamento da fatura aberta (pela tela inicial)</b>
+                                    <ol>
+                                        <li>O sistema apresenta na página inicial o histórico de compras o proprietário do cartão desliza o menu superior até encontrar o botão para gerar boleto;</li>
+                                        <li>O fluxo continua no passo 3.</li>
+                                    </ol>
 
-                                        <b>4.2 Fluxos alternativos</b><br>
-                                        <b>FA01 - Geração do Boleto para pagamento da fatura aberta (pela tela inicial)</b>
-                                        <ol>
-                                            <li>O sistema apresenta na página inicial o histórico de compras o proprietário do cartão desliza o menu superior até encontrar o botão para gerar boleto;</li>
-                                            <li>O fluxo continua no passo 3.</li>
-                                        </ol>
+                                    <b>FA02 - Geração do Boleto para pagamento da fatura fechada (pela tela de gerenciamento de faturas)</b>
+                                    <ol>
+                                        <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
+                                        <li>O proprietário do cartão seleciona “pagar”;</li>
+                                        <li>O fluxo continua no passo 4.</li>
+                                    </ol>
 
-                                        <b>FA02 - Geração do Boleto para pagamento da fatura fechada (pela tela de gerenciamento de faturas)</b>
-                                        <ol>
-                                            <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
-                                            <li>O proprietário do cartão seleciona “pagar”;</li>
-                                            <li>O fluxo continua no passo 4.</li>
-                                        </ol>
+                                    <b>FA03 - Geração do boleto da fatura antecipada (pela tela de gerenciamento de faturas)</b>
+                                    <ol>
+                                        <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
+                                        <li>O proprietário do cartão seleciona “Boleto”;</li>
+                                        <li>O fluxo continua no passo 4.</li>
+                                    </ol>
 
-                                        <b>FA03 - Geração do boleto da fatura antecipada (pela tela de gerenciamento de faturas)</b>
-                                        <ol>
-                                            <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
-                                            <li>O proprietário do cartão seleciona “Boleto”;</li>
-                                            <li>O fluxo continua no passo 4.</li>
-                                        </ol>
+                                    <b>FA04 - O usuário cancela o procedimento</b>
+                                    <ol>
+                                        <li>O proprietário do cartão cancela a ação.</li>
+                                        <li>O sistema retorna para a tela anterior.</li>
+                                        <li>O caso de uso é encerrado.</li>
+                                    </ol>
 
-                                        <b>FA04 - O usuário cancela o procedimento</b>
-                                        <ol>
-                                            <li>O proprietário do cartão cancela a ação.</li>
+                                    <b>4.3 Fluxos de Exceção</b>
+                                    <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
+                                    <ol>
+                                        <li>O sistema informa a queda de internet.</li>
+                                        <li>A operação é interrompida.</li>
+                                        <li>O caso de uso se encerra.</li>
+                                    </ol>
+
+                                    <b>5 Pré-condições</b>
+                                    <ol>
+                                        <li>O proprietário do cartão deve estar conectado à internet. </li>
+                                        <li>O proprietário do cartão deve estar logado no sistema. </li>
+                                    </ol>
+                                    <b>6 Pós-condições</b>
+                                    <p align="justify">&emsp;&emsp;O usuário tem acesso ao boleto de sua fatura e pode efetuar o pagamento.</p>
+                                </div>
+
+
+                                <div id="uc04"  class="section-block">
+                                    <h3 class="block-title">UC04 - Pedir Ajuda</h3>
+                                    <b>1 Nome do Caso de Uso</b><br>
+                                    <p align="justify">&emsp;&emsp;Pedir Ajuda</p>
+                                    <b>2 Breve descrição</b>
+                                    <p align="justify">&emsp;&emsp;O usuário que tem dúvidas pode encontrar os mecanismos para saná-las.</p>
+                                    <b>3 Atores</b>
+                                    <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                    <b>4 Fluxo de eventos</b><br>
+                                    <b>4.1 Fluxo básico</b><br>
+                                    <ol>
+                                        <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “me ajuda” no menu lateral esquerdo da página de gerenciamento de faturas.</li>
+                                        <li>O sistema exibe as opções disponíveis de ajuda. <b>[FA01]</b></li>
+                                        <ul>
+                                                <li>Chat online. <b>UC07 - ACESSAR CHAT ONLINE.</b></li>
+                                                <li>Dúvidas frequentes. <b>UC08 - ACESSAR DÚVIDAS FREQUENTES</b></li>
+                                            </ul>
+                                        <li>O caso de uso é encerrado.</li>
+                                    </ol>
+
+                                    <b>4.2 Fluxos alternativos</b><br>
+                                    <b>FA01 - O usuário cancela o procedimento</b>
+                                    <ol>
+                                            <li>O proprietário do cartão clica em fechar.</li>
                                             <li>O sistema retorna para a tela anterior.</li>
                                             <li>O caso de uso é encerrado.</li>
-                                        </ol>
+                                    </ol>
 
-                                        <b>4.3 Fluxos de Exceção</b>
-                                        <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
-                                        <ol>
-                                                <li>O sistema informa a queda de internet.</li>
-                                                <li>A operação é interrompida.</li>
-                                                <li>O caso de uso se encerra.</li>
-                                        </ol>
-
-                                        <b>5 Pré-condições</b>
-                                        <ol>
+                                    <b>5 Pré-condições</b>
+                                    <ol>
                                             <li>O proprietário do cartão deve estar conectado à internet. </li>
-                                            <li>O proprietário do cartão deve estar logado no sistema. </li>
-                                        </ol>
-                                        <b>6 Pós-condições</b>
-                                        <p align="justify">&emsp;&emsp;O usuário tem acesso ao boleto de sua fatura e pode efetuar o pagamento.</p>
-                                    </div>
-
-
-                             <div id="uc04"  class="section-block">
-                                <h3 class="block-title">UC04 - Pedir Ajuda</h3>
-                                        <b>1 Nome do Caso de Uso</b><br>
-                                        <p align="justify">&emsp;&emsp;Pedir Ajuda</p>
-                                        <b>2 Breve descrição</b>
-                                        <p align="justify">&emsp;&emsp;O usuário que tem dúvidas pode encontrar os mecanismos para saná-las.</p>
-                                        <b>3 Atores</b>
-                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                        <b>4 Fluxo de eventos</b><br>
-                                        <b>4.1 Fluxo básico</b><br>
-                                        <ol>
-                                            <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “me ajuda” no menu lateral esquerdo da página de gerenciamento de faturas.</li>
-                                            <li>O sistema exibe as opções disponíveis de ajuda. <b>[FA01]</b></li>
-                                            <ul>
-                                                    <li>Chat online. <b>UC07 - ACESSAR CHAT ONLINE.</b></li>
-                                                    <li>Dúvidas frequentes. <b>UC08 - ACESSAR DÚVIDAS FREQUENTES</b></li>
-                                                </ul>
-                                            <li>O caso de uso é encerrado.</li>
-                                        </ol>
-
-                                        <b>4.2 Fluxos alternativos</b><br>
-                                        <b>FA01 - O usuário cancela o procedimento</b>
-                                        <ol>
-                                                <li>O proprietário do cartão clica em fechar.</li>
-                                                <li>O sistema retorna para a tela anterior.</li>
-                                                <li>O caso de uso é encerrado.</li>
-                                        </ol>
-
-                                        <b>5 Pré-condições</b>
-                                        <ol>
-                                                <li>O proprietário do cartão deve estar conectado à internet. </li>
-                                                <li>O proprietário do cartão deve estar logado no sistema.</li>
-                                        </ol>
-                                        <b>6 Pós-condições</b>
-                                        <p align="justify">&emsp;&emsp;Um menu com opções de ajuda disponíveis é exibido.</p>
-                                    </div>
+                                            <li>O proprietário do cartão deve estar logado no sistema.</li>
+                                    </ol>
+                                    <b>6 Pós-condições</b>
+                                    <p align="justify">&emsp;&emsp;Um menu com opções de ajuda disponíveis é exibido.</p>
+                                </div>
 <!--
 Caso de uso: acessar chat online
 UC05
 -->
-                                    <div id="uc05"  class="section-block">
-                                       <h3 class="block-title">UC05 - Acessar Char Online</h3>
+                                <div id="uc05"  class="section-block">
+                                    <h3 class="block-title">UC05 - Acessar Char Online</h3>
+                                   <b>1 Nome do Caso de Uso</b><br>
+                                   <p align="justify">&emsp;&emsp;Acessar Chat Online</p>
+                                   <b>2 Breve descrição</b>
+                                   <p align="justify">&emsp;&emsp;Acesso ao chat online com um atendente nubank.</p>
+                                   <b>3 Atores</b>
+                                   <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                   <p align="justify">&emsp;&emsp;Atendente Nubank</p>
+                                   <b>4 Fluxo de eventos</b><br>
+                                   <b>4.1 Fluxo básico</b><br>
+                                   <ol>
+                                       <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “chat” na pagina me ajuda;<b>[FE01]</b></li>
+                                       <li>O sistema abre a janela de conversa;<b>[FA01]</b></li>
+                                       <li>O proprietário do cartão redige uma mensagem no campo indicado e seleciona “enviar”;</li>
+                                       <li>O atendente envia resposta;</li>
+                                       <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-                                               <b>1 Nome do Caso de Uso</b><br>
-                                               <p align="justify">&emsp;&emsp;Acessar Chat Online</p>
-                                               <b>2 Breve descrição</b>
-                                               <p align="justify">&emsp;&emsp;Acesso ao chat online com um atendente nubank.</p>
-                                               <b>3 Atores</b>
-                                               <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                               <p align="justify">&emsp;&emsp;Atendente Nubank</p>
-                                               <b>4 Fluxo de eventos</b><br>
-                                               <b>4.1 Fluxo básico</b><br>
-                                               <ol>
-                                                   <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “chat” na pagina me ajuda;<b>[FE01]</b></li>
-                                                   <li>O sistema abre a janela de conversa;<b>[FA01]</b></li>
-                                                   <li>O proprietário do cartão redige uma mensagem no campo indicado e seleciona “enviar”;</li>
-                                                   <li>O atendente envia resposta;</li>
-                                                   <li>O caso de uso é encerrado.</li>
-                                               </ol>
+                                   <b>4.2 Fluxos de excessão</b><br>
+                                   <b>FE01 - A Internet cai durante o procedimento</b>
+                                   <ol>
+                                         <li>O sistema informa que foi perdida a conexão com a internet.</li>
+                                         <li>A ação é interrompida.</li>
+                                         <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-                                               <b>4.2 Fluxos de excessão</b><br>
-                                               <b>FE01 - A Internet cai durante o procedimento</b>
-                                               <ol>
-                                                     <li>O sistema informa que foi perdida a conexão com a internet.</li>
-                                                     <li>A ação é interrompida.</li>
-                                                     <li>O caso de uso é encerrado.</li>
-                                               </ol>
+                                   <b>4.3 Fluxos alternativos</b><br>
+                                   <b>FA01 - O usuário cancela o procedimento</b>
+                                   <ol>
+                                         <li>O proprietário do cartão clica em fechar.</li>
+                                         <li>O sistema retorna para a tela anterior.</li>
+                                         <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-                                               <b>4.3 Fluxos alternativos</b><br>
-                                               <b>FA01 - O usuário cancela o procedimento</b>
-                                               <ol>
-                                                     <li>O proprietário do cartão clica em fechar.</li>
-                                                     <li>O sistema retorna para a tela anterior.</li>
-                                                     <li>O caso de uso é encerrado.</li>
-                                               </ol>
-
-                                               <b>5 Pré-condições</b>
-                                               <ol>
-                                                       <li>O proprietário do cartão deve estar conectado à internet; </li>
-                                                       <li>O proprietário do cartão deve estar logado no sistema;</li>
-                                                       <li>O proprietário do cartão deve ter selecionado a opção “chat”.</li>
-                                               </ol>
-                                               <b>6 Pós-condições</b>
-                                               <p align="justify">&emsp;&emsp;O atendente nubank irá responder às dúvidas na janela da conversa.</p>
-                                           </div>
+                                   <b>5 Pré-condições</b>
+                                   <ol>
+                                           <li>O proprietário do cartão deve estar conectado à internet; </li>
+                                           <li>O proprietário do cartão deve estar logado no sistema;</li>
+                                           <li>O proprietário do cartão deve ter selecionado a opção “chat”.</li>
+                                   </ol>
+                                   <b>6 Pós-condições</b>
+                                   <p align="justify">&emsp;&emsp;O atendente nubank irá responder às dúvidas na janela da conversa.</p>
+                               </div>
 <!--
   Caso de uso: acessar duvidas frequentes
   UC05
 -->
-                                           <div id="uc06"  class="section-block">
-                                              <h3 class="block-title">UC06 - Acessar Duvidas Frequentes</h3>
+                               <div id="uc06"  class="section-block">
+                                  <h3 class="block-title">UC06 - Acessar Duvidas Frequentes</h3>
+                                  <b>1 Nome do Caso de Uso</b><br>
+                                  <p align="justify">&emsp;&emsp;Duvidas Frequentes</p>
+                                  <b>2 Breve descrição</b>
+                                  <p align="justify">&emsp;&emsp;Acesso à página de dúvidas frequentes de usuários nubank.</p>
+                                  <b>3 Atores</b>
+                                  <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                  <b>4 Fluxo de eventos</b><br>
+                                  <b>4.1 Fluxo básico</b><br>
+                                  <ol>
+                                      <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “dúvidas frequentes” na página me ajuda;<b>[FE01]</b></li>
+                                      <li>O sistema abre a janela de dúvidas frequentes;<b>[FA01]</b></li>
+                                      <li>O proprietário do cartão seleciona um dos tópicos de dúvidas apresentados pelo sistema;</li>
+                                      <li>O caso de uso é encerrado.</li>
+                                  </ol>
 
-                                                      <b>1 Nome do Caso de Uso</b><br>
-                                                      <p align="justify">&emsp;&emsp;Duvidas Frequentes</p>
-                                                      <b>2 Breve descrição</b>
-                                                      <p align="justify">&emsp;&emsp;Acesso à página de dúvidas frequentes de usuários nubank.</p>
-                                                      <b>3 Atores</b>
-                                                      <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                                      <b>4 Fluxo de eventos</b><br>
-                                                      <b>4.1 Fluxo básico</b><br>
-                                                      <ol>
-                                                          <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “dúvidas frequentes” na página me ajuda;<b>[FE01]</b></li>
-                                                          <li>O sistema abre a janela de dúvidas frequentes;<b>[FA01]</b></li>
-                                                          <li>O proprietário do cartão seleciona um dos tópicos de dúvidas apresentados pelo sistema;</li>
-                                                          <li>O caso de uso é encerrado.</li>
-                                                      </ol>
+                                  <b>4.2 Fluxos de excessão</b><br>
+                                  <b>FE01 - A Internet cai durante o procedimento</b>
+                                  <ol>
+                                        <li>O sistema informa que foi perdida a conexão com a internet.</li>
+                                        <li>A ação é interrompida.</li>
+                                        <li>O caso de uso é encerrado.</li>
+                                  </ol>
 
-                                                      <b>4.2 Fluxos de excessão</b><br>
-                                                      <b>FE01 - A Internet cai durante o procedimento</b>
-                                                      <ol>
-                                                            <li>O sistema informa que foi perdida a conexão com a internet.</li>
-                                                            <li>A ação é interrompida.</li>
-                                                            <li>O caso de uso é encerrado.</li>
-                                                      </ol>
+                                  <b>4.3 Fluxos alternativos</b><br>
+                                  <b>FA01 - O usuário cancela o procedimento</b>
+                                  <ol>
+                                          <li>O proprietário do cartão clica em fechar.</li>
+                                          <li>O sistema retorna para a tela anterior.</li>
+                                          <li>O caso de uso é encerrado.</li>
+                                  </ol>
 
-                                                      <b>4.3 Fluxos alternativos</b><br>
-                                                      <b>FA01 - O usuário cancela o procedimento</b>
-                                                      <ol>
-                                                              <li>O proprietário do cartão clica em fechar.</li>
-                                                              <li>O sistema retorna para a tela anterior.</li>
-                                                              <li>O caso de uso é encerrado.</li>
-                                                      </ol>
-
-                                                      <b>5 Pré-condições</b>
-                                                      <ol>
-                                                              <li>O proprietário do cartão deve estar conectado à internet; </li>
-                                                              <li>O proprietário do cartão deve estar logado no sistema;</li>
-                                                              <li>O proprietário do cartão deve ter selecionado a opção “dúvidas frequentes” da tela “me ajuda”.</li>
-                                                      </ol>
-                                                      <b>6 Pós-condições</b>
-                                                      <p align="justify">&emsp;&emsp;O sistema exibe a página com os tópicos de dúvidas mais frequentes.</p>
-                                                  </div>
+                                  <b>5 Pré-condições</b>
+                                  <ol>
+                                          <li>O proprietário do cartão deve estar conectado à internet; </li>
+                                          <li>O proprietário do cartão deve estar logado no sistema;</li>
+                                          <li>O proprietário do cartão deve ter selecionado a opção “dúvidas frequentes” da tela “me ajuda”.</li>
+                                  </ol>
+                                  <b>6 Pós-condições</b>
+                                  <p align="justify">&emsp;&emsp;O sistema exibe a página com os tópicos de dúvidas mais frequentes.</p>
+                              </div>
 <!--
 UC09
 Caso de uso: reportar compra
 -->
-<div id="uc09"  class="section-block">
-   <h3 class="block-title">UC09 - Reportar Compra</h3>
+                                <div id="uc09"  class="section-block">
+                                   <h3 class="block-title">UC09 - Reportar Compra</h3>
+                                   <b>1 Nome do Caso de Uso</b><br>
+                                   <p align="justify">&emsp;&emsp;Reportar Compra</p>
+                                   <b>2 Breve descrição</b>
+                                   <p align="justify">&emsp;&emsp;Usuário reporta uma compra duplicada ou não realizada por ele.</p>
+                                   <b>3 Atores</b>
+                                   <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                   <b>4 Fluxo de eventos</b><br>
+                                   <b>4.1 Fluxo básico</b><br>
+                                   <ol>
+                                      <li>O caso de uso começa quando o proprietário do cartão abre o
+                                         aplicativo e seleciona uma compra específica na lista do histórico de compras;</b></li>
+                                      <li>O proprietário do cartão seleciona a opção “contestar compra”;</li>
+                                      <li>O proprietário do cartão seleciona a opção “continuar” e o
+                                         sistema exibe uma lista de motivos selecionáveis para a contestação da compra;</li>
+                                      <li>O proprietário do cartão seleciona um dos motivos para contestar sua compra;</li>
+                                      <li>O proprietário do cartão visualiza informações de sua contestação de compra;</li>
+                                      <li>A compra é alterada para pendente;</li>
+                                      <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-           <b>1 Nome do Caso de Uso</b><br>
-           <p align="justify">&emsp;&emsp;Reportar Compra</p>
-           <b>2 Breve descrição</b>
-           <p align="justify">&emsp;&emsp;Usuário reporta uma compra duplicada ou não realizada por ele.</p>
-           <b>3 Atores</b>
-           <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-           <b>4 Fluxo de eventos</b><br>
-           <b>4.1 Fluxo básico</b><br>
-           <ol>
-              <li>O caso de uso começa quando o proprietário do cartão abre o
-                 aplicativo e seleciona uma compra específica na lista do histórico de compras;</b></li>
-              <li>O proprietário do cartão seleciona a opção “contestar compra”;</li>
-              <li>O proprietário do cartão seleciona a opção “continuar” e o
-                 sistema exibe uma lista de motivos selecionáveis para a contestação da compra;</li>
-              <li>O proprietário do cartão seleciona um dos motivos para contestar sua compra;</li>
-              <li>O proprietário do cartão visualiza informações de sua contestação de compra;</li>
-              <li>A compra é alterada para pendente;</li>
-              <li>O caso de uso é encerrado.</li>
-           </ol>
+                                   <b>4.2 Fluxos de excessão</b><br>
+                                   <b>FE01 - A Internet cai durante o procedimento</b>
+                                   <ol>
+                                         <li>O sistema informa que foi perdida a conexão com a internet.</li>
+                                         <li>A ação é interrompida.</li>
+                                         <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-           <b>4.2 Fluxos de excessão</b><br>
-           <b>FE01 - A Internet cai durante o procedimento</b>
-           <ol>
-                 <li>O sistema informa que foi perdida a conexão com a internet.</li>
-                 <li>A ação é interrompida.</li>
-                 <li>O caso de uso é encerrado.</li>
-           </ol>
+                                   <b>4.3 Fluxos alternativos</b><br>
+                                   <b>FA01 - O usuário cancela o procedimento</b>
+                                   <ol>
+                                       <li>O proprietário do cartão clica em fechar.</li>
+                                       <li>O sistema retorna para a tela anterior.</li>
+                                       <li>O caso de uso é encerrado.</li>
+                                   </ol>
 
-           <b>4.3 Fluxos alternativos</b><br>
-           <b>FA01 - O usuário cancela o procedimento</b>
-           <ol>
-                   <li>O proprietário do cartão clica em fechar.</li>
-                   <li>O sistema retorna para a tela anterior.</li>
-                   <li>O caso de uso é encerrado.</li>
-           </ol>
-
-           <b>5 Pré-condições</b>
-           <ol>
-                   <li>O proprietário do cartão deve estar conectado à internet; </li>
-                   <li>O proprietário do cartão deve estar logado no sistema;</li>
-                   <li>O proprietário do cartão deve ter realizado uma compra.</li>
-           </ol>
-           <b>6 Pós-condições</b>
-           <p align="justify">&emsp;&emsp;Compra será analisada pelo sistema e retirada da fatura do proprietário do cartão.</p>
-       </div>
+                                   <b>5 Pré-condições</b>
+                                   <ol>
+                                           <li>O proprietário do cartão deve estar conectado à internet; </li>
+                                           <li>O proprietário do cartão deve estar logado no sistema;</li>
+                                           <li>O proprietário do cartão deve ter realizado uma compra.</li>
+                                   </ol>
+                                   <b>6 Pós-condições</b>
+                                   <p align="justify">&emsp;&emsp;Compra será analisada pelo sistema e retirada da fatura do proprietário do cartão.</p>
+                               </div>
                                 <div id="uc11"  class="section-block">
                                 <h3 class="block-title">UC11 - Adicionar Tag</h3>
 
