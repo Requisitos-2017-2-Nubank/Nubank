@@ -176,7 +176,8 @@
                                         <b>6 Pós-condições</b>
                                         <p align="justify">&emsp;&emsp;É adicionada uma nova tag referente a uma compra.</p>
                                     </div>
-                                    <div id="uc11"  class="section-block">        
+
+                                    <div id="uc12"  class="section-block">        
                                     <h3 class="block-title">UC12 - Bloquear Temporariamente o Cartão</h3>
                                         
                                         <b>1 Nome do Caso de Uso</b><br>
@@ -222,6 +223,70 @@
                                         <b>6 Pós-condições</b>
                                         <p align="justify">&emsp;&emsp;O cartão pertencente ao ator é bloqueado.</p>
                                     </div>
+
+                                    <div id="uc13"  class="section-block">        
+                                    <h3 class="block-title">UC13 - Alterar limite</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Alterar limite</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;Permite a um usuário alterar o limite de seu cartão.
+                                        </p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <p align="justify">&emsp;&emsp;Análise do Nubank</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico</b><br>
+                                            <ol>
+                                                <li>O caso de uso começa quando o usuário do cartão seleciona a opção “Minha Conta” no menu lateral do aplicativo.</li>
+                                                <li>O sistema exibe uma tela contendo informações sobre a conta e opções de configuração e modificação de dados.</li>
+                                                <li>O proprietário do cartão seleciona a opção “Alterar Limite”.</li>
+                                                <li>O sistema exibe uma tela contendo o limite atual do cartão e um slider contendo determinada faixa de valores.</li>
+                                                <li>O proprietário do cartão ajusta o slider, escolhendo o valor desejado para o novo limite do cartão. [FA01]</li>
+                                                <li>O proprietário do cartão confirma a ação selecionando o botão “Alterar”. [FA02]</li>
+                                                <li>O sistema altera o limite do cartão para o valor desejado.</li>
+                                                <li>O fluxo principal é encerrado.</li>
+                                            </ol>
+
+                                            <b>4.2 Fluxos alternativos</b><br>
+                                                <b>FA01 - O proprietário do cartão digita o valor</b>
+                                                <ol>
+                                                        <li>O proprietário do cartão clica no número correspondente ao limite atual do cartão.</li>
+                                                        <li>O sistema torna o número editável.</li>
+                                                        <li>O proprietário do cartão digita o valor desejado para o novo limite 
+                                                                do cartão.
+                                                        </li>
+                                                        <li>O sistema retorna para o item 6 do fluxo principal.</li>
+                                                </ol>
+                                                <b>FA02 - O proprietário do cartão escolhe um valor acima do disponível no slider</b>
+                                                <ol>
+                                                        <li>O proprietário do cartão seleciona a opção “Pedir mais limite”.</li>
+                                                        <li>O sistema exibe uma relação de opções de justificativa do pedido.</li>
+                                                        <li>O proprietário do cartão seleciona a opção mais adequada a seus 
+                                                                motivos.                                                                
+                                                        </li>
+                                                        <li>O proprietário do cartão confirma o pedido.</li>
+                                                        <li>O sistema envia o pedido à Análise do Nubank.</li>
+                                                        <li>A Análise do Nubank aprova ou não o pedido.</li>
+                                                        <li>O caso de uso é encerrado.</li>
+                                                </ol>
+                                            <b>4.3 Fluxos de Exceção</b>
+                                            <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
+                                            <ol>
+                                                    <li>O sistema informa a queda de internet.</li>
+                                                    <li>A operação é interrompida.</li>
+                                                    <li>O caso de uso se encerra.</li>
+                                            </ol>
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                            <li>O proprietário do cartão deve estar logado no sistema.</li>
+                                            <li>O proprietário do cartão deve possuir acesso à internet.</li>
+                                            <li>O ator deve estar com o menu lateral do aplicativo aberto.</li>
+                                            
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;O limite do cartão do usuário é alterado.</p>
+                                    </div>
                         </section>
 
                         
@@ -246,7 +311,10 @@
                                     <li><a class="scrollto" href="#diagramas">Diagramas de<br> Caso de Uso</a>
                                     <li><a class="scrollto" href="#especificacao">Especificação de<br> Casos de Uso</a>
                                     <ul class="nav doc-sub-menu">
-                                            <li><a class="scrollto" href="#uc01">UC01 Fazer Login</a>                                           
+                                            <li><a class="scrollto" href="#uc01">UC01 - Fazer Login</a> 
+                                            <li><a class="scrollto" href="#uc11">UC11 - Adicionar Tag</a>
+                                            <li><a class="scrollto" href="#uc12">UC12 - Bloquear <br>Temporariamente o Cartão</a>
+                                            <li><a class="scrollto" href="#uc13">UC13 - Alterar limite</a>                                          
                                     </ul><!--//nav-->
                                 <li><a class="scrollto" href="#referencias">Referências</a>
                             </ul><!--//doc-menu-->
