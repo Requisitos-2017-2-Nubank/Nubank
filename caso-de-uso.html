@@ -128,7 +128,54 @@
                                         <p align="justify">&emsp;&emsp;O usuário é logado no sistema e tem acesso à sua conta no aplicativo.</p>
                                     </div>
 
-                                    
+                                <div id="uc11"  class="section-block">        
+                                <h3 class="block-title">UC11 - Adicionar Tag</h3>
+                                        
+                                        <b>1 Nome do Caso de Uso</b><br>
+                                        <p align="justify">&emsp;&emsp;Adicionar Tag</p>
+                                        <b>2 Breve descrição</b>
+                                        <p align="justify">&emsp;&emsp;Permite a um usuário adicionar uma Tag a uma compra.</p>
+                                        <b>3 Atores</b>
+                                        <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                        <b>4 Fluxo de eventos</b><br>
+                                        <b>4.1 Fluxo básico</b><br>
+                                        <ol>
+                                                <li>O caso de uso começa quando o usuário do cartão clica na opção “+tag” na tela de visualização de uma compra.</li>
+                                                <li>O sistema exibe uma caixa de texto.</li>
+                                                <li>O proprietário do cartão insere o nome da tag na caixa de texto.</li>
+                                                <li>O usuário clica em “adicionar”. <b>[FE01]</b></li>
+                                                <li>O sistema adiciona a tag ao conjunto de tags associadas àquela compra.</li>
+                                                <li>O fluxo principal é encerrado.</li>
+                                            </ol>
+
+                                        <b>4.3 Fluxos de Exceção</b>
+                                        <br><b>FE01 - Proprietário do cartão tenta adicionar tag já existente</b>
+                                        <ol>
+                                            <li>O fluxo de exceção começa quando a tag inserida pelo usuário já 
+                                                    existe para aquela compra. 
+                                            </li>
+                                            <li>O sistema exibe uma mensagem de erro informando ao 
+                                                    proprietário que a tag já está em uso.
+                                            </li>
+                                            <li>A tag não é replicada.</li>
+                                            <li>O caso de uso é encerrado.</li>
+                                        </ol>
+                                        <b>FE02 - Não ter acesso a Internet durante o procedimento</b>
+                                        <ol>
+                                                <li>O sistema informa a queda de internet.</li>
+                                                <li>A operação é interrompida.</li>
+                                                <li>O caso de uso se encerra.</li>
+                                        </ol>
+                                        <b>5 Pré-condições</b>
+                                        <ol>
+                                            <li>O proprietário do cartão deve estar logado no sistema.</li>
+                                            <li>O proprietário do cartão deve possuir acesso à internet.</li>
+                                            <li>O proprietário do cartão deve possuir ao menos uma compra registrada no aplicativo.</li>
+                                            <li>O sistema deve estar na tela de visualização de uma compra.</li>
+                                        </ol>
+                                        <b>6 Pós-condições</b>
+                                        <p align="justify">&emsp;&emsp;É adicionada uma nova tag referente a uma compra.</p>
+                                    </div>
                         </section>
 
                         
