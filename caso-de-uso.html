@@ -300,142 +300,7 @@ Caso de uso: acessar chat online
 UC05
 -->
                                 <div id="uc05"  class="section-block">
-                                    <h3 class="block-title">UC05 - Acessar Char Online</h3>
-                                   <b>1 Nome do Caso de Uso</b><br>
-                                   <p align="justify">&emsp;&emsp;Acessar Chat Online</p>
-                                   <b>2 Breve descrição</b>
-                                   <p align="justify">&emsp;&emsp;Acesso ao chat online com um atendente nubank.</p>
-                                   <b>3 Atores</b>
-                                   <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                   <p align="justify">&emsp;&emsp;Atendente Nubank</p>
-                                   <b>4 Fluxo de eventos</b><br>
-                                   <b>4.1 Fluxo básico</b><br>
-                                   <ol>
-                                       <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “chat” na pagina me ajuda;<b>[FE01]</b></li>
-                                       <li>O sistema abre a janela de conversa;<b>[FA01]</b></li>
-                                       <li>O proprietário do cartão redige uma mensagem no campo indicado e seleciona “enviar”;</li>
-                                       <li>O atendente envia resposta;</li>
-                                       <li>O caso de uso é encerrado.</li>
-                                   </ol>
-
-                                   <b>4.2 Fluxos de excessão</b><br>
-                                   <b>FE01 - A Internet cai durante o procedimento</b>
-                                   <ol>
-                                         <li>O sistema informa que foi perdida a conexão com a internet.</li>
-                                         <li>A ação é interrompida.</li>
-                                         <li>O caso de uso é encerrado.</li>
-                                   </ol>
-
-                                   <b>4.3 Fluxos alternativos</b><br>
-                                   <b>FA01 - O usuário cancela o procedimento</b>
-                                   <ol>
-                                         <li>O proprietário do cartão clica em fechar.</li>
-                                         <li>O sistema retorna para a tela anterior.</li>
-                                         <li>O caso de uso é encerrado.</li>
-                                   </ol>
-
-                                   <b>5 Pré-condições</b>
-                                   <ol>
-                                           <li>O proprietário do cartão deve estar conectado à internet; </li>
-                                           <li>O proprietário do cartão deve estar logado no sistema;</li>
-                                           <li>O proprietário do cartão deve ter selecionado a opção “chat”.</li>
-                                   </ol>
-                                   <b>6 Pós-condições</b>
-                                   <p align="justify">&emsp;&emsp;O atendente nubank irá responder às dúvidas na janela da conversa.</p>
-                               </div>
-<!--
-  Caso de uso: acessar duvidas frequentes
-  UC05
--->
-                               <div id="uc06"  class="section-block">
-                                  <h3 class="block-title">UC06 - Acessar Duvidas Frequentes</h3>
-                                  <b>1 Nome do Caso de Uso</b><br>
-                                  <p align="justify">&emsp;&emsp;Duvidas Frequentes</p>
-                                  <b>2 Breve descrição</b>
-                                  <p align="justify">&emsp;&emsp;Acesso à página de dúvidas frequentes de usuários nubank.</p>
-                                  <b>3 Atores</b>
-                                  <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                  <b>4 Fluxo de eventos</b><br>
-                                  <b>4.1 Fluxo básico</b><br>
-                                  <ol>
-                                      <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “dúvidas frequentes” na página me ajuda;<b>[FE01]</b></li>
-                                      <li>O sistema abre a janela de dúvidas frequentes;<b>[FA01]</b></li>
-                                      <li>O proprietário do cartão seleciona um dos tópicos de dúvidas apresentados pelo sistema;</li>
-                                      <li>O caso de uso é encerrado.</li>
-                                  </ol>
-
-                                  <b>4.2 Fluxos de excessão</b><br>
-                                  <b>FE01 - A Internet cai durante o procedimento</b>
-                                  <ol>
-                                        <li>O sistema informa que foi perdida a conexão com a internet.</li>
-                                        <li>A ação é interrompida.</li>
-                                        <li>O caso de uso é encerrado.</li>
-                                  </ol>
-
-                                  <b>4.3 Fluxos alternativos</b><br>
-                                  <b>FA01 - O usuário cancela o procedimento</b>
-                                  <ol>
-                                          <li>O proprietário do cartão clica em fechar.</li>
-                                          <li>O sistema retorna para a tela anterior.</li>
-                                          <li>O caso de uso é encerrado.</li>
-                                  </ol>
-
-                                  <b>5 Pré-condições</b>
-                                  <ol>
-                                          <li>O proprietário do cartão deve estar conectado à internet; </li>
-                                          <li>O proprietário do cartão deve estar logado no sistema;</li>
-                                          <li>O proprietário do cartão deve ter selecionado a opção “dúvidas frequentes” da tela “me ajuda”.</li>
-                                  </ol>
-                                  <b>6 Pós-condições</b>
-                                  <p align="justify">&emsp;&emsp;O sistema exibe a página com os tópicos de dúvidas mais frequentes.</p>
-                              </div>
-<!--
-UC09
-Caso de uso: reportar compra
--->
-                                <div id="uc09"  class="section-block">
-                                   <h3 class="block-title">UC09 - Reportar Compra</h3>
-                                   <b>1 Nome do Caso de Uso</b><br>
-                                   <p align="justify">&emsp;&emsp;Reportar Compra</p>
-                                   <b>2 Breve descrição</b>
-                                   <p align="justify">&emsp;&emsp;Usuário reporta uma compra duplicada ou não realizada por ele.</p>
-                                   <b>3 Atores</b>
-                                   <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                   <b>4 Fluxo de eventos</b><br>
-                                   <b>4.1 Fluxo básico</b><br>
-                                   <ol>
-                                      <li>O caso de uso começa quando o proprietário do cartão abre o
-                                         aplicativo e seleciona uma compra específica na lista do histórico de compras;</b></li>
-                                      <li>O proprietário do cartão seleciona a opção “contestar compra”;</li>
-                                      <li>O proprietário do cartão seleciona a opção “continuar” e o
-                                         sistema exibe uma lista de motivos selecionáveis para a contestação da compra;</li>
-                                      <li>O proprietário do cartão seleciona um dos motivos para contestar sua compra;</li>
-                                      <li>O proprietário do cartão visualiza informações de sua contestação de compra;</li>
-                                      <li>A compra é alterada para pendente;</li>
-                                      <li>O caso de uso é encerrado.</li>
-                                   </ol>
-                                    <b>4.2 Fluxos alternativos</b><br>
-                                    <b>FA01 - O usuário cancela o procedimento</b>
-                                    <ol>
-                                        <li>O proprietário do cartão clica em fechar.</li>
-                                        <li>O sistema retorna para a tela anterior.</li>
-                                        <li>O caso de uso é encerrado.</li>
-                                    </ol>
-
-                                    <b>5 Pré-condições</b>
-                                    <ol>
-                                        <li>O proprietário do cartão deve estar conectado à internet. </li>
-                                        <li>O proprietário do cartão deve estar logado no sistema.</li>
-                                    </ol>
-                                    <b>6 Pós-condições</b>
-                                    <p align="justify">&emsp;&emsp;Um menu com opções de ajuda disponíveis é exibido.</p>
-                                </div>
-<!--
-Caso de uso: acessar chat online
-UC05
--->
-                                <div id="uc05"  class="section-block">
-                                    <h3 class="block-title">UC05 - Acessar Char Online</h3>
+                                    <h3 class="block-title">UC05 - Acessar Chat Online</h3>
                                    <b>1 Nome do Caso de Uso</b><br>
                                    <p align="justify">&emsp;&emsp;Acessar Chat Online</p>
                                    <b>2 Breve descrição</b>
@@ -482,48 +347,49 @@ UC05
   Caso de uso: acessar duvidas frequentes
   UC06
 -->
-                                <div id="uc06"  class="section-block">
-                                    <h3 class="block-title">UC06 - Acessar Duvidas Frequentes</h3>
-                                    <b>1 Nome do Caso de Uso</b><br>
-                                    <p align="justify">&emsp;&emsp;Duvidas Frequentes</p>
-                                    <b>2 Breve descrição</b>
-                                    <p align="justify">&emsp;&emsp;Acesso à página de dúvidas frequentes de usuários nubank.</p>
-                                    <b>3 Atores</b>
-                                    <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
-                                    <b>4 Fluxo de eventos</b><br>
-                                    <b>4.1 Fluxo básico</b><br>
-                                    <ol>
-                                        <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “dúvidas frequentes” na página me ajuda;<b>[FE01]</b></li>
-                                        <li>O sistema abre a janela de dúvidas frequentes;<b>[FA01]</b></li>
-                                        <li>O proprietário do cartão seleciona um dos tópicos de dúvidas apresentados pelo sistema;</li>
-                                        <li>O caso de uso é encerrado.</li>
-                                    </ol>
+                               <div id="uc06"  class="section-block">
+                                  <h3 class="block-title">UC06 - Acessar Duvidas Frequentes</h3>
+                                  <b>1 Nome do Caso de Uso</b><br>
+                                  <p align="justify">&emsp;&emsp;Duvidas Frequentes</p>
+                                  <b>2 Breve descrição</b>
+                                  <p align="justify">&emsp;&emsp;Acesso à página de dúvidas frequentes de usuários nubank.</p>
+                                  <b>3 Atores</b>
+                                  <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                  <b>4 Fluxo de eventos</b><br>
+                                  <b>4.1 Fluxo básico</b><br>
+                                  <ol>
+                                      <li>O caso de uso começa quando o proprietário do cartão seleciona a opção “dúvidas frequentes” na página me ajuda;<b>[FE01]</b></li>
+                                      <li>O sistema abre a janela de dúvidas frequentes;<b>[FA01]</b></li>
+                                      <li>O proprietário do cartão seleciona um dos tópicos de dúvidas apresentados pelo sistema;</li>
+                                      <li>O caso de uso é encerrado.</li>
+                                  </ol>
 
-                                    <b>4.2 Fluxos de excessão</b><br>
-                                    <b>FE01 - A Internet cai durante o procedimento</b>
-                                    <ol>
+                                  <b>4.2 Fluxos de excessão</b><br>
+                                  <b>FE01 - A Internet cai durante o procedimento</b>
+                                  <ol>
                                         <li>O sistema informa que foi perdida a conexão com a internet.</li>
                                         <li>A ação é interrompida.</li>
                                         <li>O caso de uso é encerrado.</li>
-                                    </ol>
+                                  </ol>
 
-                                    <b>4.3 Fluxos alternativos</b><br>
-                                    <b>FA01 - O usuário cancela o procedimento</b>
-                                    <ol>
-                                        <li>O proprietário do cartão clica em fechar.</li>
-                                        <li>O sistema retorna para a tela anterior.</li>
-                                        <li>O caso de uso é encerrado.</li>
-                                    </ol>
+                                  <b>4.3 Fluxos alternativos</b><br>
+                                  <b>FA01 - O usuário cancela o procedimento</b>
+                                  <ol>
+                                          <li>O proprietário do cartão clica em fechar.</li>
+                                          <li>O sistema retorna para a tela anterior.</li>
+                                          <li>O caso de uso é encerrado.</li>
+                                  </ol>
 
-                                    <b>5 Pré-condições</b>
-                                    <ol>
-                                        <li>O proprietário do cartão deve estar conectado à internet; </li>
-                                        <li>O proprietário do cartão deve estar logado no sistema;</li>
-                                        <li>O proprietário do cartão deve ter selecionado a opção “dúvidas frequentes” da tela “me ajuda”.</li>
-                                    </ol>
-                                    <b>6 Pós-condições</b>
-                                    <p align="justify">&emsp;&emsp;O sistema exibe a página com os tópicos de dúvidas mais frequentes.</p>
+                                  <b>5 Pré-condições</b>
+                                  <ol>
+                                          <li>O proprietário do cartão deve estar conectado à internet; </li>
+                                          <li>O proprietário do cartão deve estar logado no sistema;</li>
+                                          <li>O proprietário do cartão deve ter selecionado a opção “dúvidas frequentes” da tela “me ajuda”.</li>
+                                  </ol>
+                                  <b>6 Pós-condições</b>
+                                  <p align="justify">&emsp;&emsp;O sistema exibe a página com os tópicos de dúvidas mais frequentes.</p>
                               </div>
+
 <!--
 UC07
 Caso de uso: Acessar histórico de compras
@@ -565,6 +431,62 @@ Caso de uso: Acessar histórico de compras
                                 </ol>
                                 <b>6 Pós-condições</b>
                                 <p align="justify">&emsp;&emsp;É exibido o histórico de compras do usuário atualizado.</p>
+                            </div>
+
+<!--
+UC08
+Caso de uso: Acessar compra
+-->
+                              <div id="uc08"  class="section-block">
+                                <h3 class="block-title">UC08 - Acessar compra.</h3>
+                                <b>1 Nome do Caso de Uso</b><br>
+                                <p align="justify">&emsp;&emsp;Acessar compra.</p>
+                                <b>2 Breve descrição</b>
+                                <p align="justify">&emsp;&emsp;Proprietário do cartão tem acesso à uma compra detalhada.</p>
+                                <b>3 Atores</b>
+                                <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                                <b>4 Fluxo de eventos</b><br>
+                                <b>4.1 Fluxo básico</b><br>
+                                <ol>
+                                    <li>O caso de uso começa quando o usuário do cartão abre o aplicativo e seleciona uma compra específica no histórico de compras. <b>[FA01]</b>, <b>[FA02]</b>, <b>[FA03]</b> ou <b>[FE01]</b></li>
+                                    <li>O caso de uso de encerra.</li>
+                                </ol>
+
+                                <b>4.2 Fluxos alternativos</b><br>
+                                <b>FA01 - Reportar compra.</b>
+                                <ol>
+                                        <li>O usuário acessa o <b>US09 - REPORTAR COMPRA.</b></li>
+                                        <li>O caso de uso de encerra.</li>
+                                </ol>
+
+                                <b>FA02 - Alterar categoria.</b>
+                                <ol>
+                                        <li>O usuário acessa o <b>UC10 - ALTERAR CATEGORIA.</b></li>
+                                        <li>O caso de uso de encerra.</li>
+                                </ol>
+
+                                <b>FA03 - Adicionar Tag.</b>
+                                <ol>
+                                        <li>O usuário acessa o <b>UC11 - ADICIONAR TAG.</b></li>
+                                        <li>O caso de uso de encerra.</li>
+                                </ol>
+
+                                <b>4.3 Fluxos de Exceção</b>
+                                <br><b>FE01 - Não ter acesso à Internet durante o procedimento</b>
+                                <ol>
+                                        <li>O sistema informa a queda de internet.</li>
+                                        <li>A operação é interrompida.</li>
+                                        <li>O caso de uso se encerra.</li>
+                                </ol>
+
+                                <b>5 Pré-condições</b>
+                                <ol>
+                                        <li>O usuário deverá estar logado no sistema.</li>
+                                        <li>O usuário deverá ter acesso a internet.</li>
+                                        <li>O usuário deverá possuir ao menos uma compra cadastrada no sistema.</li>
+                                </ol>
+                                <b>6 Pós-condições</b>
+                                <p align="justify">&emsp;&emsp;É exibida a página detalhada de uma compra.</p>
                             </div>
 <!--
 UC09
@@ -616,10 +538,52 @@ Caso de uso: reportar compra
                                    <b>6 Pós-condições</b>
                                    <p align="justify">&emsp;&emsp;Compra será analisada pelo sistema e retirada da fatura do proprietário do cartão.</p>
                                </div>
+
+<!--
+UC10
+Caso de uso: Alterar categoria
+-->
+                             <div id="uc10"  class="section-block">
+                               <h3 class="block-title">UC10 - Alterar categoria.</h3>
+                               <b>1 Nome do Caso de Uso</b><br>
+                               <p align="justify">&emsp;&emsp;Alterar categoria.</p>
+                               <b>2 Breve descrição</b>
+                               <p align="justify">&emsp;&emsp;Usuário altera a categoria de uma compra para se organizar melhor.</p>
+                               <b>3 Atores</b>
+                               <p align="justify">&emsp;&emsp;Proprietário do cartão</p>
+                               <b>4 Fluxo de eventos</b><br>
+                               <b>4.1 Fluxo básico</b><br>
+                               <ol>
+                                   <li>O caso de uso começa quando o usuário do cartão abre o aplicativo e seleciona uma compra específica no histórico de compras.</li>
+                                   <li>O usuário clica na categoria.</li>
+                                   <li>O sistema exibe uma lista de categorias disponíveis.</li>
+                                   <li>O usuário escolhe a nova categoria.</li>
+                                   <li>O usuário clica em alterar.</li>
+                                   <li>O caso de uso de encerra.</li>
+                               </ol>
+
+                               <b>4.2 Fluxos de Exceção</b>
+                               <br><b>FE01 - O usuário cancela o procedimento</b>
+                               <ol>
+                                       <li>O proprietário do cartão cancela a ação.</li>
+                                       <li>O sistema retorna para a tela anterior.</li>
+                                       <li>A compra permanece na mesma categoria.</li>
+                                       <li>O caso de uso é encerrado.</li>
+                               </ol>
+
+                               <b>5 Pré-condições</b>
+                               <ol>
+                                       <li>O usuário deverá estar logado no sistema.</li>
+                                       <li>O usuário deverá ter acesso a internet.</li>
+                                       <li>O usuário deverá possuir ao menos uma compra cadastrada no sistema.</li>
+                               </ol>
+                               <b>6 Pós-condições</b>
+                               <p align="justify">&emsp;&emsp;A categoria de uma compra é alterada.</p>
+                           </div>
 <!--
 UC11
 Caso de uso: Adicionar Tag
--->                               
+-->
                                 <div id="uc11"  class="section-block">
                                 <h3 class="block-title">UC11 - Adicionar Tag</h3>
 
@@ -671,7 +635,7 @@ Caso de uso: Adicionar Tag
 <!--
 UC12
 Caso de uso: Bloquear Temporariamente o Cartão
---> 
+-->
                                     <div id="uc12"  class="section-block">
                                     <h3 class="block-title">UC12 - Bloquear Temporariamente o Cartão</h3>
 
@@ -721,7 +685,7 @@ Caso de uso: Bloquear Temporariamente o Cartão
 <!--
 UC13
 Caso de uso: Alterar limite
---> 
+-->
                                     <div id="uc13"  class="section-block">
                                     <h3 class="block-title">UC13 - Alterar limite</h3>
 
@@ -788,7 +752,7 @@ Caso de uso: Alterar limite
 <!--
 UC14
 Caso de uso: Alterar vencimento da fatura
---> 
+-->
                                     <div id="uc14"  class="section-block">
                                         <h3 class="block-title">UC014 - Alterar vencimento da fatura.</h3>
                                             <b>1 Nome do Caso de Uso</b><br>
@@ -851,7 +815,9 @@ Caso de uso: Alterar vencimento da fatura
                                             <li><a class="scrollto" href="#uc05">UC05 - Acessar Chat Online</li>
                                             <li><a class="scrollto" href="#uc06">UC06 - Acessar Duvidas Frequentes</li>
                                             <li><a class="scrollto" href="#uc07">UC07 - Acessar Histórico de Compras</a>
+                                            <li><a class="scrollto" href="#uc08">UC08 - Acessar Compra</a>
                                             <li><a class="scrollto" href="#uc09">UC09 - Reportar Compra</li>
+                                            <li><a class="scrollto" href="#uc10">UC10 - Alterar categoria</li>
                                             <li><a class="scrollto" href="#uc11">UC11 - Adicionar Tag</a>
                                             <li><a class="scrollto" href="#uc12">UC12 - Bloquear <br>Temporariamente o Cartão</a>
                                             <li><a class="scrollto" href="#uc13">UC13 - Alterar limite</a>
