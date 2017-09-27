@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+    <title>Módulo IV - Modelagem</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-blue">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Requisitos de Software</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelagem.html">Modelagem</a></li>
+                    <li class="active">Especificação Suplementar</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="fa fa-file-text-o"></span> Especificação Suplementar</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 27th, 2017</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+
+                            <section id="introducao" class="doc-section">
+                                <h2 class="section-title">Introdução</h2>
+                                <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;<b>oi</b></p>                                        
+                                </div>
+
+                                <div class="section-block">
+                                    <h3 class="block-title">Finalidade</h3>
+                                    <p align="justify">&emsp;&emsp;Explicitar os requisitos não funcionais do sistema que será construído, a fim de deixar desenvolvedores e stakeholders atualizados quanto aos atributos de qualidade, usabilidade, confiabilidade, desempenho e suportabilidade. 
+                                    E tudo o que for previamente definido de acordo com as necessidades do cliente na construção deste novo projeto de software, que não estão listados nos casos de uso.</p>
+                                </div>
+
+                                <div class="section-block">
+                                    <h3 class="block-title">Escopo</h3>
+                                    <p align="justify">&emsp;&emsp;O escopo desta especificação suplementar se resume à uma aplicação mobile que ofereça recursos necessários para um usuário ser capaz de gerenciar suas finanças relacionadas ao uso de cartão de crédito.</p>
+                                </div>
+
+                                <div class="section-block">
+                                    <h3 class="block-title">Definições, Acrônimos e Abreviações</h3>
+                                    <ul>
+                                            <li>Nubank - Nome do projeto</li>
+                                    </ul>
+                                </div>
+
+                                    <div class="section-block">
+                                    <h3 class="block-title">Referências</h3>
+                                    <ul style="list-style-type:circle">
+                                            <li><p align="justify">[1] Funpar, <b>Artefato: Especificações Suplementares.</b>
+                                                Disponível <a href="http://www.funpar.ufpr.br:8080/rup/process/artifact/ar_sspec.htm">Aqui</a>.
+                                                Acesso em: 25 de setembro de 2017. </p></li>
+
+                                            <li><p align="justify">[2] Funpar, <b>Template: Especificações Suplementares.</b>
+                                                Disponível <a href="http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/req/rup_sspec.htm">Aqui</a>.
+                                                Acesso em: 25 de setembro de 2017. </p></li>
+
+                                            <li><p align="justify">[3] Requisitos de Software, Grupo 3, <b>Casos de Uso.</b>
+                                                Disponível <a href="https://requisitos-2017-2-nubank.github.io/Nubank/caso-de-uso.html">Aqui</a>.
+                                                Acesso em: 26 de setembro de 2017. </p></li>
+                                    </ul>
+                                    </div>
+
+                                    <div class="section-block">
+                                            <h3 class="block-title">Visão Geral</h3>
+                                            <p align="justify">&emsp;&emsp;Este documento apresenta uma breve introdução sobre a finalidade da especificação suplementar e do sistema que ela contempla, em sequência, descreve, em detalhes, seus requisitos funcionais, 
+                                                requisitos de usabilidade, confiabilidade, desempenho, suportabilidade, suas restrições de <i>design</i>, requisitos de sistema de ajuda, interfaces, e os requisitos de licenciamento.
+                                                </p>        
+                                    </div>
+                            </section>
+
+                            <section id="funcionalidade" class="doc-section">
+                                    <h2 class="section-title">Funcionalidade</h2>
+                                    <div class="section-block">
+
+                                        <h3 class="block-title"><b>Requisitos Funcionais</b></h3>
+                                        <table align="center" class="blue-migue" class="" style="width:80%">
+                                           <tr>
+                                                <th>Caso de Uso</th>
+                                                <td><p align="justify" class="blue-migue-description"><b>Nome do Caso de Uso<b></p>
+                                                </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <th>UC01</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc01">Fazer Login</a></p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                             <th>UC02</th>
+                                             <td>
+                                                <p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc02">Gerar Boleto</a></p>
+                                           </tr>
+
+                                           <tr>
+                                             <th>UC03</th>
+                                             <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc03">Acessar Fatura</a></p>
+                                            </td>
+                                        </tr>
+
+                                           <tr>
+                                            <th>UC04</th>
+                                                <td>
+                                                    <p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc04">Pedir ajuda</a></p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>UC05</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc05">Acessar Chat Online</a></p></td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>UC06</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc06">Acessar Dúvidas Frequentes</a></p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <th>UC07</th>
+                                                    <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc07">Acessar Histórico de Compras</a></p></td>
+                                            </tr>
+
+                                            <tr>
+                                                        <th>UC08</th>
+                                                        <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc08">Acessar Compra</a></p></td>
+                                            </tr>
+
+                                             <tr>
+                                                <th>UC09</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc09">Reportar Compra</a></p></td>
+                                             </tr>
+
+                                             <tr>
+                                                 <th>UC10</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc10">Alterar Categoria</a></p></td>
+                                            </tr>
+                                                            
+                                            <tr>
+                                                <th>UC11</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc11">Adicionar Tag</a></p></td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>UC12</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc12">Bloquear Temporariamente o Cartão</a></p></td>
+                                             </tr>
+
+                                             <tr>
+                                                <th>UC13</th>
+                                                 <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc13">Alterar limite</a></p></td>
+                                             </tr>
+
+                                            <tr>
+                                                <th>UC14</th>
+                                                <td><p align="justify" class="blue-migue-description"><a href="caso-de-uso.html#uc14">Alterar vencimento da fatura</a></p></td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                            </section>
+
+
+                            <section id="usabilidade" class="doc-section">
+                                    <h2 class="section-title">Usabilidade</h2>
+                                    <div class="section-block">
+                                        <h3 class="block-title">Facilidade de uso</h3>
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+    
+                                    <div class="section-block">
+                                        <h3 class="block-title">Mensagens de Erro</h3>
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+                            </section>
+
+                            <section id="confiabilidade" class="doc-section">
+                                    <h2 class="section-title">Confiabilidade</h2>
+                                    <div class="section-block">
+                                        <h3 class="block-title">Garantia de Disponibilidade</h3>
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+    
+                                    <div class="section-block">
+                                        <h3 class="block-title">Garantia de Segurança do Armazenamento de Dados</h3>
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+    
+                                    <div class="section-block">
+                                        <h3 class="block-title">Garantia de Segurança dos Dados Informados</h3>
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+                            </section>
+                                        
+
+                            <section id="desempenho" class="doc-section">
+                                    <h2 class="section-title">Desempenho</h2>
+                                    <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+                            </section>
+
+                            <section id="suportabilidade" class="doc-section">
+                                    <h2 class="section-title">Suportabilidade</h2>
+                                    <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+
+                                    <div class="section-block">
+                                            <h3 class="block-title">Requisito de Suportabilidade Um</h3>
+                                            <p align="justify">&emsp;&emsp;texto</p>
+                                        </div>
+                            </section>
+
+                            <section id="restricoes-de-design" class="doc-section">
+                                    <h2 class="section-title">Restrições de Design</h2>
+                                    <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+
+                                    <div class="section-block">
+                                            <h3 class="block-title">Restrições de Design Um</h3>
+                                            <p align="justify">&emsp;&emsp;texto</p>
+                                        </div>
+                            </section>
+
+
+                            <section id="requisitos-de-sistema-de-ajuda" class="doc-section">
+                                    <h2 class="section-title">Requisitos de Sistema de Ajuda e de <br>Documentação de Usuário On-line</h2>
+                                    <div class="section-block">
+                                        <p align="justify">&emsp;&emsp;texto</p>
+                                    </div>
+                            </section>
+
+
+
+                            <section id="referencias" class="doc-section">
+                                <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
+                                <div class="section-block">
+                                    <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">[1] SAMPAIO. Júlio. Livro Vivo : Engenharia de Requisitos, <b>Engenharia de Requisitos, uma area de conhecimento fundamental para a construção de software.</b>
+                                            Disponível <a href="http://livrodeengenhariaderequisitos.blogspot.com.br/2007/08/universo-de-informaes.html">Aqui</a>.
+                                            Acesso em: 26 de setembro de 2017. </p></li>
+                                        <li><p align="justify">[2] SAMPAIO. Júlio. <b>Scenario inspections</b>. Requirements Eng (2005).
+                                            Disponível <a href="http://www-di.inf.puc-rio.br/~julio/Slct-pub/req-insp.pdf">Aqui</a>.
+                                            Acesso em: 26 de setembro de 2017. </p></li>
+                                </div>
+                            </section><!--//doc-section-->
+
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                                <li><a class="scrollto" href="#introducao">Introdução</a>
+                                <li><a class="scrollto" href="#funcionalidade">Funcionalidade</a>
+                                <li><a class="scrollto" href="#usabilidade">Usabilidade</a>
+                                <li><a class="scrollto" href="#confiabilidade">Confiabilidade</a>
+                                <li><a class="scrollto" href="#desempenho">Desempenho</a>
+                                <li><a class="scrollto" href="#suportabilidade">Suportabilidade</a>
+
+                                <li><a class="scrollto" href="#restricoes-de-design">Restrições de Design</a>
+                                <li><a class="scrollto" href="#requisitos-de-sistema-de-ajuda">Requisitos de Sistema<br>de Ajuda </a>
+                                <li><a class="scrollto" href="#componentes-adquiridos">Componentes Adquiridos</a>
+                                <li><a class="scrollto" href="#interfaces">Interfaces</a>
+                                <li><a class="scrollto" href="#requisitos-de-licenciamento">Requisitos de<br>Licenciamento</a>
+                                <li><a class="scrollto" href="#observações-legais">Observações Legais</a>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+
+    </div><!--//page-wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support.
+                 :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class><b><font color="white">Universidade de Brasília,  Requisitos de Software,  Grupo 3 - 2017.2</b></small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
