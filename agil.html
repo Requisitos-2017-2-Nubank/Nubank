@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+    <title>Módulo IV - Modelagem</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-blue">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Requisitos de Software</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelagem.html">Modelagem</a></li>
+                    <li class="active">Metodologias Ágeis</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="icon_documents_alt icon"></span> Metodologias Ágeis</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Oct 2nd, 2017</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+
+                            <section id="backlog" class="doc-section">
+                                <h2 class="section-title"><i>Backlog</i> do Produto</h2>
+                                <div class="screenshot-holder">
+                                    <a href="assets/images/Backlog.png" data-title="Backlog" data-toggle="lightbox"><img class="img-responsive" src="assets/images/Backlog.png" alt="screenshot"/></a>
+                                    <a class="mask" href="assets/images/Backlog.png" data-title="Backlog" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                </div>
+                                <p><i>Autores: Grupo<br>Elaborado em: 25/09/2017 </i></p>
+                                <p><i>Fontes:<a class="scrollto" href="#referencias-section"> [1] [2]</a></i></p>
+
+                                <div class="section-block">
+                            </section>
+                            <section id="roadmap" class="doc-section">
+                              <h2 class="section-title"><i>Roadmap</i></h2>
+                              <div id="release1" class="section-block">
+                                <h3 class="block-title">Release 1</h3>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas <i>Sprints</i></p>
+                                <p align="justify">&emsp;&emsp;<b>Início:</b> <i>Sprint</i> um</p>
+                                <p align="justify">&emsp;&emsp;<b>Termino:</b> <i>Sprint</i> dois</p><br>
+
+                                <h3 class="block-title"><i>Sprint</i> 1</h3>
+                                <img class="img-responsive" src="assets/images/sprint1.png" style="width:80%;" alt="screenshot"/><br>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas semanas</p>
+                                <p align="justify">&emsp;&emsp;<b><i>Scrum Master</i>: </b>Integrante da equipe de desenvolvimento.</p><br>
+                                <h4 class="block-title">Critérios de aceitação</h4><br>
+                                <h5 class="block-title">US01 - Fazer login no aplicativo</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir os campos de CPF e senha;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir uma mensagem de erro, caso o usuário insira dados incorretos;
+                                            </p></li>
+                                        <li><p align="justify">A funcionalidade deve indicar o campo a ser corrigido pelo usuário;</p></li>
+                                        <li><p align="justify">A funcionalidade deve entrar na tela inicial;</p></li>
+                                        <li><p align="justify">A funcionalidade deve atender às tecnologias de segurança do smartphone(touch ID).</p></li>
+                                    </ul>
+                                <h5 class="block-title">US05 - Editar meu <i>e-mail</i> cadastrado</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir o email atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir o teclado e permitir a edição do email atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve atualizar o email na base de dados;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um botão para confirmação;</p></li>
+                                        <li><p align="justify">A funcionalidade deve retornar uma mensagem de erro caso haja alguma discrepância com o padrão esperado.</p></li>
+                                    </ul>
+                                <h5 class="block-title">US06 - Editar meu telefone cadastrado</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir o telefone atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir o teclado e permitir a edição do telefone atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de  confirmação;</p></li>
+                                        <li><p align="justify">A funcionalidade deve atualizar o  telefone na base de dados;</p></li>
+                                        <li><p align="justify">A funcionalidade deve retornar uma mensagem de erro caso haja alguma discrepância com o padrão esperado.</p></li>
+                                    </ul>
+                                <h5 class="block-title">US07 - Alterar minha senha do aplicativo</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de edição de senha;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um campo para inserção da nova senha;</p></li>
+                                        <li><p align="justify">A funcionalidade deve verificar a força da segurança da nova senha;</p></li>
+                                        <li><p align="justify">A funcionalidade deve retornar uma mensagem de erro caso haja algum na nova senha digitada;</p></li>
+                                        <li><p align="justify">A funcionalidade deve atualizar a senha atual.</p></li>
+                                    </ul>
+                                <br><br>
+                                <h3 class="block-title"><i>Sprint</i> 2</h3>
+                                <img class="img-responsive" src="assets/images/sprint2.png" style="width:80%;" alt="screenshot"/><br>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas semanas</p>
+                                <p align="justify">&emsp;&emsp;<b><i>Scrum Master</i>: </b>Integrante da equipe de desenvolvimento.</p><br>
+                                <h4 class="block-title">Critérios de aceitação</h4><br>
+                                <h5 class="block-title">US02 - Poder gerar um boleto de minha fatura</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de geração de boleto;</p></li>
+                                        <li><p align="justify">A funcionalidade deve gerar um boleto a partir da fatura fechada;</p></li>
+                                        <li><p align="justify">A funcionalidade deve ser capaz de gerar um boleto a partir da fatura atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve ser capaz de gerar pdf;</p></li>
+                                        <li><p align="justify">A funcionalidade deve ser capaz de enviar o boleto gerado por email.</p></li>
+                                    </ul>
+                                <h5 class="block-title">US04 - Acessar a fatura da minha conta</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve recuperar e exibir a fatura do usuário.</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir as faturas dos meses anteriores.</p></li>
+                                </ul>
+                                <h5 class="block-title">US12 - Reportar uma compra</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de reportar compra;</p></li>
+                                        <li><p align="justify">A funcionalidade deve enviar a compra selecionada para análise;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um menu com as opções que ilustram os motivos possíveis para o reporte de uma compra.</p></li>
+                                    </ul>
+                                <h5 class="block-title">US16 - Bloquear temporariamente o cartão</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de bloqueio do cartão;</p></li>
+                                        <li><p align="justify">A funcionalidade deve bloquear temporariamente o cartão ao ser acionada;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de desbloqueio do cartão.</p></li>
+                                    </ul>
+                              </div>
+
+
+                              <div id="release2" class="section-block">
+                                <h3 class="block-title">Release 2</h3>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Três <i>Sprints</i></p>
+                                <p align="justify">&emsp;&emsp;<b>Início:</b> <i>Sprint</i> três</p>
+                                <p align="justify">&emsp;&emsp;<b>Termino:</b> <i>Sprint</i> cinco</p><br>
+
+                                <h3 class="block-title"><i>Sprint</i> 3</h3>
+                                <img class="img-responsive" src="assets/images/sprint3.png" style="width:80%;" alt="screenshot"/><br>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas semanas</p>
+                                <p align="justify">&emsp;&emsp;<b><i>Scrum Master</i>: </b>Integrante da equipe de desenvolvimento.</p><br>
+                                <h4 class="block-title">Critérios de aceitação</h4><br>
+                                <h5 class="block-title">US08 - Conversar com um atendente do <i>Nubank</i></h5>
+                                    <ul style="list-style-type:circle">
+                                            <li><p align="justify">A funcionalidade deve exibir um botão de chat;</p></li>
+                                            <li><p align="justify">A funcionalidade deve exibir um chat contendo as mensagens antigas;</p></li>
+                                            <li><p align="justify">A funcionalidade deve permitir o envio de mensagens pelo usuário através do teclado de seu aparelho;</p></li>
+                                            <li><p align="justify">A funcionalidade deve receber mensagens enviadas por um funcionário do nubank.</p></li>
+                                    </ul>
+
+                                <h5 class="block-title">US10 - Acessar o histórico de compras</h5>
+                                <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve recuperar e exibir o histórico de compras do usuário;</p></li>
+                                        <li><p align="justify">A funcionalidade deve recuperar e exibir as compras dos meses anteriores.</p></li>
+                                </ul>     
+
+                                <h5 class="block-title">US17 - Ajustar limite máximo do cartão</h5>
+                                <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir o limite do cartão atual;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir um botão de ajuste de limite do cartão;</p></li>
+                                        <li><p align="justify">A funcionalidade deve receber o novo limite através de um slider exibido dentro do limite pré aprovado;</p></li>
+                                        <li><p align="justify">A funcionalidade deve atualizar o limite do cartão na base de dados.</p></li>
+                                </ul><br><br>
+
+                                <h3 class="block-title"><i>Sprint</i> 4</h3>
+                                <img class="img-responsive" src="assets/images/sprint4.png" style="width:80%;" alt="screenshot"/><br>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas semanas</p>
+                                <p align="justify">&emsp;&emsp;<b><i>Scrum Master</i>: </b>Integrante da equipe de desenvolvimento.</p><br>
+                                <h4 class="block-title">Critérios de aceitação</h4><br>
+                                <h5 class="block-title">US09 - Acessar dúvidas frequentes</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve exibir um botão ajuda;</p></li>
+                                        <li><p align="justify">A funcionalidade deve exibir as categorias de perguntas frequentes;</p></li>
+                                        <li><p align="justify">A funcionalidade deve permitir a busca por uma pergunta; </p></li>
+                                        <li><p align="justify">Caso seja realizada uma busca, a funcionalidade deve exibir uma página de resultados;</p></li>
+                                        <li><p align="justify">Ao clicar em uma categoria de pergunta, a funcionalidade deve exibir as perguntas pertencentes à essa categoria;</p></li>
+                                        <li><p align="justify">Ao clicar em uma pergunta, a funcionalidade deve exibir a resposta desta pergunta.</p></li>                                  
+                                    </ul>
+
+                                <h5 class="block-title">US11 - Acessar uma determinada compra</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve exibir os detalhes de uma compra ao clicar em uma compra na página de histórico de compras;</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir as informações o emissor da compra, o valor em reais, a categoria da compra, e tags caso haja alguma;</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir em um mapa o local da compra.</p></li> 
+                                </ul>     
+
+                                <h5 class="block-title">US18 - Alterar o limite do cartão</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve exibir um botão de pedir mais limite;</p></li>
+                                    <li><p align="justify">A funcionalidade deve perguntar o motivo exibindo opções para serem escolhidas;</p></li>
+                                    <li><p align="justify">A funcionalidade deve perguntar a quantidade;</p></li>
+                                    <li><p align="justify">A funcionalidade deve retornar uma mensagem informando se o limite foi ajustado ou não;</p></li>
+                                    <li><p align="justify">A funcionalidade deve analisar a solicitação;</p></li>
+                                    <li><p align="justify">Caso o ajuste seja aprovado, a funcionalidade deve atualizar o limite do cartão na base de dados.</p></li>
+                                </ul>
+
+                                <h5 class="block-title">US19 - Visualizar a senha do meu cartão</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve exibir um botão de senha do cartão;</p></li>
+                                    <li><p align="justify">A funcionalidade deve receber a senha do app pelo teclado do usuário;</p></li>
+                                    <li><p align="justify">A funcionalidade deve confirmar a senha do app recebida do usuário;</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir uma mensagem de erro caso a senha do app informada pelo usuário esteja incorreta;</p></li>
+                                    <li><p align="justify">Caso a senha do app informada pelo usuário esteja correta, a funcionalidade deve exibir a senha do cartão do usuário.</p></li>
+                                </ul><br><br>
+
+                                <h3 class="block-title"><i>Sprint</i> 5</h3>
+                                <img class="img-responsive" src="assets/images/sprint5.png" style="width:80%;" alt="screenshot"/><br>
+                                <p align="justify">&emsp;&emsp;<b>Duração:</b> Duas semanas</p>
+                                <p align="justify">&emsp;&emsp;<b><i>Scrum Master</i>: </b>Integrante da equipe de desenvolvimento.</p><br>
+                                <h4 class="block-title">Critérios de aceitação</h4><br>
+                                <h5 class="block-title">US03 - Alterar o vencimento da fatura</h5>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">A funcionalidade deve permitir a alteração da data de vencimento somente a cada três meses;</p></li>
+                                        <li><p align="justify">Ao clicar na data de vencimento atual, a funcionalidade exibe os dias disponíveis para serem escolhidos;</p></li>
+                                        <li><p align="justify">Ao se clicar em um dos dias disponíveis, a funcionalidade deve exibir uma simulação com os seus próximos dias de vencimento;</p></li>
+                                        <li><p align="justify">Ao se clicar em alterar, a funcionalidade deve exibir uma mensagem de confirmação;</p></li>
+                                        <li><p align="justify">A funcionalidade deve alterar a data de vencimento no banco de dados nubank.</p></li>
+                                    </ul>
+
+                                <h5 class="block-title">US13 - Alterar categoria de uma compra</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">Ao se clicar em categoria, a funcionalidade deve exibir uma lista contendo as categorias disponíveis;</p></li>
+                                    <li><p align="justify">Na lista de categorias disponíveis, ao se clicar na categoria desejada e depois em alterar, a funcionalidade deve atualizar o banco de dados nubank;</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir a categoria escolhida nas respectivas compras.</p></li>
+                                </ul>     
+
+                                <h5 class="block-title">US14 - Adicionar uma tag a uma compra</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve exibir um botão de adicionar tag;</p></li>
+                                    <li><p align="justify">A funcionalidade deve receber uma tag a ser adicionada através do teclado do usuário;</p></li>
+                                    <li><p align="justify">A funcionalidade deve atualizar o banco de dados nubank;</p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir tags adicionadas nas respectivas compras.</p></li>
+                                </ul>
+                                <h5 class="block-title">US15 - Excluir uma tag de uma compra</h5>
+                                <ul style="list-style-type:circle">
+                                    <li><p align="justify">A funcionalidade deve exibir um botão de excluir tag;</p></p></li>
+                                    <li><p align="justify">A funcionalidade deve exibir uma caixa de diálogo para confirmar a remoção da tag;</li>
+                                    <li><p align="justify">A funcionalidade deve atualizar o banco de dados Nubank;</p></li>
+                                    <li><p align="justify">Ao se remover uma tag, a funcionalidade não deve mais exibir a tag nas compras em que era utilizada.</p></li>
+                                </ul>
+                              </div>
+                            </section>
+
+                            <section id="referencias" class="doc-section">
+                                <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
+                                <div class="section-block">
+                                    <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
+                                    <ul style="list-style-type:circle">
+                                        <li><p align="justify">[1] Requisitos de Software, Grupo 3, <b>Cenários e Léxicos</b>.
+                                            Disponível <a href="cenarios-lexicos.html">Aqui</a>.
+                                            Acesso em: 26 de setembro de 2017. </p></li>
+                                        <li><p align="justify">[2] Requisitos de Software, Grupo 3, <b>Casos de Uso</b>.
+                                        Disponível <a href="caso-de-uso.html">Aqui</a>.
+                                        Acesso em: 26 de setembro de 2017. </p></li>
+                                </div>
+                            </section><!--//doc-section-->
+
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                                <li><a class="scrollto" href="#backlog"><i>Backlog</i> do Produto</a>
+                                <li><a class="scrollto" href="#roadmap">Roadmap</a>
+                                    <ul class="nav doc-sub-menu">
+                                      <li><a class="scrollto" href="#release1"><i>Release 1</i></a></li>
+                                      <li><a class="scrollto" href="#release2"><i>Release 2</i></a></li>
+                                  </ul>
+                                <li><a class="scrollto" href="#referencias">Referências</a>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+
+    </div><!--//page-wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support.
+                 :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class><b><font color="white">Universidade de Brasília,  Requisitos de Software,  Grupo 3 - 2017.2</b></small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
