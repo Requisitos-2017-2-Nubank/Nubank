@@ -1,5 +1,5 @@
 
-<p align="center"><a href="http://www.nubank.com.br" target="_blank"><img width="270"src="assets/images/Nubank_Logo.png"></a></p>
+<p align="center"><a href="http://www.nubank.com.br" target="_blank"><img width="300"src="siki/assets/images/Nubank_Logo.png"></a></p>
 
 <a href="https://requisitos-2017-2-nubank.github.io/Nubank/siki/disciplina.html#disciplina" target="_blank"><img src="https://img.shields.io/badge/Requisitos%20de%20Software-2017--2-005a1d.svg?style=flat-square"></a> <a href="https://requisitos-2017-2-nubank.github.io/Nubank/siki/disciplina.html#time" target="_blank"> <img src="https://img.shields.io/badge/Grupo-03-612F74.svg?style=flat-square" alt="Grupo 03"></a>
 
