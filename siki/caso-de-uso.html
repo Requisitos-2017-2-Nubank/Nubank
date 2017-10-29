@@ -161,36 +161,40 @@ UC02
                                     <b>4.1 Fluxo básico - Geração do Boleto para pagamento da fatura fechada (pela tela inicial)</b><br>
                                     <ol>
                                         <li>O caso de uso começa quando o proprietário do cartão abre o aplicativo com suas credenciais de segurança;</li>
-                                        <li>O sistema apresenta na página inicial o histórico de compras e o botão para gerar boleto; <b>[FA01], [FA02], [FA03], [FA04]</b></li>
-                                        <li>O proprietário do cartão seleciona “Gerar boleto”; <b>[FE01]</b></li>
-                                        <li>O proprietário do cartão visualiza as informações do tempo de processamento de boletos; <b>[FA04]</b></li>
-                                        <li>O proprietário do cartão seleciona “continuar”;</li>
+                                        <li>O sistema apresenta na página inicial o histórico de compras e opção para gerar boleto; <b>[FA01], [FA02], [FA03], [FA04]</b></li>
+                                        <li>O proprietário do cartão seleciona a opção de gerar boleto;</li>
+                                        <li>O sistema exibe informações do tempo de processamento de boletos.</li>
+                                        <li>O proprietário do cartão seleciona opção para prosseguir; <b>[FA04]</b></li>
+                                        <li>O sistema apresenta opções para selecionar o valor de pagamento.</li>
                                         <li>O proprietário do cartão define o valor que deseja pagar; <b>[FA04]</b></li>
-                                        <li>O proprietário do cartão seleciona “Gerar boleto”;</li>
-                                        <li>O sistema exibe as informações da fatura e disponibiliza as opções: “copiar código” ou “enviar por email”; <b>[FA04]</b></li>
-                                        <li>O proprietário do cartão paga sua fatura no banco;</li>
+                                        <li>O proprietário do cartão seleciona opção para gerar boleto;</li>
+                                        <li>O sistema exibe as informações da fatura e disponibiliza opções para copiar o código ou enviar por email; <b>[FA04]</b></li>
+                                        <li>O proprietário do cartão escolhe sua opção;</li>
                                         <li>O caso de uso é encerrado.</li>
                                     </ol>
 
                                     <b>4.2 Fluxos alternativos</b><br>
                                     <b>FA01 - Geração do Boleto para pagamento da fatura aberta (pela tela inicial)</b>
                                     <ol>
-                                        <li>O sistema apresenta na página inicial o histórico de compras o proprietário do cartão desliza o menu superior até encontrar o botão para gerar boleto;</li>
-                                        <li>O fluxo continua no passo 3.</li>
+                                        <li>O sistema apresenta na página inicial o histórico de compras.</li> 
+                                        <li>O proprietário do cartão escolhe opção para gerar boleto com a fatura aberta.</li>
+                                        <li>O fluxo principal continua no passo 3.</li>
                                     </ol>
 
                                     <b>FA02 - Geração do Boleto para pagamento da fatura fechada (pela tela de gerenciamento de faturas)</b>
                                     <ol>
-                                        <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
-                                        <li>O proprietário do cartão seleciona “pagar”;</li>
-                                        <li>O fluxo continua no passo 4.</li>
+                                        <li>O proprietário do cartão acessa a tela de gerenciamento de faturas;</li>
+                                        <li>O sistema exibe opção de pagamento.</li>
+                                        <li>O proprietário do cartão seleciona a opção de pagamento;</li>
+                                        <li>O fluxo principal continua no passo 4.</li>
                                     </ol>
 
                                     <b>FA03 - Geração do boleto da fatura antecipada (pela tela de gerenciamento de faturas)</b>
                                     <ol>
-                                        <li>O proprietário do cartão navega pelo aplicativo até encontrar a tela de gerenciamento de faturas;</li>
-                                        <li>O proprietário do cartão seleciona “Boleto”;</li>
-                                        <li>O fluxo continua no passo 4.</li>
+                                        <li>O proprietário do cartão acessa a tela de gerenciamento de faturas;</li>
+                                        <li>O sistema exibe opção de visualização de boleto.</li>
+                                        <li>O proprietário do cartão seleciona a opção de visualização de boleto;</li>
+                                        <li>O fluxo principal continua no passo 4.</li>
                                     </ol>
 
                                     <b>FA04 - O usuário cancela o procedimento</b>
