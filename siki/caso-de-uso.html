@@ -94,18 +94,22 @@ UC01
                                         <b>4 Fluxo de eventos</b><br>
                                         <b>4.1 Fluxo básico</b><br>
                                         <ol>
-                                            <li>O caso de uso começa quando o ator abre o aplicativo e se depara com a tela inicial do aplicativo sem estar logado.</li>
-                                            <li>O ator toca em “Entrar”. <b>[FA01]</b></li>
-                                            <li>O ator digita o seu CPF e sua senha.</li>
-                                            <li>O ator toca em “Entrar” e é autenticado. <b>[FE 01],[FE02]</b></li>
+                                            <li>O caso de uso começa quando o ator abre o aplicativo.</li>
+                                            <li>O sistema exibe a tela inicial do aplicativo sem estar logado.</li>
+                                            <li>O ator toca em “Entrar”.</li>
+                                            <li>O sistema exibe campos de entrada para CPF e senha.</li>
+                                            <li>O ator digita o seu CPF e sua senha. <b>[FA01]</b></li>
+                                            <li>O ator toca em “Entrar”.</li>
+                                            <li>O sistema autentica o autor. <b>[FE 01],[FE02]</b></li>
                                         </ol>
 
                                         <b>4.2 Fluxos alternativos</b><br>
                                         <b>FA01 - O usuário esqueceu a senha</b>
                                         <ol>
-                                                <li>Logo após digitar o CPF, o ator toca em “Esqueci a senha”.</li>
+                                                <li>Logo após digitar o CPF, o ator seleciona opção para alterar a senha.</li>
                                                 <li>O sistema envia um e-mail ao ator para trocar a senha.</li>
-                                                <li>Depois de abrir o e-mail e redefinir a senha, o usuário digita seu CPF e sua nova senha e toca em “Entrar”.</li>
+                                                <li>O ator abre o e-mail e redefine sua senha.</li>
+                                                <li>O fluxo principal é recomeçado.</li>
                                         </ol>
                                         <b>4.3 Fluxos de Exceção</b>
                                         <br><b>FE01 - Não ter acesso a Internet durante o procedimento</b>
@@ -127,6 +131,19 @@ UC01
                                         </ol>
                                         <b>6 Pós-condições</b>
                                         <p align="justify">&emsp;&emsp;O usuário é logado no sistema e tem acesso à sua conta no aplicativo.</p>
+                                        <b>Regras de Negócio</b>
+                                        <br><b>RN01</b>
+                                        <ol>
+                                            <li><b>Descrição:</b> Número​ ​ de​ ​ CPF,​ ​ contendo​ ​ 11​ ​ dígitos,​ ​ sem​ ​ pontuação.</li>
+                                            <li><b>Obrigatoriedade:</b> Sim</li>
+                                            <li><b>Passo​ ​do​ ​Fluxo:</b> FB05</li>
+                                        </ol>
+                                        <b>RN02</b>
+                                        <ol>
+                                            <li><b>Descrição:</b> Senha​ ​ de​ ​ no​ ​ mínimo​ ​ 8 ​ ​ caracteres,​ ​ associada​ ​ ao​ ​ CPF​ ​ digitado.</li>
+                                            <li><b>Obrigatoriedade:</b> Sim</li>
+                                            <li><b>Passo​ ​do​ ​Fluxo:</b> FB05</li>
+                                        </ol>
                                 </div>
 <!--
 Caso de uso: gerar boleto
