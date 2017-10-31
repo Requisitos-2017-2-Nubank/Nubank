@@ -632,6 +632,19 @@ select {
   text-align: center;
 }
 
+.green-table th {
+  text-align: center;
+}
+
+.green-table tr:nth-child(odd) {background-color: #E1EEF5}
+
+.green-table tr > th {
+  background: #40babd;
+  color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
 IMG.displayed {
   display: block;
   margin-left: auto;
