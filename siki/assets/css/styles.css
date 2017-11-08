@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: PrettyDocs - Responsive Website Template for documentations
  * Version: 1.0
  * Author: Xiaoying Riley
@@ -312,6 +312,12 @@ select {
   border-top: 5px solid #40babd;
   padding: 30px 0;
 }
+.footer-index {
+  background: #494d55;
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 5px solid #40babd;
+  padding: 30px 0;
+}
 .header a {
   color: #fff;
 }
@@ -405,6 +411,9 @@ select {
 }
 .footer .fa-heart {
   color: #EA5395;
+}
+.footer-blue{
+    background: #40babd
 }
 /* ======= Doc Styling ======= */
 .doc-wrapper {
@@ -648,7 +657,7 @@ select {
 IMG.displayed {
   display: block;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto
 }
 
 .body-orange .table > thead > tr > th {
@@ -709,8 +718,9 @@ IMG.displayed {
   margin-top: 30px;
 }
 .author-profile img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  margin-top: 5px;
 }
 .speech-bubble {
   background: #fff;
