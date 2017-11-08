@@ -257,6 +257,57 @@
                                           </tr>
                                       </table>
                                   </div>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  cenarios Bloqueio Temporário do Cartão
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+                            <div id="bloqueio-cartão"  class="section-block">
+                                <h2>Bloqueio Temporário do Cartão</h2>
+                                  <table  class="blue-migue" class="" style="width:100%">
+                                      <tr>
+                                          <th>Objetivo</th>
+                                          <td><p align="justify" class="blue-migue-description"> Realizar o bloqueio do cartão.</p>
+                                          </td>
+                                      </tr>
+
+                                      <tr>
+                                       <th>Contexto</th>
+                                       <td>
+                                          <p align="justify" class="blue-migue-description">Ter acesso à internet</p>
+                                          <p align="justify" class="blue-migue-description">Estar com o aplicativo instalado.</p>
+                                          <p align="justify" class="blue-migue-description">Estar com o cartão desbloqueado.</p>
+                                     </tr>
+
+                                     <tr>
+                                       <th>Atores</th>
+                                       <td><p align="justify" class="blue-migue-description"><a class="scrollto" href="#usuario">Usuário</a></p>
+                                      </td></tr>
+
+                                     <tr>
+                                      <th>Recursos</th>
+                                          <td>
+                                              <p align="justify" class="blue-migue-description">Internet</p>
+                                              <p align="justify" class="blue-migue-description">Aplicativo instalado  </p>
+                                              <p align="justify" class="blue-migue-description">Aplicativo logado na conta do <a class="scrollto" href="#usuario">usuário</a></p>
+                                          </td></tr>
+                                      <tr>
+                                          <th>Exceção</th>
+                                          <td><p align="justify" class="blue-migue-description">A internet cair durante a tentativa de bloqueio. </p></td>
+                                      </tr>
+                                      <tr>
+                                          <th>Episódios</th>
+                                          <td><p align="justify" class="blue-migue-description">
+                                              <ul>
+                                                  <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão abre o aplicativo;</li>
+                                                  <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão desliza a tela para a esquerda;</li>
+                                                  <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão aperta o botão chamado “Bloqueio Temporário”;</li>
+                                                  <li>O <a class="scrollto" href="#usuario">usuário</a> do cartão confirma a ação;</li>
+                                              </ul>
+                                          </p></td>
+                                      </tr>
+                                  </table>
+                              </div>
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       topico de cenarios Gerenciamento de compras
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1853,8 +1904,9 @@
                                 <li><a class="scrollto" href="#cenarios">Cenários</a>
                                     <ul class="nav doc-sub-menu">
                                         <li><a class="scrollto" href="#historico-compras-geral">Acessar Histórico de Compras</a></li>
-                                        <li><a class="scrollto" href="#alterar-vencimento">Alterar Vencimento da Fatura</a></li>                                        
+                                        <li><a class="scrollto" href="#alterar-vencimento">Alterar Vencimento da Fatura</a></li>
                                         <li><a class="scrollto" href="#apagar-gastos">Apagar Gastos</a></li>
+                                        <li><a class="scrollto" href="#bloqueio-cartão">Bloqueio Temporario do Cartão</a></li>
                                         <li><a class="scrollto" href="#gerenciar-compras">Gerenciar Compras</a></li>
                                         <li><a class="scrollto" href="#geracao-fatura">Geração de Fatura</a></li>
                                         <li><a class="scrollto" href="#pedir-ajuda">Pedir ajuda</a></li>
