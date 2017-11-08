@@ -51,7 +51,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><span aria-hidden="true" class="icon fa fa-pencil-square-o"></span> Matriz de Rastreabilidade - <i>Forward From</i></h1>
-                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Sep 24th, 2017</div>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Nov 8th, 2017</div>
                 </div><!--//doc-header-->
                 <div class="doc-body">
                     <div class="doc-content">
@@ -59,6 +59,14 @@
                         <section id="especificacao" class="doc-section">
                             <h2 class="section-title">Matriz de Rastreabilidade</h2>
                             <div class="section-block">
+                                <section>
+                                    <div id="backwards" class="section-block">
+                                        <div class="screenshot-holder">
+                                                <a href="assets/images/forward.png" data-title="Forward From" data-toggle="lightbox"><img class="img-responsive" src="assets/images/forward.png" alt="screenshot"/></a>
+                                                <a class="mask" href="assets/images/forward.png" data-title="Forward From" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div>
+                                    </div>
+                                </section>
 <!--
 Requisito 1 - Fazer login
 -->
@@ -137,9 +145,9 @@ Requisito 3 - Ajuda
                                         <b>Softgoals Relacionados</b>
                                         <p align="justify">
                                             <ul>
-                                                <li><a href="istar.html#uc04">Satisfação do proprietário do cartão</a></li>
-                                                <li><a href="istar.html#uc04">Eficiência na resolução dos problemas</a></li>
-                                                <li><a href="istar.html#uc04">Praticidade na resolução de problemas</a></li>
+                                                <li><a href="nfr.html">Satisfação do proprietário do cartão</a></li>
+                                                <li><a href="nfr.html">Eficiência na resolução dos problemas</a></li>
+                                                <li><a href="nfr.html">Praticidade na resolução de problemas</a></li>
                                             </ul>
                                         </p>
                                 </div>
@@ -180,19 +188,29 @@ Requisito 5 - Acessar Compra
                                 <div id="rq05"  class="section-block">
                                     <h3 class="block-title">RQ05</h3>
                                         <b>Requisito do Sistema</b><br>
-                                        <p align="justify">Habilidade de acessar compra.</p>
+                                        <p align="justify">Habilidade de acessar compra</p>
                                         <b>Cenários</b>
-                                        <p align="justify">&emsp;&emsp;</p>
+                                        <p align="justify">
+                                            <ul>
+                                                <li><a href="cenarios-lexicos.html#gerenciar-compras">Gerenciar Compras</a></li>
+                                                <li><a href="cenarios-lexicos.html#acessar-historico">Acessar histórico de compras</a></li>
+                                            </ul>
+                                        </p>
                                         <b>Léxicos</b>
                                         <p align="justify">&emsp;&emsp;</p>
                                         <b>Casos de Uso</b>
-                                        <p align="justify">&emsp;&emsp;</p>
+                                        <p align="justify">&emsp;&emsp;<a href="caso-de-uso.html#uc08">UC08 - Acessar compra</a></p>
                                         <b>Histórias de Usuário</b>
-                                        <p align="justify">&emsp;&emsp;</p>
+                                        <p align="justify">&emsp;&emsp;<a href="agil.html">US11</a></p>
                                         <b>Rationales</b>
-                                        <p align="justify">&emsp;&emsp;</p>
+                                        <p align="justify">&emsp;&emsp;<a href="istar.html#uc08">Satisfação do proprietário do cartão</a></p>
                                         <b>Softgoals Relacionados</b>
-                                        <p align="justify">&emsp;&emsp;</p>
+                                        <p align="justify">
+                                            <ul>
+                                                <li><a href="istar.html#uc08">Praticidade [gerenciamento financeiro]</a></li>
+                                                <li><a href="istar.html#uc08">Detalhamento e organização para acessar compra</a></li>
+                                            </ul>
+                                        </p>
                                 </div>
 <!--
 Requisito 6 - Visualizar histórico
@@ -439,13 +457,6 @@ Requisito 12 - Tag
                                         <p align="justify">&emsp;&emsp;</p>
                                 </div>
                         </section>
-                        <section id="referencias" class="doc-section">
-                            <h2 class="section-title"><i class="icon fa fa-search"></i> Referências</h2>
-                            <div class="section-block">
-                                <p align="justify">Material utilizado como referência para este módulo da disciplina.</p>
-                                <ul style="list-style-type:circle">
-                            </div>
-                        </section><!--//doc-section-->
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
 
@@ -467,7 +478,6 @@ Requisito 12 - Tag
                                             <li><a class="scrollto" href="#rq11">RQ11</a>
                                             <li><a class="scrollto" href="#rq12">RQ12</a>
                                     </ul><!--//nav-->
-                                <li><a class="scrollto" href="#referencias">Referências</a>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
