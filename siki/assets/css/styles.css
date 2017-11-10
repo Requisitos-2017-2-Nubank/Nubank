@@ -404,7 +404,7 @@ select {
 .footer {
   background: #26282c;
   color: rgba(255, 255, 255, 0.6);
-  padding: 15px 0;
+  padding:  0;
 }
 .footer a {
   color: #40babd;
@@ -414,6 +414,18 @@ select {
 }
 .footer-blue{
     background: #40babd
+}
+.footer-pink{
+    background: #EA5395
+}
+.footer-green{
+    background: #75c181
+}
+.footer-orange{
+    background: #f77e17
+}
+.footer-purple{
+    background: #8A40A7
 }
 /* ======= Doc Styling ======= */
 .doc-wrapper {
